@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PTE</title>
     <link rel="stylesheet" href="../../dist/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script defer src="../../main.js"></script>
 </head>
 <body class="bg-black w-[40%]">
+
     <div class="bg-white py-5 px-12 rounded-[30px] shadow-lg">
         <div class="flex justify-between items-center mb-7 pl-2">
             <h1 class="text-mainBlackColor text-3xl font-semibold">Set Target</h1>
@@ -141,5 +139,83 @@
             </div>
         </div>
     </div>
+
+    
+    <script>
+        const scoreTargetButtonOne = document.querySelector(".changeBg")
+let selected = true;
+scoreTargetButtonOne.addEventListener("click",()=>{
+    if(selected){
+        scoreTargetButtonOne.style.backgroundColor="#49DEFF"
+    }
+    else{
+        scoreTargetButtonOne.style.backgroundColor="#f9fafb"
+    }
+    selected = !selected
+})
+
+const scoreTargetButtonTwo = document.querySelector(".changeBg2")
+let selected2 = true;
+scoreTargetButtonTwo.addEventListener("click",()=>{
+    if(selected2){
+        scoreTargetButtonTwo.style.backgroundColor="#49DEFF"
+    }
+    else{
+        scoreTargetButtonTwo.style.backgroundColor="#f9fafb"
+    }
+    selected2 = !selected2
+})
+
+const scoreTargetButtonThree = document.querySelector(".changeBg3")
+let selected3 = true;
+scoreTargetButtonThree.addEventListener("click",()=>{
+    if(selected3){
+        scoreTargetButtonThree.style.backgroundColor="#49DEFF"
+    }
+    else{
+        scoreTargetButtonThree.style.backgroundColor="#f9fafb"
+    }
+    selected3 = !selected3
+})
+
+const scoreTargetButtonFour = document.querySelector(".changeBg4")
+let selected4 = true;
+scoreTargetButtonFour.addEventListener("click",()=>{
+    if(selected4){
+        scoreTargetButtonFour.style.backgroundColor="#49DEFF"
+    }
+    else{
+        scoreTargetButtonFour.style.backgroundColor="#f9fafb"
+    }
+    selected4 = !selected4
+})
+
+const onSelectedOverall = document.querySelector(".onSelectedOverall")
+let selectOverall = true
+onSelectedOverall.addEventListener("click",()=>{
+    if(selectOverall){
+        document.querySelector(".overallChangeNumbers").innerHTML="75"
+        document.querySelector(".changeOverallBg").style.backgroundColor="#49DEFF"
+    }
+    else{
+        document.querySelector(".overallChangeNumbers").innerHTML="0"
+        document.querySelector(".changeOverallBg").style.backgroundColor="#e5e7eb"
+    }
+    selectOverall = !selectOverall
+})
+
+let calender = false
+const onShowCalendner = () => {
+    if(calender){
+        document.querySelector(".showCalender").style.display="none" 
+        document.querySelector(".rotateIcon").style.rotate="0deg"
+    }
+    else{
+        document.querySelector(".showCalender").style.display="flex" 
+        document.querySelector(".rotateIcon").style.rotate="-180deg"
+    }
+    calender = !calender
+}
+    </script>
 </body>
 </html>
