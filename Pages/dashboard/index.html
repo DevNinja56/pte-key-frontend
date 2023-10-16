@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PTE</title>
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <script defer src="../../main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    *{
+  font-size: 62.5%;
+
+    }
+  </style>
+  <body>
+    <!-- Dashboard screen Start -->
+
+    <div class="w-full relative bg-white mb-7 border-b">
+      <div
+        class="max-w-[92%] mx-auto px-2 flex items-center justify-between 2xl:pt-[4rem] lg:pt-[2rem] 2xl:pb-[3.2rem] lg:pb-[2.4rem] z-10"
+      >
+        <div class="flex items-center gap-x-8">
+          <div class="flex items-center gap-2">
+            <img
+              class="h-[45px] w-[45px]"
+              src="../../assets/images/Logo.svg"
+            />
+            <h1
+              class="2xl:text-[3rem] xl:text-[2.4rem] lg:text-[2rem] font-bold text-mainBlackColor"
+            >
+              PTE Key
+            </h1>
+          </div>
+          <ul
+            class="flex items-center gap-[3.5rem] 2xl:text-[2rem] xl:text-[1.8rem] lg:text-[1.6rem] font-medium text-mainBlackColor"
+          >
+            <li>Dashboard</li>
+            <li
+              onmouseenter="onShowDropdown()"
+              onmouseleave="hideDropDown()"
+              class="cursor-pointer ptePractice"
+            >
+              PTE Practice
+            </li>
+            <li>PTE Guide</li>
+            <li class="text-mainColor">Tutorials</li>
+            <li>App</li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-[30px] z-10">
+          <button
+            class="py-2 px-5 rounded-[5px] bg-mainColor text-white font-semibold"
+          >
+            Upgrade VIP
+          </button>
+          <img src="../../assets/images/bell.svg" />
+          <div
+            class="flex items-center gap-x-3 2xl:text-[2rem] xl:text-[1.8rem] lg:text-[1.6rem]"
+          >
+            <div class="h-12 w-12 rounded-full">
+              <img src="../../assets/images/userImg.svg" />
+            </div>
+            <p class="flex items-center gap-x-1 font-medium">
+              John Smith
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="14"
+                viewBox="0 0 15 14"
+                fill="none"
+              >
+                <path
+                  d="M10.6054 5.37281L8.07575 7.90244L5.54612 5.37281C5.46361 5.29312 5.3531 5.24902 5.23839 5.25002C5.12367 5.25101 5.01394 5.29702 4.93283 5.37814C4.85171 5.45926 4.8057 5.56899 4.8047 5.6837C4.80371 5.79841 4.8478 5.90892 4.9275 5.99144L7.76512 8.82906C7.80582 8.86993 7.85424 8.90227 7.90758 8.9242C7.96091 8.94614 8.01808 8.95722 8.07575 8.95681C8.1334 8.9571 8.19053 8.94596 8.24385 8.92403C8.29717 8.90211 8.34561 8.86983 8.38637 8.82906L11.224 5.99144C11.3037 5.90892 11.3478 5.79841 11.3468 5.6837C11.3458 5.56899 11.2998 5.45926 11.2187 5.37814C11.1376 5.29702 11.0278 5.25101 10.9131 5.25002C10.7984 5.24902 10.6879 5.29312 10.6054 5.37281Z"
+                  fill="#303030"
+                  stroke="#303030"
+                />
+              </svg>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper max-w-[92%] m-auto">
+      <div
+        class="dashboardHeader mt-[3.5rem] flex items-center justify-between w-[100%] pb-14"
+      >
+        <h1 class="text-mainBlackColor text-[4rem] font-semibold leading-10">
+          Dashboard
+        </h1>
+        <div class="searchaBar w-[30%] relative">
+          <input
+            class="border text-[2rem] border-lightGray rounded-[20px] w-[100%] 2xl:py-[2.6rem] lg:py-[2rem] 2xl:px-[4.1rem] lg:px-[3.6rem] shadow-inputShadow"
+            placeholder="Search Question..."
+          />
+          <span class="text-[2.2rem] absolute right-10 2xl:top-10 lg:top-7">
+            <i class="fa fa-search"></i
+          ></span>
+        </div>
+      </div>
+      <div class="flex 2xl:gap-[3rem] xl:gap-[2.4rem] lg:gap-[2rem]">
+        <div
+          class="flex items-center 2xl:gap-[2rem] lg:gap-[1.4rem] flex-col w-[72%]"
+        >
+          <!-- Practice Program Section Starts-->
+          <section
+            class="practiceProgramContainer rounded-[20px] px-[2.5rem] py-[3rem] bg-white bg-opacity-93 shadow-box_shadow w-[100%]"
+          >
+            <div class="header flex items-center justify-between mb-[3rem]">
+              <h2
+                class="text-mainBlackColor 2xl:text-[3.2rem] lg:text-[2.6rem] font-semibold"
+              >
+                Practice Progress
+              </h2>
+              <div class="dateContainer flex items-center gap-[2.4rem]">
+                <p
+                  class="2xl:text-[2rem] lg:text-[1.6rem] font-medium text-mainBlackColor leading-5"
+                >
+                  Last updated on 9/26/2023
+                </p>
+                <div class="bg-mainColor bg-opacity-10 rounded-full p-[1rem]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M4.59976 16.25L3.93946 16.9155C4.30497 17.2781 4.89456 17.2781 5.26006 16.9155L4.59976 16.25ZM7.35984 14.8321C7.72739 14.4675 7.72971 13.8739 7.36504 13.5064C7.00036 13.1388 6.40677 13.1365 6.03922 13.5011L7.35984 14.8321ZM3.1603 13.5011C2.79275 13.1365 2.19916 13.1388 1.83449 13.5064C1.46981 13.8739 1.47215 14.4675 1.8397 14.8321L3.1603 13.5011ZM23.2695 9.24099C23.5406 9.68206 24.118 9.81981 24.5591 9.54865C25.0001 9.27749 25.1379 8.70009 24.8667 8.25901L23.2695 9.24099ZM15.0986 2.8125C8.78944 2.8125 3.66226 7.889 3.66226 14.1666H5.53726C5.53726 8.9384 9.81105 4.6875 15.0986 4.6875V2.8125ZM3.66226 14.1666V16.25H5.53726V14.1666H3.66226ZM5.26006 16.9155L7.35984 14.8321L6.03922 13.5011L3.93946 15.5845L5.26006 16.9155ZM5.26006 15.5845L3.1603 13.5011L1.8397 14.8321L3.93946 16.9155L5.26006 15.5845ZM24.8667 8.25901C22.8587 4.99284 19.2341 2.8125 15.0986 2.8125V4.6875C18.5605 4.6875 21.5909 6.51056 23.2695 9.24099L24.8667 8.25901Z" fill="#49DEFF"/>
+                        <path d="M25.3925 13.75L26.0515 13.0832C25.6864 12.7222 25.0986 12.7222 24.7335 13.0832L25.3925 13.75ZM22.6256 15.1666C22.2574 15.5305 22.254 16.1241 22.6179 16.4924C22.9819 16.8606 23.5755 16.8641 23.9438 16.5001L22.6256 15.1666ZM26.8413 16.5001C27.2095 16.8641 27.8031 16.8606 28.167 16.4924C28.531 16.1241 28.5276 15.5305 28.1594 15.1665L26.8413 16.5001ZM6.64756 20.7576C6.37563 20.317 5.79801 20.1802 5.35739 20.4522C4.91677 20.7241 4.78002 21.3017 5.05193 21.7424L6.64756 20.7576ZM14.8535 27.1875C21.1815 27.1875 26.33 22.1144 26.33 15.8334H24.455C24.455 21.0583 20.1666 25.3125 14.8535 25.3125V27.1875ZM26.33 15.8334V13.75H24.455V15.8334H26.33ZM24.7335 13.0832L22.6256 15.1666L23.9438 16.5001L26.0515 14.4167L24.7335 13.0832ZM24.7335 14.4167L26.8413 16.5001L28.1594 15.1665L26.0515 13.0832L24.7335 14.4167ZM5.05193 21.7424C7.06769 25.0087 10.7052 27.1875 14.8535 27.1875V25.3125C11.3754 25.3125 8.33243 23.4879 6.64756 20.7576L5.05193 21.7424Z" fill="#49DEFF"/>
+                      </svg>
+                    </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between gap-[1rem]">
+              <div
+                class="tasksProgress border border-gray-300 rounded-[10px] shadow-sm 2xl:py-[2rem] xl:py-[1.8rem] lg:py-[1.6rem] px-[1.6rem] w-[18%]"
+              >
+                <div
+                  class="header flex items-center gap-[1rem] 2xl:mb-[1.5rem] xl:mb-[1.2rem] lg:mb-[.8rem]"
+                >
+                  <div
+                    class="icon bg-gray-600 p-[.8rem] bg-opacity-10 rounded-[39px]"
+                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="none">
+                    <path d="M10.7112 4.87712C11.1724 3.70762 12.8276 3.70763 13.2888 4.87713L14.7181 8.50132C14.8589 8.85837 15.1416 9.14101 15.4987 9.28183L19.1229 10.7112C20.2924 11.1724 20.2924 12.8276 19.1229 13.2888L15.4987 14.7181C15.1416 14.8589 14.8589 15.1416 14.7181 15.4987L13.2888 19.1229C12.8276 20.2924 11.1724 20.2924 10.7112 19.1229L9.28183 15.4987C9.141 15.1416 8.85837 14.8589 8.50132 14.7181L4.87712 13.2888C3.70762 12.8276 3.70763 11.1724 4.87713 10.7112L8.50132 9.28183C8.85837 9.141 9.14101 8.85837 9.28183 8.50132L10.7112 4.87712Z" stroke="#6B7AFF" stroke-width="2"/>
+                    <path d="M21.9843 17.7976C22.2283 17.1788 23.1043 17.1788 23.3483 17.7976L24.4158 20.5043C24.4903 20.6932 24.6399 20.8428 24.8288 20.9173L27.5355 21.9848C28.1543 22.2288 28.1543 23.1048 27.5355 23.3488L24.8288 24.4163C24.6399 24.4908 24.4903 24.6404 24.4158 24.8293L23.3483 27.536C23.1043 28.1548 22.2283 28.1548 21.9843 27.536L20.9168 24.8293C20.8423 24.6404 20.6927 24.4908 20.5038 24.4163L17.7971 23.3488C17.1783 23.1048 17.1783 22.2288 17.7971 21.9848L20.5038 20.9173C20.6927 20.8428 20.8423 20.6932 20.9168 20.5043L21.9843 17.7976Z" stroke="#6B7AFF" stroke-width="2"/>
+                  </svg>
+                  </div>
+                  <h3
+                    class="title 2xl:text-[2rem] xl:text-[1.6rem] lg:text-[1.4rem] font-medium text-mainBlackColor 2xl:leading-[2.4rem] lg:leading-[2rem]"
+                  >
+                    Prediction Questions
+                  </h3>
+                </div>
+                <div
+                  class="flex items-center gap-[0.8rem] 2xl:mb-[1.5rem] lg:mb-[1rem]"
+                >
+                  <h1
+                    class="text-blue-500 2xl:text-[3rem] lg:text-[2rem] font-semibold"
+                  >
+                    1995
+                  </h1>
+                  <p
+                    class="text-[1.2rem] font-semibold percentage text-blue-500 bg-blue-500 py-[0.4rem] px-[1rem] rounded-[53px] bg-opacity-10"
+                  >
+                    0%
+                  </p>
+                </div>
+                <div class="flex flex-col gap-2 text-[1.2rem]">
+                  <p>Your Progress</p>
+                  <div
+                    class="bg-blue-500 p-2 bg-opacity-10 rounded-[39px]"
+                  ></div>
+                </div>
+              </div>
+              <div
+                class="tasksProgress border border-gray-300 rounded-[10px] shadow-sm 2xl:py-[2rem] xl:py-[1.8rem] lg:py-[1.6rem] px-[1.6rem] w-[18%]"
+              >
+                <div
+                  class="header flex items-center gap-[1rem] 2xl:mb-[1.5rem] xl:mb-[1.2rem] lg:mb-[.8rem]"
+                >
+                  <div
+                    class="icon bg-red-500 p-[1rem] bg-opacity-10 rounded-[39px]"
+                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="none">
+                    <path d="M7.2002 20.8001C10.4002 28.8001 21.6002 28.8001 24.8002 20.8001M21.6002 12.8001H15.2002M21.6002 16.0001H17.6002M16.0002 23.2001C12.9074 23.2001 10.4002 20.6929 10.4002 17.6001V11.2001C10.4002 8.1073 12.9074 5.6001 16.0002 5.6001C19.093 5.6001 21.6002 8.1073 21.6002 11.2001V17.6001C21.6002 20.6929 19.093 23.2001 16.0002 23.2001Z" stroke="#FF5F5F" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                  </div>
+                  <h3
+                    class="title 2xl:text-[2rem] xl:text-[1.6rem] lg:text-[1.4rem] font-medium text-mainBlackColor 2xl:leading-[2.4rem] lg:leading-[2rem]"
+                  >
+                    Speaking Questions
+                  </h3>
+                </div>
+                <div
+                  class="flex items-center gap-2 2xl:mb-[1.5rem] lg:mb-[.8rem]"
+                >
+                  <h1
+                    class="text-red-400 2xl:text-[3rem] lg:text-[2rem] font-semibold"
+                  >
+                    6423
+                  </h1>
+                  <p
+                    class="text-[1.2rem] font-semibold percentage text-red-500 bg-red-500 py-[0.4rem] px-[1rem] rounded-[53px] bg-opacity-10"
+                  >
+                    0%
+                  </p>
+                </div>
+                <div class="flex flex-col gap-2 text-[1.2rem]">
+                  <p>Your Progress</p>
+                  <div class="bg-red-500 p-2 bg-opacity-10 rounded-[39px]"></div>
+                </div>
+              </div>
+              <div
+                class="tasksProgress border border-gray-300 rounded-[10px] shadow-sm 2xl:py-[2rem] xl:py-[1.8rem] lg:py-[1.6rem] px-[1.6rem] w-[18%]"
+              >
+                <div
+                  class="header flex items-center gap-[1rem] 2xl:mb-[1.5rem] xl:mb-[1.2rem] lg:mb-[.8rem]"
+                >
+                  <div
+                    class="icon bg-orange-500 p-[.8rem] bg-opacity-10 rounded-[39px]"
+                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="none">
+                    <path d="M16.762 9.41365L21.7143 4.57129L27.8096 10.2856L22.7495 15.238M16.762 9.41365L4.57148 21.3332L3.80957 28.1903L9.90481 27.8094L22.7495 15.238M16.762 9.41365L22.7495 15.238" stroke="#FFD666" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>
+                  </div>
+                  <p
+                    h3
+                    class="title 2xl:text-[2rem] xl:text-[1.6rem] lg:text-[1.4rem] font-medium text-mainBlackColor 2xl:leading-[2.4rem] lg:leading-[2rem]"
+                  >
+                    Writing Questions
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-[.8rem] 2xl:mb-[1.5rem] lg:mb-[1rem]"
+                >
+                  <h1
+                    class="text-yellow-500 2xl:text-[3rem] lg:text-[2rem] font-semibold"
+                  >
+                    2105
+                  </h1>
+                  <p
+                    class="text-[1.2rem] font-semibold percentage text-yellow-500 bg-orange-500 py-[0.4rem] px-[1.2rem] rounded-[53px] bg-opacity-10"
+                  >
+                    0%
+                  </p>
+                </div>
+                <div class="flex flex-col gap-[.8rem] text-[1.2rem]">
+                  <p>Your Progress</p>
+                  <div class="bg-orange-500 p-2 bg-opacity-10 rounded-[39px]"></div>
+                </div>
+              </div>
+
+              <div
+                class="tasksProgress border border-gray-300 rounded-[10px] shadow-sm 2xl:py-[2rem] xl:py-[1.8rem] lg:py-[1.6rem] px-[1.6rem] w-[18%]"
+              >
+                <div
+                  class="header flex items-center gap-[1rem] 2xl:mb-[1.5rem] xl:mb-[1.2rem] lg:mb-[.8rem]"
+                >
+                  <div
+                    class="icon bg-purple-500 p-[.8rem] bg-opacity-10 rounded-[39px]"
+                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="none">
+                    <path d="M8.66634 2.6665H26.6663V24.13M8.66634 2.6665V24.3437M8.66634 2.6665C7.55523 2.6665 5.33301 3.3169 5.33301 5.91853C5.33301 8.52016 5.33301 20.8778 5.33301 26.7316M26.6663 24.13L8.66634 24.3437M26.6663 24.13V26.7316M8.66634 24.3437C7.45509 24.3437 5.33301 24.8881 5.33301 26.7316M5.33301 26.7316C5.33301 29.3332 7.33301 29.3332 7.99967 29.3332H26.6663V26.7316M26.6663 26.7316H18.6663" stroke="#A76FD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  </div>
+                  <h3
+                    class="title 2xl:text-[2rem] xl:text-[1.6rem] lg:text-[1.4rem] font-medium text-mainBlackColor 2xl:leading-[2.4rem] lg:leading-[2rem]"
+                  >
+                    Reading Questions
+                  </h3>
+                </div>
+                <div
+                  class="flex items-center gap-[.8rem] 2xl:mb-[1.5rem] lg:mb-[1rem]"
+                >
+                  <h1
+                    class="text-purple-500 2xl:text-[3rem] lg:text-[2rem] font-semibold"
+                  >
+                    2642
+                  </h1>
+                  <p
+                    class="text-[1.2rem] font-semibold percentage text-purple-500 bg-purple-500 py-[0.4rem] px-[1rem] rounded-[53px] bg-opacity-10"
+                  >
+                    0%
+                  </p>
+                </div>
+                <div class="flex flex-col gap-[.8rem] text-[1.2rem]">
+                  <p>Your Progress</p>
+                  <div class="bg-purple-500 p-2 bg-opacity-10 rounded-[39px]"></div>
+                </div>
+              </div>
+              <div
+                class="tasksProgress border border-gray-300 rounded-[10px] shadow-sm 2xl:py-[2rem] xl:py-[1.8rem] lg:py-[1.6rem] px-[1.6rem] w-[18%]"
+              >
+                <div
+                  class="header flex items-center gap-[1rem] 2xl:mb-[1.5rem] xl:mb-[1.2rem] lg:mb-[.8rem]"
+                >
+                  <div
+                    class="icon bg-mainColor p-[.8rem] bg-opacity-10 rounded-[39px]"
+                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="none">
+                    <path d="M8.38119 18.2856H4.57166C3.73008 18.2856 3.04785 18.9679 3.04785 19.8095V25.9047C3.04785 26.7463 3.73008 27.4285 4.57166 27.4285H8.38119C9.22276 27.4285 9.90499 26.7463 9.90499 25.9047V19.8095C9.90499 18.9679 9.22276 18.2856 8.38119 18.2856Z" stroke="#12D3BF" stroke-width="2"/>
+                    <path d="M27.429 18.2856H23.6195C22.7779 18.2856 22.0957 18.9679 22.0957 19.8095V25.9047C22.0957 26.7463 22.7779 27.4285 23.6195 27.4285H27.429C28.2706 27.4285 28.9528 26.7463 28.9528 25.9047V19.8095C28.9528 18.9679 28.2706 18.2856 27.429 18.2856Z" stroke="#12D3BF" stroke-width="2"/>
+                    <path d="M28.9252 22.5317L28.9323 18.0439C28.9434 10.9131 23.1718 5.12347 16.0411 5.11232C8.91032 5.10118 3.1207 10.8728 3.10956 18.0035L3.10254 22.4913" stroke="#12D3BF" stroke-width="2"/>
+                  </svg>
+                  </div>
+                  <p
+                    h3
+                    class="title 2xl:text-[2rem] xl:text-[1.6rem] lg:text-[1.4rem] font-medium text-mainBlackColor 2xl:leading-[2.4rem] lg:leading-[2rem]"
+                  >
+                    Listening Questions
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-2 2xl:mb-[1.5rem] lg:mb-[.8rem]"
+                >
+                  <h1
+                    class="text-mainColor 2xl:text-[3rem] lg:text-[2rem] font-semibold"
+                  >
+                    1829
+                  </h1>
+                  <p
+                    class="text-[1.2rem] font-semibold percentage text-mainColor bg-maintext-mainColor py-[0.4rem] px-[1rem] rounded-[53px] bg-opacity-10"
+                  >
+                    0%
+                  </p>
+                </div>
+                <div class="flex flex-col gap-2 text-[1.2rem]">
+                  <p>Your Progress</p>
+                  <div class="bg-mainColor p-2 bg-opacity-10 rounded-[39px]"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Practice Program Section Ends -->
+
+          <!-- Graph Section Starts-->
+          <section
+            class="border w-[100%] rounded-[20px] 2xl:py-[4.5rem] lg:py-[4rem] 2xl:px-[3.5rem] lg:px-[3rem] 2xl:mt-[2rem] lg:mt-[1rem]"
+          >
+            <div class="flex items-center justify-between mb-[50px]">
+              <h2
+                class="text-mainBlackColor 2xl:text-[3.2rem] lg:text-[2.6rem] font-semibold"
+              >
+                Performance Progress
+              </h2>
+              <div class="flex gap-5">
+                <button
+                  class="flex items-center gap-2 bg-skyBlue py-[1.3rem] px-[2.4rem] text-[1.6rem] rounded-[5px] text-white font-semibold"
+                >
+                  Weekly
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="15"
+                      viewBox="0 0 14 15"
+                      fill="none"
+                    >
+                      <path
+                        d="M9.73819 5.87281L7.20856 8.40244L4.67894 5.87281C4.59642 5.79312 4.48591 5.74902 4.3712 5.75002C4.25649 5.75101 4.14676 5.79702 4.06564 5.87814C3.98452 5.95926 3.93851 6.06899 3.93752 6.1837C3.93652 6.29841 3.98062 6.40892 4.06031 6.49144L6.89794 9.32906C6.93863 9.36993 6.98706 9.40227 7.04039 9.4242C7.09372 9.44614 7.15089 9.45722 7.20856 9.45681C7.26621 9.4571 7.32335 9.44596 7.37666 9.42403C7.42998 9.40211 7.47842 9.36983 7.51919 9.32906L10.3568 6.49144C10.4365 6.40892 10.4806 6.29841 10.4796 6.1837C10.4786 6.06899 10.4326 5.95926 10.3515 5.87814C10.2704 5.79702 10.1606 5.75101 10.0459 5.75002C9.93121 5.74902 9.8207 5.79312 9.73819 5.87281Z"
+                        fill="#303030"
+                        stroke="white"
+                      />
+                    </svg>
+                  </p>
+                </button>
+                <button
+                  class="bg-mainBlackColor py-[1.3rem] px-[2.4rem] text-[1.6rem] rounded-[5px] text-white font-semibold"
+                >
+                  View Detailed Analytics
+                </button>
+              </div>
+            </div>
+            <div class="h-[660px]">
+              <h1 class="text-[40px] font-semibold text-center">graph</h1>
+            </div>
+            <div class="flex items-center justify-center gap-[25px] mt-[50px]">
+              <button
+                class="flex items-center text-[1.6rem] font-semibold gap-[.8rem] bg-skyBlue py-[1rem] px-[2.4rem] rounded-[5px] text-white w-[130px] justify-center"
+              >
+                Speaking
+              </button>
+              <button
+                class="flex items-center text-[1.6rem] font-semibold gap-[.8rem] bg-skyBlue py-[1rem] px-[2.4rem] rounded-[5px] text-white w-[130px] justify-center"
+              >
+                Reading
+              </button>
+              <button
+                class="flex items-center text-[1.6rem] font-semibold gap-[.8rem] bg-skyBlue py-[1rem] px-[2.4rem] rounded-[5px] text-white w-[130px] justify-center"
+              >
+                Writing
+              </button>
+              <button
+                class="flex items-center text-[1.6rem] font-semibold gap-[.8rem] bg-skyBlue py-[1rem] px-[2.4rem] rounded-[5px] text-white w-[130px] justify-center"
+              >
+                Listening
+              </button>
+            </div>
+          </section>
+          <!-- Graph Section Ends-->
+          <!-- Free PTEKey Lessons Section starts-->
+          <section
+            class="border w-[100%] rounded-[20px] 2xl:py-[4.5rem] xl:py-[4rem] lg:py-[3.4rem] 2xl:px-[3.5rem] xl:px-[3rem] lg:px-[2.6rem] 2xl:mb-[26rem] lg:mb-[20rem] shadow-box_shadow"
+          >
+            <div class="flex items-center justify-between mb-[2rem]">
+              <h2
+                class="text-mainBlackColor 2xl:text-[3.2rem] lg:text-[2.6rem] font-semibold"
+              >
+                Free PTEKey Lessons
+              </h2>
+              <div class="flex gap-[2rem]">
+                <button
+                  class="flex items-center gap-[0.8rem] py-[1.2rem] px-[2.6rem] rounded-[5px] text-mainBlackColor text-[2rem]"
+                >
+                  More
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="15"
+                      viewBox="0 0 14 15"
+                      fill="none"
+                    >
+                      <path
+                        d="M9.73819 5.87281L7.20856 8.40244L4.67894 5.87281C4.59642 5.79312 4.48591 5.74902 4.3712 5.75002C4.25649 5.75101 4.14676 5.79702 4.06564 5.87814C3.98452 5.95926 3.93851 6.06899 3.93752 6.1837C3.93652 6.29841 3.98062 6.40892 4.06031 6.49144L6.89794 9.32906C6.93863 9.36993 6.98706 9.40227 7.04039 9.4242C7.09372 9.44614 7.15089 9.45722 7.20856 9.45681C7.26621 9.4571 7.32335 9.44596 7.37666 9.42403C7.42998 9.40211 7.47842 9.36983 7.51919 9.32906L10.3568 6.49144C10.4365 6.40892 10.4806 6.29841 10.4796 6.1837C10.4786 6.06899 10.4326 5.95926 10.3515 5.87814C10.2704 5.79702 10.1606 5.75101 10.0459 5.75002C9.93121 5.74902 9.8207 5.79312 9.73819 5.87281Z"
+                        fill="#303030"
+                        stroke="white"
+                      />
+                    </svg>
+                  </p>
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center 2xl:gap-[2.4rem] lg:gap-[1.8rem]">
+              <div class="rounded-[2rem] shadow-box_shadow">
+                <div>
+                  <img 
+                    src="../../assets/images/Course/courseCardImg.svg"
+                    class="w-[100%] rounded-[20px]"
+                  />
+                </div>
+                <div class="p-[2rem]">
+                  <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center gap-[.8rem]">
+                      <div class="w-[1.5rem]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 26" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.95999 16.1865C14.2355 16.1865 19.92 16.6679 19.92 20.8332C19.92 25.2209 13.2963 25.4842 10.4551 25.5L9.42356 25.5C6.39415 25.4843 0 25.2225 0 20.8595C0 16.4668 6.62367 16.2033 9.46487 16.1875L9.80623 16.1865C9.85943 16.1865 9.91072 16.1865 9.95999 16.1865ZM9.95999 18.1543C6.31421 18.1543 1.96786 18.6227 1.96786 20.8595C1.96786 22.6332 4.65727 23.5331 9.95999 23.5331C15.2627 23.5331 17.9521 22.624 17.9521 20.8332C17.9521 19.0556 15.2627 18.1543 9.95999 18.1543ZM9.95999 0.5C13.674 0.5 16.6967 3.52263 16.6967 7.23664C16.7045 9.02608 16.0105 10.7158 14.7458 11.9884C13.4838 13.2622 11.798 13.9667 10.0046 13.9733H9.95999C6.24468 13.9733 3.22204 10.9506 3.22204 7.23664C3.22204 3.52263 6.24468 0.5 9.95999 0.5ZM9.95999 2.46786C7.32962 2.46786 5.1899 4.60758 5.1899 7.23664C5.1899 9.8657 7.32962 12.0054 9.95999 12.0054H10.0007C11.2653 12.0002 12.4566 11.503 13.35 10.6017C14.2447 9.70302 14.734 8.50788 14.7288 7.24058C14.7288 4.60758 12.5891 2.46786 9.95999 2.46786Z" fill="#49DEFF"/>
+                        </svg>
+                    </div>
+                      <p
+                        class="text-CharcoalGray font-normal mb-0 2xl:text-[1.6rem] lg:text-[1.2rem]"
+                      >
+                        PTE Key
+                      </p>
+                    </div>
+                    s
+                    <div class="flex items-center gap-[.8rem]">
+                      <div class="2xl:w-[1.9rem] lg:w-[1.5rem]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 26" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6531 0.438477C17.1345 0.438477 17.5252 0.829172 17.5252 1.31057L17.5258 2.29639C19.2235 2.41279 20.6336 2.99433 21.6316 3.99439C22.7211 5.08857 23.2944 6.66182 23.2886 8.54902V19.1571C23.2886 23.0315 20.8281 25.4385 16.8688 25.4385H7.034C3.07471 25.4385 0.614258 22.9978 0.614258 19.0687V8.54669C0.614258 4.89228 2.8085 2.54654 6.38712 2.29679L6.38784 1.31057C6.38784 0.829172 6.77853 0.438477 7.25992 0.438477C7.74132 0.438477 8.13201 0.829172 8.13201 1.31057L8.13166 2.27451H15.7805L15.781 1.31057C15.781 0.829172 16.1717 0.438477 16.6531 0.438477ZM21.5444 10.7919H2.35844V19.0687C2.35844 22.0524 4.01889 23.6943 7.034 23.6943H16.8688C19.8839 23.6943 21.5444 22.0827 21.5444 19.1571L21.5444 10.7919ZM17.1272 18.1085C17.6086 18.1085 17.9993 18.4992 17.9993 18.9806C17.9993 19.462 17.6086 19.8527 17.1272 19.8527C16.6458 19.8527 16.2505 19.462 16.2505 18.9806C16.2505 18.4992 16.6353 18.1085 17.1167 18.1085H17.1272ZM11.9673 18.1085C12.4487 18.1085 12.8394 18.4992 12.8394 18.9806C12.8394 19.462 12.4487 19.8527 11.9673 19.8527C11.486 19.8527 11.0906 19.462 11.0906 18.9806C11.0906 18.4992 11.4755 18.1085 11.9569 18.1085H11.9673ZM6.79667 18.1085C7.27806 18.1085 7.66876 18.4992 7.66876 18.9806C7.66876 19.462 7.27806 19.8527 6.79667 19.8527C6.31528 19.8527 5.91877 19.462 5.91877 18.9806C5.91877 18.4992 6.30481 18.1085 6.78621 18.1085H6.79667ZM17.1272 13.5891C17.6086 13.5891 17.9993 13.9798 17.9993 14.4612C17.9993 14.9426 17.6086 15.3333 17.1272 15.3333C16.6458 15.3333 16.2505 14.9426 16.2505 14.4612C16.2505 13.9798 16.6353 13.5891 17.1167 13.5891H17.1272ZM11.9673 13.5891C12.4487 13.5891 12.8394 13.9798 12.8394 14.4612C12.8394 14.9426 12.4487 15.3333 11.9673 15.3333C11.486 15.3333 11.0906 14.9426 11.0906 14.4612C11.0906 13.9798 11.4755 13.5891 11.9569 13.5891H11.9673ZM6.79667 13.5891C7.27806 13.5891 7.66876 13.9798 7.66876 14.4612C7.66876 14.9426 7.27806 15.3333 6.79667 15.3333C6.31528 15.3333 5.91877 14.9426 5.91877 14.4612C5.91877 13.9798 6.30481 13.5891 6.78621 13.5891H6.79667ZM15.7805 4.01869H8.13166L8.13201 5.13729C8.13201 5.61868 7.74132 6.00938 7.25992 6.00938C6.77853 6.00938 6.38784 5.61868 6.38784 5.13729L6.38722 4.04509C3.78231 4.26392 2.35844 5.84294 2.35844 8.54669V9.04774H21.5444L21.5444 8.54669C21.549 7.11065 21.163 5.99438 20.3967 5.22694C19.7241 4.5523 18.7407 4.14939 17.5262 4.04565L17.5252 5.13729C17.5252 5.61868 17.1345 6.00938 16.6531 6.00938C16.1717 6.00938 15.781 5.61868 15.781 5.13729L15.7805 4.01869Z" fill="#49DEFF"/>
+                            </svg>
+                        </div>
+                      <p
+                        class="text-CharcoalGray font-normal mb-0 2xl:text-[1.6rem] lg:text-[1.2rem]"
+                      >
+                        April 23, 2023
+                      </p>
+                    </div>
+                  </div>
+                  <div class="mb-8">
+                    <h3
+                      class="2xl:text-[2.4rem] xl:text-[2rem] lg:text-[1.8rem] font-semibold 2xl:mb-[1.6rem] lg:1rem"
+                    >
+                      Best Resources for PTE Exam Preparation: Online Courses,
+                      Books and Apps
+                    </h3>
+                    <p
+                      class="text-CharcoalGray 2xl:text-[1.6rem] xl:text-[1.5rem] lg:text-[1.4rem]"
+                    >
+                      AlfaPTE is designed to help students improve their English
+                      language skills and prepare for the PTE exam.
+                    </p>
+                  </div>
+                  <button
+                    class="bg-mainBlackColor text-white 2xl:py-[0.9rem] lg:py-[1rem] 2xl:px-[3.2rem] lg:px-[1.6rem] rounded-[5px] text-[1.6rem] font-semibold"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+              <div class="rounded-[20px] shadow-box_shadow">
+                <div>
+                 <img 
+                    src="../../assets/images/Course/courseCardImg.svg"
+                    class="w-[100%] rounded-[20px]"
+                  />
+                </div>
+                <div class="p-[2rem]">
+                  <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center gap-[.8rem]">
+                      <div class="2xl:w-[1.9rem] lg:w-[1.5rem]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 26" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.95999 16.1865C14.2355 16.1865 19.92 16.6679 19.92 20.8332C19.92 25.2209 13.2963 25.4842 10.4551 25.5L9.42356 25.5C6.39415 25.4843 0 25.2225 0 20.8595C0 16.4668 6.62367 16.2033 9.46487 16.1875L9.80623 16.1865C9.85943 16.1865 9.91072 16.1865 9.95999 16.1865ZM9.95999 18.1543C6.31421 18.1543 1.96786 18.6227 1.96786 20.8595C1.96786 22.6332 4.65727 23.5331 9.95999 23.5331C15.2627 23.5331 17.9521 22.624 17.9521 20.8332C17.9521 19.0556 15.2627 18.1543 9.95999 18.1543ZM9.95999 0.5C13.674 0.5 16.6967 3.52263 16.6967 7.23664C16.7045 9.02608 16.0105 10.7158 14.7458 11.9884C13.4838 13.2622 11.798 13.9667 10.0046 13.9733H9.95999C6.24468 13.9733 3.22204 10.9506 3.22204 7.23664C3.22204 3.52263 6.24468 0.5 9.95999 0.5ZM9.95999 2.46786C7.32962 2.46786 5.1899 4.60758 5.1899 7.23664C5.1899 9.8657 7.32962 12.0054 9.95999 12.0054H10.0007C11.2653 12.0002 12.4566 11.503 13.35 10.6017C14.2447 9.70302 14.734 8.50788 14.7288 7.24058C14.7288 4.60758 12.5891 2.46786 9.95999 2.46786Z" fill="#49DEFF"/>
+                          </svg>
+                        </div>
+                      <p
+                        class="text-CharcoalGray font-normal mb-0 2xl:text-[1.6rem] lg:text-[1.2rem]"
+                      >
+                        PTE Key
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-[.8rem]">
+                      <div class="2xl:w-[1.9rem] lg:w-[1.5rem]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 26" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6531 0.438477C17.1345 0.438477 17.5252 0.829172 17.5252 1.31057L17.5258 2.29639C19.2235 2.41279 20.6336 2.99433 21.6316 3.99439C22.7211 5.08857 23.2944 6.66182 23.2886 8.54902V19.1571C23.2886 23.0315 20.8281 25.4385 16.8688 25.4385H7.034C3.07471 25.4385 0.614258 22.9978 0.614258 19.0687V8.54669C0.614258 4.89228 2.8085 2.54654 6.38712 2.29679L6.38784 1.31057C6.38784 0.829172 6.77853 0.438477 7.25992 0.438477C7.74132 0.438477 8.13201 0.829172 8.13201 1.31057L8.13166 2.27451H15.7805L15.781 1.31057C15.781 0.829172 16.1717 0.438477 16.6531 0.438477ZM21.5444 10.7919H2.35844V19.0687C2.35844 22.0524 4.01889 23.6943 7.034 23.6943H16.8688C19.8839 23.6943 21.5444 22.0827 21.5444 19.1571L21.5444 10.7919ZM17.1272 18.1085C17.6086 18.1085 17.9993 18.4992 17.9993 18.9806C17.9993 19.462 17.6086 19.8527 17.1272 19.8527C16.6458 19.8527 16.2505 19.462 16.2505 18.9806C16.2505 18.4992 16.6353 18.1085 17.1167 18.1085H17.1272ZM11.9673 18.1085C12.4487 18.1085 12.8394 18.4992 12.8394 18.9806C12.8394 19.462 12.4487 19.8527 11.9673 19.8527C11.486 19.8527 11.0906 19.462 11.0906 18.9806C11.0906 18.4992 11.4755 18.1085 11.9569 18.1085H11.9673ZM6.79667 18.1085C7.27806 18.1085 7.66876 18.4992 7.66876 18.9806C7.66876 19.462 7.27806 19.8527 6.79667 19.8527C6.31528 19.8527 5.91877 19.462 5.91877 18.9806C5.91877 18.4992 6.30481 18.1085 6.78621 18.1085H6.79667ZM17.1272 13.5891C17.6086 13.5891 17.9993 13.9798 17.9993 14.4612C17.9993 14.9426 17.6086 15.3333 17.1272 15.3333C16.6458 15.3333 16.2505 14.9426 16.2505 14.4612C16.2505 13.9798 16.6353 13.5891 17.1167 13.5891H17.1272ZM11.9673 13.5891C12.4487 13.5891 12.8394 13.9798 12.8394 14.4612C12.8394 14.9426 12.4487 15.3333 11.9673 15.3333C11.486 15.3333 11.0906 14.9426 11.0906 14.4612C11.0906 13.9798 11.4755 13.5891 11.9569 13.5891H11.9673ZM6.79667 13.5891C7.27806 13.5891 7.66876 13.9798 7.66876 14.4612C7.66876 14.9426 7.27806 15.3333 6.79667 15.3333C6.31528 15.3333 5.91877 14.9426 5.91877 14.4612C5.91877 13.9798 6.30481 13.5891 6.78621 13.5891H6.79667ZM15.7805 4.01869H8.13166L8.13201 5.13729C8.13201 5.61868 7.74132 6.00938 7.25992 6.00938C6.77853 6.00938 6.38784 5.61868 6.38784 5.13729L6.38722 4.04509C3.78231 4.26392 2.35844 5.84294 2.35844 8.54669V9.04774H21.5444L21.5444 8.54669C21.549 7.11065 21.163 5.99438 20.3967 5.22694C19.7241 4.5523 18.7407 4.14939 17.5262 4.04565L17.5252 5.13729C17.5252 5.61868 17.1345 6.00938 16.6531 6.00938C16.1717 6.00938 15.781 5.61868 15.781 5.13729L15.7805 4.01869Z" fill="#49DEFF"/>
+                            </svg>
+                        </div>
+                      <p
+                        class="text-CharcoalGray font-normal mb-0 2xl:text-[1.6rem] lg:text-[1.2rem]"
+                      >
+                        April 23, 2023
+                      </p>
+                    </div>
+                  </div>
+                  <div class="mb-8">
+                    <h3
+                      class="2xl:text-[2.4rem] xl:text-[2rem] lg:text-[1.8rem] font-semibold 2xl:mb-[1.6rem] lg:1rem"
+                    >
+                      Best Resources for PTE Exam Preparation: Online Courses,
+                      Books and Apps
+                    </h3>
+                    <p
+                      class="text-CharcoalGray 2xl:text-[1.6rem] xl:text-[1.5rem] lg:text-[1.4rem]"
+                    >
+                      AlfaPTE is designed to help students improve their English
+                      language skills and prepare for the PTE exam.
+                    </p>
+                  </div>
+                  <button
+                    class="bg-mainBlackColor text-white 2xl:py-[0.9rem] lg:py-[1rem] 2xl:px-[3.2rem] lg:px-[1.6rem] rounded-[5px] text-[1.6rem] font-semibold"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+              <div class="rounded-[20px] shadow-box_shadow">
+                <div>
+                 <img 
+                    src="../../assets/images/Course/courseCardImg.svg"
+                    class="w-[100%] rounded-[20px]"
+                  />
+                </div>
+                <div class="p-[2rem]">
+                  <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center gap-[.8rem]">
+                      <div class="2xl:w-[1.9rem] lg:w-[1.5rem]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 26" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.95999 16.1865C14.2355 16.1865 19.92 16.6679 19.92 20.8332C19.92 25.2209 13.2963 25.4842 10.4551 25.5L9.42356 25.5C6.39415 25.4843 0 25.2225 0 20.8595C0 16.4668 6.62367 16.2033 9.46487 16.1875L9.80623 16.1865C9.85943 16.1865 9.91072 16.1865 9.95999 16.1865ZM9.95999 18.1543C6.31421 18.1543 1.96786 18.6227 1.96786 20.8595C1.96786 22.6332 4.65727 23.5331 9.95999 23.5331C15.2627 23.5331 17.9521 22.624 17.9521 20.8332C17.9521 19.0556 15.2627 18.1543 9.95999 18.1543ZM9.95999 0.5C13.674 0.5 16.6967 3.52263 16.6967 7.23664C16.7045 9.02608 16.0105 10.7158 14.7458 11.9884C13.4838 13.2622 11.798 13.9667 10.0046 13.9733H9.95999C6.24468 13.9733 3.22204 10.9506 3.22204 7.23664C3.22204 3.52263 6.24468 0.5 9.95999 0.5ZM9.95999 2.46786C7.32962 2.46786 5.1899 4.60758 5.1899 7.23664C5.1899 9.8657 7.32962 12.0054 9.95999 12.0054H10.0007C11.2653 12.0002 12.4566 11.503 13.35 10.6017C14.2447 9.70302 14.734 8.50788 14.7288 7.24058C14.7288 4.60758 12.5891 2.46786 9.95999 2.46786Z" fill="#49DEFF"/>
+                        </svg>
+                    </div>
+                      <p
+                        class="text-CharcoalGray font-normal mb-0 2xl:text-[1.6rem] lg:text-[1.2rem]"
+                      >
+                        PTE Key
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-[.8rem]">
+                      <div class="2xl:w-[1.9rem] lg:w-[1.5rem]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 26" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6531 0.438477C17.1345 0.438477 17.5252 0.829172 17.5252 1.31057L17.5258 2.29639C19.2235 2.41279 20.6336 2.99433 21.6316 3.99439C22.7211 5.08857 23.2944 6.66182 23.2886 8.54902V19.1571C23.2886 23.0315 20.8281 25.4385 16.8688 25.4385H7.034C3.07471 25.4385 0.614258 22.9978 0.614258 19.0687V8.54669C0.614258 4.89228 2.8085 2.54654 6.38712 2.29679L6.38784 1.31057C6.38784 0.829172 6.77853 0.438477 7.25992 0.438477C7.74132 0.438477 8.13201 0.829172 8.13201 1.31057L8.13166 2.27451H15.7805L15.781 1.31057C15.781 0.829172 16.1717 0.438477 16.6531 0.438477ZM21.5444 10.7919H2.35844V19.0687C2.35844 22.0524 4.01889 23.6943 7.034 23.6943H16.8688C19.8839 23.6943 21.5444 22.0827 21.5444 19.1571L21.5444 10.7919ZM17.1272 18.1085C17.6086 18.1085 17.9993 18.4992 17.9993 18.9806C17.9993 19.462 17.6086 19.8527 17.1272 19.8527C16.6458 19.8527 16.2505 19.462 16.2505 18.9806C16.2505 18.4992 16.6353 18.1085 17.1167 18.1085H17.1272ZM11.9673 18.1085C12.4487 18.1085 12.8394 18.4992 12.8394 18.9806C12.8394 19.462 12.4487 19.8527 11.9673 19.8527C11.486 19.8527 11.0906 19.462 11.0906 18.9806C11.0906 18.4992 11.4755 18.1085 11.9569 18.1085H11.9673ZM6.79667 18.1085C7.27806 18.1085 7.66876 18.4992 7.66876 18.9806C7.66876 19.462 7.27806 19.8527 6.79667 19.8527C6.31528 19.8527 5.91877 19.462 5.91877 18.9806C5.91877 18.4992 6.30481 18.1085 6.78621 18.1085H6.79667ZM17.1272 13.5891C17.6086 13.5891 17.9993 13.9798 17.9993 14.4612C17.9993 14.9426 17.6086 15.3333 17.1272 15.3333C16.6458 15.3333 16.2505 14.9426 16.2505 14.4612C16.2505 13.9798 16.6353 13.5891 17.1167 13.5891H17.1272ZM11.9673 13.5891C12.4487 13.5891 12.8394 13.9798 12.8394 14.4612C12.8394 14.9426 12.4487 15.3333 11.9673 15.3333C11.486 15.3333 11.0906 14.9426 11.0906 14.4612C11.0906 13.9798 11.4755 13.5891 11.9569 13.5891H11.9673ZM6.79667 13.5891C7.27806 13.5891 7.66876 13.9798 7.66876 14.4612C7.66876 14.9426 7.27806 15.3333 6.79667 15.3333C6.31528 15.3333 5.91877 14.9426 5.91877 14.4612C5.91877 13.9798 6.30481 13.5891 6.78621 13.5891H6.79667ZM15.7805 4.01869H8.13166L8.13201 5.13729C8.13201 5.61868 7.74132 6.00938 7.25992 6.00938C6.77853 6.00938 6.38784 5.61868 6.38784 5.13729L6.38722 4.04509C3.78231 4.26392 2.35844 5.84294 2.35844 8.54669V9.04774H21.5444L21.5444 8.54669C21.549 7.11065 21.163 5.99438 20.3967 5.22694C19.7241 4.5523 18.7407 4.14939 17.5262 4.04565L17.5252 5.13729C17.5252 5.61868 17.1345 6.00938 16.6531 6.00938C16.1717 6.00938 15.781 5.61868 15.781 5.13729L15.7805 4.01869Z" fill="#49DEFF"/>
+                            </svg>
+                        </div>
+                      <p
+                        class="text-CharcoalGray font-normal mb-0 2xl:text-[1.6rem] lg:text-[1.2rem]"
+                      >
+                        April 23, 2023
+                      </p>
+                    </div>
+                  </div>
+                  <div class="mb-8">
+                    <h3
+                      class="2xl:text-[2.4rem] xl:text-[2rem] lg:text-[1.8rem] font-semibold 2xl:mb-[1.6rem] lg:1rem"
+                    >
+                      Best Resources for PTE Exam Preparation: Online Courses,
+                      Books and Apps
+                    </h3>
+                    <p
+                      class="text-CharcoalGray 2xl:text-[1.6rem] xl:text-[1.5rem] lg:text-[1.4rem]"
+                    >
+                      AlfaPTE is designed to help students improve their English
+                      language skills and prepare for the PTE exam.
+                    </p>
+                  </div>
+                  <button
+                    class="bg-mainBlackColor text-white 2xl:py-[0.9rem] lg:py-[1rem] 2xl:px-[3.2rem] lg:px-[1.6rem] rounded-[5px] text-[1.6rem] font-semibold"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Free PTEKey Lessons Section Ends-->
+        </div>
+        <div class="w-[27%]">
+          <!-- Target Section Starts-->
+          <section
+            class="yourTargetContainer border rounded-[20px] py-[2rem] 2xl:px-[2rem] xl:px-[1.6rem] lg:px-[1.4rem] relative shadow-sm"
+          >
+            <div class="border-b-2 border-dashed border-spacing-1">
+              <div>
+                <div
+                  class="bg-skyBlue bg-opacity-10 p-3 rounded-full absolute top-[5%] right-[6%]"
+                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 30" fill="none">
+                    <path d="M15 18.75C17.0711 18.75 18.75 17.0711 18.75 15C18.75 12.9289 17.0711 11.25 15 11.25C12.9289 11.25 11.25 12.9289 11.25 15C11.25 17.0711 12.9289 18.75 15 18.75Z" stroke="#49DEFF" stroke-width="2"/>
+                    <path d="M17.2069 2.6903C16.7474 2.5 16.165 2.5 15.0001 2.5C13.8352 2.5 13.2529 2.5 12.7934 2.6903C12.1808 2.94404 11.6941 3.43073 11.4404 4.04329C11.3246 4.32293 11.2792 4.64813 11.2615 5.12249C11.2354 5.8196 10.8779 6.46486 10.2738 6.81366C9.66967 7.16245 8.93211 7.14942 8.31536 6.82345C7.89568 6.60162 7.59138 6.47828 7.29129 6.43878C6.63392 6.35223 5.96909 6.53036 5.44307 6.934C5.04854 7.23673 4.75733 7.74112 4.17491 8.74991C3.59248 9.75871 3.30127 10.2631 3.23636 10.7561C3.14982 11.4135 3.32796 12.0783 3.73159 12.6044C3.91582 12.8445 4.17474 13.0462 4.57661 13.2987C5.16737 13.67 5.54748 14.3024 5.54744 15C5.54741 15.6976 5.16731 16.3299 4.57659 16.701C4.17468 16.9536 3.91572 17.1555 3.73147 17.3956C3.32783 17.9216 3.14969 18.5864 3.23624 19.2438C3.30114 19.7368 3.59236 20.2413 4.17478 21.25C4.75722 22.2587 5.04843 22.7632 5.44294 23.0659C5.96897 23.4695 6.63379 23.6476 7.29117 23.5611C7.59123 23.5216 7.89552 23.3983 8.31517 23.1765C8.93196 22.8505 9.66957 22.8375 10.2737 23.1862C10.8779 23.5351 11.2354 24.1804 11.2615 24.8776C11.2793 25.3519 11.3246 25.6771 11.4404 25.9567C11.6941 26.5692 12.1808 27.056 12.7934 27.3097C13.2529 27.5 13.8352 27.5 15.0001 27.5C16.165 27.5 16.7474 27.5 17.2069 27.3097C17.8194 27.056 18.3061 26.5692 18.5597 25.9567C18.6756 25.6771 18.721 25.3519 18.7387 24.8775C18.7647 24.1804 19.1222 23.5351 19.7264 23.1862C20.3305 22.8374 21.0681 22.8505 21.685 23.1765C22.1046 23.3983 22.4089 23.5215 22.7089 23.561C23.3662 23.6476 24.0311 23.4695 24.5571 23.0659C24.9516 22.7631 25.2429 22.2588 25.8252 21.2499C26.4077 20.2411 26.699 19.7368 26.7639 19.2438C26.8504 18.5864 26.6722 17.9215 26.2686 17.3955C26.0844 17.1554 25.8254 16.9535 25.4235 16.701C24.8329 16.3299 24.4527 15.6975 24.4527 14.9999C24.4527 14.3022 24.8329 13.6701 25.4235 13.299C25.8255 13.0464 26.0845 12.8446 26.2687 12.6044C26.6724 12.0784 26.8505 11.4136 26.764 10.7562C26.6991 10.2632 26.4079 9.75879 25.8254 8.75C25.243 7.74121 24.9517 7.23681 24.5572 6.93409C24.0312 6.53045 23.3664 6.35231 22.709 6.43886C22.409 6.47836 22.1047 6.6017 21.685 6.8235C21.0682 7.14949 20.3306 7.16253 19.7265 6.8137C19.1222 6.46489 18.7647 5.81957 18.7387 5.12242C18.721 4.6481 18.6756 4.32291 18.5597 4.04329C18.3061 3.43073 17.8194 2.94404 17.2069 2.6903Z" stroke="#49DEFF" stroke-width="2"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex justify-center mb-2">
+                <h1
+                  class="text-skyBlue bg-skyBlue bg-opacity-10 2xl:p-[3.1rem] lg:p-[1.8rem] rounded-full border-[5px] border-skyBlue text-center text-[2.4rem] font-semibold top-1/4"
+                >
+                  Set
+                </h1>
+              </div>
+
+              <p
+                class="text-center text-[2rem] font-semibold leading-[2.4rem] mb-[1rem]"
+              >
+                Your Target
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-center text-[1.6rem] font-semibold leading-[2rem] text-skyBlue 2xl:my-[2rem] xl:my-[1.8rem] lg:my-[1.6rem]"
+              >
+                Exam Countdown
+              </p>
+              <div
+                class="flex items-center justify-around py-[1rem] px-[1rem] shadow-lg border rounded-[10px]"
+              >
+                <div class="flex flex-col text-darkGray text-center">
+                  <span
+                    class="2xl:text-[2.4rem] xl:text-[2.2rem] lg:text-[2rem] font-medium leading-[3.6rem]"
+                    >00</span
+                  >
+                  <span
+                    class="2xl:text-[1.6rem] xl:text-[1.4rem] lg:text-[1.2rem] font-normal leading-[2.4rem]"
+                    >Days</span
+                  >
+                </div>
+                <div class="flex flex-col text-darkGray text-center">
+                  <span
+                    class="2xl:text-[2.4rem] xl:text-[2.2rem] lg:text-[2rem] font-medium leading-[3.6rem]"
+                    >00</span
+                  >
+                  <span
+                    class="2xl:text-[1.6rem] xl:text-[1.4rem] lg:text-[1.2rem] font-normal leading-[2.4rem]"
+                    >Hours</span
+                  >
+                </div>
+                <div class="flex flex-col text-darkGray text-center">
+                  <span
+                    class="2xl:text-[2.4rem] xl:text-[2.2rem] lg:text-[2rem] font-medium leading-[3.6rem]"
+                    >00</span
+                  >
+                  <span
+                    class="2xl:text-[1.6rem] xl:text-[1.4rem] lg:text-[1.2rem] font-normal leading-[2.4rem]"
+                    >Minutes</span
+                  >
+                </div>
+                <div class="flex flex-col text-darkGray text-center">
+                  <span
+                    class="2xl:text-[2.4rem] xl:text-[2.2rem] lg:text-[2rem] font-medium leading-[3.6rem]"
+                    >00</span
+                  >
+                  <span
+                    class="2xl:text-[1.6rem] xl:text-[1.4rem] lg:text-[1.2rem] font-normal leading-[2.4rem]"
+                    >Seconds</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Target Section Ends-->
+          <div class="flex items-center gap-[30px]">
+            <!-- Study Guide Section Starts-->
+            <section class="">
+              <div
+                class="studyGuideSection shadow-box_shadow border rounded-[20px] 2xl:mt-[3rem] xl:mt-[2.4rem] lg:mt-[2rem] 2xl:p-[3.5rem] xl:p-[3rem] lg:p-[2.4rem]"
+              >
+                <div>
+                  <h2
+                    class="text-mainBlackColor 2xl:text-[3.2rem] lg:text-[2.6rem] font-semibold mb-[2rem]"
+                  >
+                    Study Guide
+                  </h2>
+                  <div class="flex flex-wrap 2xl:gap-[2rem] lg:gap-[1.6rem]">
+                    <div
+                      class="border shadow rounded-[10px] p-[2rem] w-[45%] flex items-center justify-center flex-col gap-[1rem]"
+                    >
+                      <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="48" viewBox="0 0 38 48" fill="none">
+                            <g filter="url(#filter0_d_550_1125)">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.82586 25.6895C4.56562 25.6895 5.16924 26.2587 5.20214 26.9729C7.29997 31.8032 12.8307 35.1032 18.8739 35.1032C21.758 35.1752 24.5987 34.4068 27.0336 32.896C29.4683 31.3851 31.3869 29.2004 32.5441 26.6205L32.6023 26.6465C32.7728 26.0928 33.299 25.6895 33.9218 25.6895C34.6826 25.6895 35.2994 26.2915 35.2994 27.0343C35.2994 27.3001 35.2203 27.5481 35.0839 27.7568L35.0874 27.7584C33.7525 30.7282 31.5559 33.2513 28.7687 35.0161C26.219 36.6306 23.2773 37.5459 20.2515 37.6741V42.0343H23.6425C24.0079 42.0343 24.3583 42.176 24.6167 42.4282C24.875 42.6804 25.0201 43.0224 25.0201 43.3791C25.0201 43.7358 24.875 44.0778 24.6167 44.33C24.3583 44.5822 24.0079 44.7239 23.6425 44.7239H14.3171C13.9517 44.7239 13.6012 44.5822 13.3429 44.33C13.0846 44.0778 12.9393 43.7358 12.9393 43.3791C12.9393 43.0224 13.0846 42.6804 13.3429 42.4282C13.6012 42.176 13.9517 42.0343 14.3171 42.0343H17.4962V37.6403C10.8634 37.1667 4.89614 33.3099 2.58914 27.7401C2.59493 27.7464 2.60114 27.7524 2.60724 27.7584C2.63372 27.7843 2.66021 27.8101 2.66021 27.8619L2.71193 27.8258C2.5461 27.6037 2.44824 27.3301 2.44824 27.0343C2.44824 26.2915 3.065 25.6895 3.82586 25.6895ZM2.55417 27.655C2.55417 27.6947 2.5699 27.7192 2.58914 27.7401C2.57745 27.7118 2.56576 27.6834 2.55417 27.655Z" fill="white"/>
+                              <path d="M30.2528 12.6552C30.2528 6.37057 25.1581 1.27588 18.8735 1.27588C12.5888 1.27588 7.49414 6.37057 7.49414 12.6552V19.8966C7.49414 26.1812 12.5888 31.2759 18.8735 31.2759C25.1581 31.2759 30.2528 26.1812 30.2528 19.8966V12.6552Z" fill="#FF5F5F"/>
+                              <path d="M18.874 13.1723C18.874 12.3154 19.5687 11.6206 20.4257 11.6206H30.2533V14.7241H20.4257C19.5687 14.7241 18.874 14.0293 18.874 13.1723Z" fill="#DF3535"/>
+                              <path d="M21.9775 17.3105C21.9775 16.4535 22.6722 15.7588 23.5293 15.7588H30.2534V18.8622H23.5293C22.6722 18.8622 21.9775 18.1675 21.9775 17.3105Z" fill="#DF3535"/>
+                            </g>
+                            <defs>
+                              <filter id="filter0_d_550_1125" x="0.448242" y="0.275879" width="36.8516" height="47.4482" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dy="1"/>
+                                <feGaussianBlur stdDeviation="1"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_550_1125"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_550_1125" result="shape"/>
+                              </filter>
+                            </defs>
+                          </svg>
+                        </div>
+                      <h3
+                        class="2xl:text-[2rem] lg:text-[1.6rem] font-semibold"
+                      >
+                        Speaking
+                      </h3>
+                    </div>
+                    <div
+                      class="border shadow rounded-[10px] p-[2rem] w-[45%] flex items-center justify-center flex-col gap-[1rem]"
+                    >
+                      <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="48" viewBox="0 0 40 43" fill="none">
+                            <g filter="url(#filter0_d_550_1078)">
+                              <path d="M22.6751 32.2812L20.077 35.9844L12.6679 36.0343L9.06367 36.0593C8.95763 36.0602 8.83443 36.0349 8.7045 35.9859C8.57467 35.9368 8.44205 35.8655 8.31802 35.7778C8.19398 35.6902 8.08226 35.5889 7.99246 35.4828C7.90267 35.3767 7.8375 35.2688 7.80243 35.1683L6.61039 31.7549L4.16602 24.7447L6.76443 21.041L22.6751 32.2812Z" fill="#FBD27A"/>
+                              <path d="M32.9084 17.6939L20.0845 35.973L17.9652 33.3384L17.9468 33.3308L14.7781 32.2242L12.6589 29.5896L9.48031 28.4815L7.37803 25.8704L7.36014 25.8463L4.17383 24.7327L16.9978 6.45361L32.9084 17.6939Z" fill="#FFB545"/>
+                              <path d="M28.5027 18.284L17.947 33.3319L14.778 32.2248L14.2391 31.554L12.6588 29.5902L10.3013 28.7661L9.4799 28.4815L7.37793 25.871L17.9369 10.8203L28.5027 18.284Z" fill="#FFCD3F"/>
+                              <path d="M25.1907 15.9439L14.2401 31.5537L12.6592 29.5897L10.3018 28.7656L21.2493 13.1602L25.1907 15.9439Z" fill="#FFB545"/>
+                              <path d="M32.9055 17.6907L17 6.45413L19.7169 2.58144C19.8281 2.42296 20.0011 2.31051 20.2261 2.25051C20.4511 2.19051 20.7237 2.1841 21.0283 2.23168C21.3328 2.27927 21.6634 2.37982 22.0012 2.52775C22.3391 2.67568 22.6773 2.8681 22.9969 3.09382L34.0356 10.8922C34.3552 11.118 34.6497 11.3727 34.9023 11.642C35.1551 11.9111 35.3609 12.1895 35.5083 12.4613C35.6557 12.7329 35.7416 12.9926 35.7612 13.2254C35.7807 13.4582 35.7336 13.6596 35.6223 13.8181L32.9055 17.6907Z" fill="#FF5196"/>
+                              <path d="M12.6679 36.0342L9.06363 36.0593C8.95759 36.0601 8.83439 36.0348 8.70446 35.9858C8.57463 35.9368 8.4419 35.8654 8.31787 35.7778C8.19383 35.6902 8.08221 35.5889 7.99242 35.4827C7.90263 35.3766 7.83735 35.2687 7.80239 35.1683L6.61035 31.7549L12.6679 36.0342Z" fill="#AC5C40"/>
+                              <path d="M35.4769 17.2175L16.9029 4.06605C16.4366 3.7359 15.791 3.84626 15.4608 4.31254L13.0696 7.68964C12.7395 8.15592 12.8498 8.80155 13.3161 9.1317L31.8902 22.2831C32.3565 22.6133 33.0021 22.5029 33.3322 22.0366L35.7234 18.6595C36.0536 18.1932 35.9432 17.5476 35.4769 17.2175Z" fill="white"/>
+                              <path d="M14.8514 5.17383L35.1176 19.4967L34.8258 19.9134L14.5596 5.59052L14.8514 5.17383Z" fill="#64798A"/>
+                              <path d="M13.9686 6.43457L34.2349 20.7574L33.9431 21.1741L13.6768 6.85126L13.9686 6.43457Z" fill="#64798A"/>
+                            </g>
+                            <defs>
+                              <filter id="filter0_d_550_1078" x="0.166016" y="0.200195" width="39.748" height="41.8594" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dy="2"/>
+                                <feGaussianBlur stdDeviation="2"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_550_1078"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_550_1078" result="shape"/>
+                              </filter>
+                            </defs>
+                          </svg>
+                        </div>
+                      <h3
+                        class="2xl:text-[2rem] lg:text-[1.6rem] font-semibold"
+                      >
+                        Writing
+                      </h3>
+                    </div>
+                    <div
+                      class="border shadow rounded-[10px] p-[2rem] w-[45%] flex items-center justify-center flex-col gap-[1rem]"
+                    >
+                      <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="48" viewBox="0 0 35 38" fill="none">
+                            <path d="M5.79149 0.334961H28.7601C30.1593 0.334961 31.5013 0.890892 32.4907 1.88027C33.4801 2.86965 34.036 4.21158 34.036 5.61082V30.4408C34.036 31.84 33.4801 33.182 32.4907 34.1713C31.5013 35.1608 30.1593 35.7167 28.7601 35.7167H5.79149C4.39225 35.7167 3.05031 35.1608 2.06094 34.1713C1.07145 33.182 0.515625 31.84 0.515625 30.4408V5.61082C0.515625 4.21179 1.07135 2.86996 2.06062 1.88058C3.0498 0.891203 4.39245 0.335271 5.79149 0.334961Z" fill="#8A6FFD"/>
+                            <path d="M4.98259 35.7146C3.79718 35.7146 2.66018 35.2437 1.82194 34.4054C0.983592 33.5671 0.512695 32.4301 0.512695 31.2446C0.512695 30.0592 0.983592 28.9222 1.82194 28.084C2.66018 27.2456 3.79718 26.7747 4.98259 26.7747H29.5621C29.6687 26.7727 29.7753 26.7767 29.8815 26.7868H30.076C31.1239 26.7849 32.1283 26.3682 32.8699 25.6279C33.6114 24.8875 34.0297 23.8838 34.0334 22.8359V24.5437C34.0336 25.1782 33.8983 25.8054 33.6368 26.3835C33.3752 26.9616 32.9933 27.4771 32.5166 27.8958C33.1969 28.4964 33.6782 29.2899 33.8968 30.1706C34.1153 31.0514 34.0606 31.9778 33.7399 32.8267C33.4192 33.6757 32.8477 34.4068 32.1016 34.9233C31.3553 35.4396 30.4696 35.7166 29.5621 35.7174L4.98259 35.7146Z" fill="#9747FF"/>
+                            <path d="M31.6152 33.8523H5.46495C4.82315 33.8519 4.20784 33.5968 3.75391 33.1431C3.30008 32.6893 3.04467 32.074 3.04395 31.4323C3.04446 30.7903 3.29967 30.1748 3.7536 29.721C4.20753 29.2671 4.82305 29.0119 5.46495 29.0113H29.5667C30.7278 29.0159 31.8449 28.5665 32.6792 27.7589C33.5136 26.9514 33.9992 25.8497 34.0325 24.689V31.246H34.025C34.0316 31.3085 34.0316 31.3802 34.0316 31.4323C34.0303 32.0731 33.7754 32.6874 33.3227 33.1409C32.8699 33.5943 32.2561 33.8501 31.6152 33.8523Z" fill="#6B2DBC"/>
+                            <path d="M30.311 32.738H5.09651C4.60234 32.738 4.12834 32.5419 3.77869 32.1928C3.42893 31.8435 3.23217 31.3698 3.23145 30.8756C3.23217 30.3816 3.42903 29.908 3.77869 29.5591C4.12845 29.21 4.60244 29.0141 5.09651 29.0143H29.567C30.5028 29.0174 31.4154 28.724 32.1742 28.1763V30.8766C32.1741 31.1212 32.1258 31.3633 32.0321 31.5892C31.9383 31.8152 31.8011 32.0203 31.6281 32.1932C31.455 32.366 31.2497 32.5031 31.0236 32.5966C30.7977 32.69 30.5555 32.7381 30.311 32.738Z" fill="white"/>
+                            <path d="M5.54395 0.334961H7.03474V26.8168H5.54395V0.334961Z" fill="#9747FF"/>
+                            <path d="M7.21586 37.1117C7.12296 36.9547 7.07476 36.7754 7.0762 36.593V29.0088H15.085V36.5967C15.0849 36.7765 15.0375 36.953 14.9475 37.1087C14.8576 37.2643 14.7283 37.3935 14.5726 37.4833C14.4169 37.5732 14.2403 37.6204 14.0605 37.6204C13.8808 37.6203 13.7042 37.5731 13.5485 37.4832L11.0829 36.0603L8.61448 37.485C8.37924 37.6196 8.10044 37.656 7.83862 37.5863C7.57669 37.5166 7.35293 37.3454 7.21586 37.1117Z" fill="#FFC411"/>
+                            <path d="M8.75567 29.7563C8.95326 29.7563 9.14267 29.8349 9.28243 29.9745C9.42209 30.1143 9.5006 30.3037 9.5006 30.5013V33.2928C9.5006 33.4904 9.42209 33.6798 9.28243 33.8196C9.14267 33.9592 8.95326 34.0378 8.75567 34.0378C8.55809 34.0378 8.36857 33.9592 8.22891 33.8196C8.08926 33.6798 8.01074 33.4904 8.01074 33.2928V30.5013C8.01074 30.3037 8.08926 30.1143 8.22891 29.9745C8.36857 29.8349 8.55809 29.7563 8.75567 29.7563Z" fill="white"/>
+                            <path d="M17.5172 15.5452H21.1379L25.6689 22.1039H21.5723L17.5172 15.5452ZM13.8965 7.62109H17.393V22.1039H13.8965V7.62109ZM16.0896 10.5797V7.62109H19.1723C20.4137 7.62109 21.4482 7.82109 22.2758 8.22109C23.1034 8.62109 23.731 9.17972 24.1586 9.89696C24.5861 10.6004 24.7999 11.4211 24.7999 12.359C24.7999 13.2832 24.5861 14.1039 24.1586 14.8211C23.731 15.5245 23.1034 16.0763 22.2758 16.4763C21.4482 16.8763 20.4137 17.0763 19.1723 17.0763H16.0896V14.3659H18.9241C19.393 14.3659 19.793 14.297 20.1241 14.159C20.4689 14.0073 20.731 13.7935 20.9103 13.5176C21.0896 13.228 21.1792 12.8832 21.1792 12.4832C21.1792 12.0832 21.0896 11.7452 20.9103 11.4694C20.731 11.1797 20.4689 10.959 20.1241 10.8073C19.793 10.6556 19.393 10.5797 18.9241 10.5797H16.0896Z" fill="#5F44CE"/>
+                            <path d="M17.5172 14.5106H21.1379L25.6689 21.0692H21.5723L17.5172 14.5106ZM13.8965 6.58643H17.393V21.0692H13.8965V6.58643ZM16.0896 9.54505V6.58643H19.1723C20.4137 6.58643 21.4482 6.78643 22.2758 7.18643C23.1034 7.58643 23.731 8.14505 24.1586 8.86229C24.5861 9.56574 24.7999 10.3864 24.7999 11.3244C24.7999 12.2485 24.5861 13.0692 24.1586 13.7864C23.731 14.4899 23.1034 15.0416 22.2758 15.4416C21.4482 15.8416 20.4137 16.0416 19.1723 16.0416H16.0896V13.3313H18.9241C19.393 13.3313 19.793 13.2623 20.1241 13.1244C20.4689 12.9726 20.731 12.7588 20.9103 12.483C21.0896 12.1933 21.1792 11.8485 21.1792 11.4485C21.1792 11.0485 21.0896 10.7106 20.9103 10.4347C20.731 10.145 20.4689 9.92436 20.1241 9.77263C19.793 9.62091 19.393 9.54505 18.9241 9.54505H16.0896Z" fill="white"/>
+                          </svg>
+                        </div>
+                      <h3
+                        class="2xl:text-[2rem] lg:text-[1.6rem] font-semibold"
+                      >
+                        Reading
+                      </h3>
+                    </div>
+                    <div
+                      class="border shadow rounded-[10px] p-[2rem] w-[45%] flex items-center justify-center flex-col gap-[1rem]"
+                    >
+                      <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="48" viewBox="0 0 52 46" fill="none">
+                            <g filter="url(#filter0_d_550_2146)">
+                              <path d="M44.6203 21.9999C44.6203 16.787 42.6585 11.7877 39.1664 8.10162C35.6744 4.41555 30.9381 2.34473 25.9996 2.34473C21.0611 2.34473 16.3248 4.41555 12.8328 8.10162C9.3407 11.7877 7.37891 16.787 7.37891 21.9999H10.8593C10.8593 17.7614 12.4545 13.6964 15.2938 10.6993C18.1332 7.70221 21.9841 6.01849 25.9996 6.01849C30.015 6.01849 33.866 7.70221 36.7054 10.6993C39.5447 13.6964 41.1399 17.7614 41.1399 21.9999H44.6203Z" fill="#12D3BF"/>
+                              <path d="M10.7926 19.5476C10.7926 19.3252 10.81 19.1079 10.8415 18.8966C9.25301 19.1501 7.81787 20.0222 6.69732 21.3148C5.38051 22.8338 4.49795 24.9302 4.3124 27.279C4.2883 27.5843 4.27539 27.8937 4.27539 28.2068C4.27539 32.9784 7.1436 36.927 10.8415 37.5172C10.81 37.3058 10.7926 37.0885 10.7926 36.8661V19.5476ZM45.3016 21.3146C44.1811 20.022 42.746 19.1501 41.1576 18.8965C41.189 19.1078 41.2064 19.3252 41.2064 19.5474V36.866C41.2064 37.0884 41.189 37.3057 41.1576 37.5171C44.8555 36.9269 47.7237 32.9782 47.7237 28.2067C47.7237 27.8936 47.7107 27.5842 47.6866 27.2788C47.501 24.9301 46.6185 22.8337 45.3016 21.3146Z" fill="#FFB545"/>
+                              <path d="M14.6039 17.765C14.6039 17.5109 14.6209 17.2614 14.6514 17.0166C14.3413 16.8947 14.0083 16.8276 13.6613 16.8276H13.4747C12.0092 16.8276 10.7873 18.0119 10.5322 19.5692C10.5001 19.7654 10.4824 19.967 10.4824 20.1732V36.2405C10.4824 36.4468 10.5001 36.6484 10.5322 36.8446C10.7873 38.4019 12.0092 39.5862 13.4747 39.5862H13.6613C13.9906 39.5862 14.3073 39.5255 14.6039 39.4151V17.765ZM41.5169 20.1733C41.5169 19.967 41.4992 19.7655 41.4671 19.5693C41.212 18.012 39.9901 16.8277 38.5247 16.8277H38.338C37.9911 16.8277 37.6581 16.8949 37.3479 17.0167C37.3786 17.2615 37.3955 17.511 37.3955 17.7651V39.4153C37.6921 39.5256 38.0088 39.5863 38.338 39.5863H38.5247C39.9901 39.5863 41.212 38.4019 41.4671 36.8447C41.4992 36.6485 41.5169 36.4469 41.5169 36.2406V20.1733Z" fill="#12D3BF"/>
+                            </g>
+                            <defs>
+                              <filter id="filter0_d_550_2146" x="0.275391" y="0.344727" width="51.4482" height="45.2417" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dy="2"/>
+                                <feGaussianBlur stdDeviation="2"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_550_2146"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_550_2146" result="shape"/>
+                              </filter>
+                            </defs>
+                          </svg>
+                        </div>
+                      <h3
+                        class="2xl:text-[2rem] lg:text-[1.6rem] font-semibold"
+                      >
+                        Listening
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Study Guide Section Ends-->
+            </section>
+          </div>
+          <!-- PTE Guide and Materials Section Starts-->
+          <section class="flex items-center gap-[1rem] my-[3rem]">
+            <div
+              class="border shadow-box_shadow rounded-[10px] p-[2rem] w-[47%] flex items-center justify-center flex-col"
+            >
+              <div class="bg-pink bg-opacity-10 rounded-full p-[1.2rem]">
+                <img src="../../assets/images/Dashboard/PTEGuide.svg" />
+              </div>
+              <h3
+                class="2xl:text-[2rem] lg:text-[1.6rem] font-semibold text-center"
+              >
+                PTE Guide
+              </h3>
+            </div>
+            <div
+              class="border shadow-box_shadow rounded-[10px] p-[2rem] w-[47%] flex items-center justify-center flex-col"
+            >
+              <div class="bg-lightBlue bg-opacity-10 rounded-full p-[1.2rem]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 44" fill="none">
+                    <path d="M26.251 26.0859C27.7384 26.086 29.1925 26.5259 30.4305 27.3502C31.6686 28.1744 32.6353 29.3463 33.2092 30.7185C33.783 32.0907 33.9384 33.6019 33.6557 35.0622C33.3731 36.5224 32.665 37.8665 31.6206 38.9254C30.5761 39.9844 29.242 40.7109 27.7858 41.0137C26.3296 41.3164 24.8163 41.1819 23.4364 40.627C22.0564 40.0722 20.8713 39.1217 20.03 37.8952C19.1887 36.6686 18.7288 35.2207 18.7082 33.7335C18.7134 31.7249 19.5065 29.7985 20.917 28.3684C22.3274 26.9384 24.2427 26.1188 26.251 26.0859ZM26.251 23.3621C24.2205 23.3621 22.2355 23.9642 20.5472 25.0923C18.8588 26.2204 17.5429 27.8239 16.7659 29.6998C15.9888 31.5758 15.7855 33.6401 16.1817 35.6317C16.5778 37.6232 17.5556 39.4525 18.9914 40.8884C20.4272 42.3242 22.2566 43.302 24.2481 43.6981C26.2397 44.0943 28.3039 43.891 30.1799 43.1139C32.0559 42.3368 33.6594 41.0209 34.7875 39.3326C35.9156 37.6442 36.5177 35.6593 36.5177 33.6287C36.5133 30.9072 35.4302 28.2984 33.5058 26.374C31.5814 24.4496 28.9726 23.3665 26.251 23.3621Z" fill="#6885E9"/>
+                    <path d="M31.0701 0.000132397H6.34633C4.89302 0.00416064 3.49885 0.576135 2.46147 1.59395C1.42408 2.61177 0.825652 3.99478 0.793945 5.44775V38.4478C0.797974 39.9011 1.36995 41.2952 2.38776 42.3326C3.40558 43.37 4.7886 43.9684 6.24156 44.0001H10.3273V41.2763H6.34633C5.62788 41.2637 4.94239 40.9726 4.43429 40.4645C3.9262 39.9565 3.63516 39.271 3.62252 38.5525V5.44775C3.63516 4.7293 3.9262 4.04382 4.43429 3.53572C4.94239 3.02762 5.62788 2.73659 6.34633 2.72394H31.0701C31.7886 2.73659 32.4741 3.02762 32.9822 3.53572C33.4903 4.04382 33.7813 4.7293 33.7939 5.44775V17.8097H36.5178V5.44775C36.5228 4.73096 36.3853 4.02032 36.1133 3.35712C35.8413 2.69392 35.4402 2.09138 34.9334 1.58452C34.4265 1.07766 33.824 0.676586 33.1608 0.404593C32.4976 0.132601 31.7869 -0.00488226 31.0701 0.000132397Z" fill="#6885E9"/>
+                    <path d="M14.6226 44.0002C15.3748 44.0002 15.9846 43.3904 15.9846 42.6383C15.9846 41.8861 15.3748 41.2764 14.6226 41.2764C13.8705 41.2764 13.2607 41.8861 13.2607 42.6383C13.2607 43.3904 13.8705 44.0002 14.6226 44.0002Z" fill="#6885E9"/>
+                    <path d="M35.1558 23.362C35.908 23.362 36.5178 22.7522 36.5178 22.0001C36.5178 21.2479 35.908 20.6382 35.1558 20.6382C34.4037 20.6382 33.7939 21.2479 33.7939 22.0001C33.7939 22.7522 34.4037 23.362 35.1558 23.362Z" fill="#6885E9"/>
+                    <path d="M33.7939 17.2856H36.5178V21.9999H33.7939V17.2856Z" fill="#6885E9"/>
+                    <path d="M9.38477 41.2764H14.6229V44.0002H9.38477V41.2764Z" fill="#6885E9"/>
+                    <path d="M26.9846 9.63836H10.4322C10.071 9.63836 9.72461 9.49487 9.46921 9.23947C9.2138 8.98406 9.07031 8.63766 9.07031 8.27646C9.07031 7.91526 9.2138 7.56885 9.46921 7.31344C9.72461 7.05804 10.071 6.91455 10.4322 6.91455H26.8798C27.239 6.921 27.5817 7.06656 27.8357 7.32058C28.0897 7.57461 28.2353 7.91727 28.2417 8.27646C28.2502 8.44879 28.2242 8.62108 28.1653 8.78326C28.1064 8.94545 28.0158 9.09427 27.8988 9.22106C27.7818 9.34784 27.6406 9.45004 27.4837 9.52169C27.3267 9.59334 27.1571 9.633 26.9846 9.63836Z" fill="#6885E9"/>
+                    <path d="M26.9846 14.7717H10.4322C10.071 14.7717 9.72461 14.6282 9.46921 14.3728C9.2138 14.1174 9.07031 13.771 9.07031 13.4098C9.07031 13.0486 9.2138 12.7022 9.46921 12.4467C9.72461 12.1913 10.071 12.0479 10.4322 12.0479H26.8798C27.239 12.0543 27.5817 12.1999 27.8357 12.4539C28.0897 12.7079 28.2353 13.0506 28.2417 13.4098C28.268 13.5856 28.2545 13.7652 28.2022 13.9352C28.1499 14.1051 28.0601 14.2612 27.9395 14.3919C27.8188 14.5226 27.6704 14.6245 27.5052 14.6903C27.3399 14.756 27.162 14.7838 26.9846 14.7717Z" fill="#6885E9"/>
+                    <path d="M21.4322 19.905H10.4322C10.071 19.905 9.72461 19.7615 9.46921 19.5061C9.2138 19.2507 9.07031 18.9043 9.07031 18.5431C9.07031 18.1819 9.2138 17.8355 9.46921 17.58C9.72461 17.3246 10.071 17.1812 10.4322 17.1812H21.4322C21.7914 17.1876 22.1341 17.3332 22.3881 17.5872C22.6421 17.8412 22.7877 18.1839 22.7941 18.5431C22.8086 18.7256 22.7834 18.9091 22.7201 19.0809C22.6568 19.2528 22.5569 19.4088 22.4274 19.5383C22.298 19.6678 22.1419 19.7676 21.9701 19.8309C21.7983 19.8942 21.6148 19.9195 21.4322 19.905Z" fill="#6885E9"/>
+                    <path d="M26.2516 39.1812C25.8924 39.1747 25.5497 39.0291 25.2957 38.7751C25.0417 38.5211 24.8961 38.1784 24.8896 37.8192V29.5431C24.8896 29.1819 25.0331 28.8355 25.2885 28.58C25.5439 28.3246 25.8904 28.1812 26.2516 28.1812C26.6128 28.1812 26.9592 28.3246 27.2146 28.58C27.47 28.8355 27.6135 29.1819 27.6135 29.5431V37.8192C27.607 38.1784 27.4614 38.5211 27.2074 38.7751C26.9534 39.0291 26.6107 39.1747 26.2516 39.1812Z" fill="#6885E9"/>
+                    <path d="M26.2507 39.3906C26.0716 39.3999 25.8929 39.3669 25.729 39.2941C25.5652 39.2212 25.4209 39.1107 25.3078 38.9715L21.4317 35.0953C21.1788 34.8256 21.0381 34.4698 21.0381 34.1001C21.0381 33.7304 21.1788 33.3745 21.4317 33.1048C21.5591 32.9684 21.7132 32.8597 21.8844 32.7853C22.0556 32.711 22.2402 32.6726 22.4269 32.6726C22.6135 32.6726 22.7982 32.711 22.9694 32.7853C23.1406 32.8597 23.2947 32.9684 23.4221 33.1048L27.2983 36.981C27.5512 37.2507 27.6919 37.6066 27.6919 37.9763C27.6919 38.346 27.5512 38.7018 27.2983 38.9715C27.1645 39.1131 27.0015 39.2238 26.8206 39.2962C26.6397 39.3685 26.4453 39.4007 26.2507 39.3906Z" fill="#6885E9"/>
+                    <path d="M26.2515 39.3907C26.0724 39.4001 25.8937 39.367 25.7298 39.2942C25.5659 39.2214 25.4216 39.1109 25.3086 38.9717C25.0558 38.702 24.915 38.3461 24.915 37.9764C24.915 37.6067 25.0558 37.2509 25.3086 36.9812L29.1848 33.105C29.4545 32.8521 29.8103 32.7114 30.18 32.7114C30.5497 32.7114 30.9056 32.8521 31.1753 33.105C31.3117 33.2324 31.4204 33.3865 31.4948 33.5577C31.5691 33.7289 31.6075 33.9136 31.6075 34.1002C31.6075 34.2869 31.5691 34.4716 31.4948 34.6428C31.4204 34.814 31.3117 34.9681 31.1753 35.0955L27.2991 38.9717C27.1652 39.1132 27.0022 39.224 26.8213 39.2963C26.6405 39.3687 26.446 39.4009 26.2515 39.3907Z" fill="#6885E9"/>
+                  </svg>
+                </div>
+              <h3 class="2xl:text-[2rem] lg:text-[1.6rem] font-semibold">
+                Materials
+              </h3>
+            </div>
+          </section>
+          <!-- PTE Guide and Materials Section Ends-->
+          <!-- Study Tools Section Starts-->
+          <section
+            class="studyToolsSection shadow-box_shadow border rounded-[20px] 2xl:mt-[3rem] xl:mt-[2.4rem] lg:mt-[2rem] 2xl:p-[3.5rem] xl:p-[3rem] lg:p-[2.4rem]"
+          >
+            <div>
+              <h2
+                class="text-mainBlackColor 2xl:text-[3.2rem] lg:text-[2.6rem] font-semibold mb-[2rem]"
+              >
+                Study Tools
+              </h2>
+              <div class="studyTool flex flex-col">
+                <div
+                  class="border-b-2 flex-row gap-3 2xl:py-[2.6rem] xl:py-[2.4rem] lg:py-[2.2rem] w-[100%] flex items-center"
+                >
+                  <div class="">
+                    <img src="../../assets/images/Dashboard/VOCAB-BOOK.svg" />
+                  </div>
+                  <div>
+                    <h3
+                      class="font-medium 2xl:text-[2rem] xl:[1.8rem] lg:text-[1.6rem]"
+                    >
+                      Vocab Books
+                    </h3>
+                    <p
+                      class="2xl:text-[1.8rem] lg:text-[1.4rem] text-mediumGray"
+                    >
+                      Contains 90% exam vocabs
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="border-b-2 flex-row gap-3 2xl:py-[2.6rem] xl:py-[2.4rem] lg:py-[2.2rem] w-[100%] flex items-center"
+                >
+                  <div class="">
+                    <img src="../../assets/images/Dashboard/SHADOWING.svg" />
+                  </div>
+                  <div>
+                    <h3
+                      class="font-medium 2xl:text-[2rem] xl:[1.8rem] lg:text-[1.6rem]"
+                    >
+                      Shadowing
+                    </h3>
+                    <p
+                      class="2xl:text-[1.8rem] lg:text-[1.4rem] text-mediumGray"
+                    >
+                      Improve oral in 14 days
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="border-b-2 flex-row gap-3 2xl:py-[2.6rem] xl:py-[2.4rem] lg:py-[2.2rem] w-[100%] flex items-center"
+                >
+                  <div class="">
+                    <img src="../../assets/images/Dashboard/AI-ANALYSIS.svg" />
+                  </div>
+                  <div>
+                    <h3
+                      class="font-medium 2xl:text-[2rem] xl:[1.8rem] lg:text-[1.6rem]"
+                    >
+                      AI Analysis
+                    </h3>
+                    <p
+                      class="2xl:text-[1.8rem] lg:text-[1.4rem] text-mediumGray"
+                    >
+                      Accurate score report analysis
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex-row gap-3 2xl:py-[2.6rem] xl:py-[2.4rem] lg:py-[2.2rem] w-[100%] flex items-center"
+                >
+                  <div class="">
+                    <img src="../../assets/images/Dashboard/Mocktests.svg" />
+                  </div>
+                  <div>
+                    <h3
+                      class="font-medium 2xl:text-[2rem] xl:[1.8rem] lg:text-[1.6rem]"
+                    >
+                      Mock Tests
+                    </h3>
+                    <p
+                      class="2xl:text-[1.8rem] lg:text-[1.4rem] text-mediumGray"
+                    >
+                      Test & know your scores
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Study Tools Section Ends-->
+        </div>
+      </div>
+    </div>
+    <!-- Bashboard screen  End -->
+    <!-- Footer Start -->
+    <div class="w-full relative bg-mainBlackColor">
+      <div class="max-w-[1210px] mx-auto px-2">
+        <div class="relative w-full top-[-15rem]">
+          <img
+            class="absolute top-0 left-0 h-[306px]"
+            src="../../assets/images/Home/Footer Pattern.png"
+          />
+          <div
+            class="w-full flex items-center justify-around z-10 h-full pt-20"
+          >
+            <div class="flex flex-col z-10">
+              <h1
+                class="2xl:text-[3.6rem] xl:text-[3.2rem] lg:text-[3rem] text-mainBlackColor font-bold"
+              >
+                Still have questions?<br />
+                We're here to help.
+              </h1>
+              <p
+                class="2xl:text-[2.4rem] xl:text-[2.2rem] lg:text-[2rem] text-mainBlackColor"
+              >
+                Get in touch with our experts today.
+              </p>
+            </div>
+            <button
+              class="px-[10.3rem] lg:px-[8rem] py-[2.3rem] lg:py-[2rem] h-fit bg-mainBlackColor rounded-[10px] text-white text-[2rem] font-semibold z-10"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+        <div class="max-w-[990px] mx-auto px-2 pt-8">
+          <div class="w-full flex justify-between mb-12">
+            <div class="flex items-center gap-2">
+              <img
+                class="h-[38px] w-[38px]"
+                src="../../assets/images/Logo.svg"
+              />
+              <h1 class="text-white text-3xl font-bold">PTE Key</h1>
+            </div>
+            <div class="flex items-center gap-[25px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 23 23"
+                fill="none"
+              >
+                <path
+                  d="M16.3383 2.74907C17.5671 2.7526 18.7445 3.22389 19.6134 4.06001C20.4823 4.89612 20.9721 6.02913 20.9757 7.21157V16.1356C20.9721 17.3181 20.4823 18.4511 19.6134 19.2872C18.7445 20.1233 17.5671 20.5946 16.3383 20.5981H7.06439C5.8356 20.5946 4.65817 20.1233 3.78928 19.2872C2.92038 18.4511 2.43062 17.3181 2.42695 16.1356V7.21157C2.43062 6.02913 2.92038 4.89612 3.78928 4.06001C4.65817 3.22389 5.8356 2.7526 7.06439 2.74907H16.3383ZM16.3383 0.964355H7.06439C3.49365 0.964355 0.572266 3.77553 0.572266 7.21157V16.1356C0.572266 19.5717 3.49365 22.3828 7.06439 22.3828H16.3383C19.909 22.3828 22.8304 19.5717 22.8304 16.1356V7.21157C22.8304 3.77553 19.909 0.964355 16.3383 0.964355Z"
+                  fill="white"
+                />
+                <path
+                  d="M17.7295 7.21198C17.4543 7.21198 17.1854 7.13347 16.9566 6.98637C16.7278 6.83928 16.5495 6.63021 16.4442 6.3856C16.3389 6.141 16.3114 5.87184 16.3651 5.61216C16.4187 5.35249 16.5512 5.11397 16.7458 4.92675C16.9403 4.73954 17.1882 4.61204 17.4581 4.56039C17.7279 4.50874 18.0076 4.53525 18.2618 4.63657C18.516 4.73789 18.7333 4.90947 18.8862 5.12961C19.039 5.34975 19.1206 5.60856 19.1206 5.87332C19.121 6.04922 19.0853 6.22347 19.0155 6.38605C18.9457 6.54863 18.8433 6.69636 18.714 6.82074C18.5848 6.94512 18.4313 7.04371 18.2623 7.11085C18.0933 7.17799 17.9123 7.21236 17.7295 7.21198ZM11.7014 8.1041C12.4351 8.1041 13.1524 8.31347 13.7625 8.70573C14.3726 9.098 14.8481 9.65554 15.1288 10.3079C15.4096 10.9602 15.4831 11.678 15.34 12.3705C15.1968 13.0629 14.8435 13.699 14.3246 14.1983C13.8058 14.6976 13.1448 15.0376 12.4251 15.1753C11.7055 15.3131 10.9596 15.2424 10.2817 14.9722C9.60379 14.702 9.02439 14.2444 8.61675 13.6573C8.2091 13.0703 7.99152 12.3801 7.99152 11.674C7.99258 10.7275 8.38377 9.82008 9.07928 9.15081C9.77478 8.48155 10.7178 8.10511 11.7014 8.1041ZM11.7014 6.31938C10.6008 6.31938 9.52497 6.63342 8.60989 7.2218C7.69481 7.81017 6.98159 8.64645 6.56042 9.62488C6.13925 10.6033 6.02906 11.6799 6.24376 12.7186C6.45847 13.7573 6.98844 14.7114 7.76666 15.4603C8.54487 16.2091 9.53638 16.7191 10.6158 16.9257C11.6952 17.1323 12.8141 17.0263 13.8308 16.621C14.8476 16.2157 15.7167 15.5294 16.3281 14.6489C16.9396 13.7683 17.2659 12.733 17.2659 11.674C17.2659 10.2539 16.6797 8.8919 15.6361 7.88771C14.5926 6.88353 13.1772 6.31938 11.7014 6.31938Z"
+                  fill="white"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="20"
+                viewBox="0 0 24 23"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M23.8304 11.7384C23.8304 5.78996 18.6811 0.966797 12.3304 0.966797C5.97977 0.966797 0.830444 5.78996 0.830444 11.7384C0.830444 17.1145 5.03513 21.5708 10.5336 22.3796V14.853H7.61288V11.7384H10.5336V9.36526C10.5336 6.66611 12.2509 5.17396 14.8774 5.17396C16.1357 5.17396 17.4521 5.38458 17.4521 5.38458V8.03564H16.0012C14.5735 8.03564 14.1268 8.86563 14.1268 9.7187V11.7384H17.316L16.8067 14.853H14.1273V22.3806C19.6258 21.5722 23.8304 17.116 23.8304 11.7384Z"
+                  fill="white"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="15"
+                viewBox="0 0 23 18"
+                fill="none"
+              >
+                <path
+                  d="M22.3015 2.12514C21.4961 2.47485 20.6439 2.70524 19.7719 2.80904C20.6883 2.27282 21.3775 1.42093 21.7102 0.413152C20.8438 0.919413 19.8974 1.27463 18.9118 1.46359C18.4967 1.0289 17.9975 0.683093 17.4445 0.447188C16.8916 0.211283 16.2964 0.0902057 15.6951 0.0913162C13.2608 0.0913162 11.2909 2.03127 11.2909 4.42269C11.2892 4.75533 11.3273 5.08697 11.4045 5.41055C9.65894 5.32877 7.94968 4.8838 6.38607 4.1041C4.82247 3.32439 3.43895 2.22712 2.32402 0.882496C1.93288 1.54142 1.72603 2.29323 1.72507 3.05936C1.72507 4.56126 2.50921 5.88883 3.69325 6.6666C2.99174 6.64996 2.30461 6.46442 1.69018 6.12574V6.17937C1.69018 8.28025 3.21105 10.028 5.22396 10.4258C4.84544 10.5267 4.45537 10.5777 4.06363 10.5778C3.78566 10.5783 3.50832 10.5513 3.23565 10.4973C3.79524 12.2183 5.42391 13.4698 7.35317 13.5056C5.78551 14.7129 3.86082 15.3654 1.88163 15.3606C1.53032 15.3601 1.17933 15.3392 0.830444 15.2981C2.84388 16.5828 5.18435 17.2624 7.57325 17.2559C15.6857 17.2559 20.1177 10.6538 20.1177 4.92779C20.1177 4.74005 20.1128 4.55232 20.1038 4.36905C20.9641 3.75759 21.7083 2.99772 22.3015 2.12514Z"
+                  fill="white"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 23 23"
+                fill="none"
+              >
+                <path
+                  d="M20.3119 0.798828H2.15997C1.16811 0.798828 0.301514 1.5125 0.301514 2.4927V20.685C0.301514 21.6705 1.16811 22.5488 2.15997 22.5488H20.3066C21.3038 22.5488 22.0514 21.6647 22.0514 20.685V2.4927C22.0573 1.5125 21.3038 0.798828 20.3119 0.798828ZM7.04351 18.9285H3.92763V9.24052H7.04351V18.9285ZM5.59335 7.76754H5.57102C4.57382 7.76754 3.92812 7.02523 3.92812 6.096C3.92812 5.14979 4.59081 4.42495 5.61034 4.42495C6.62987 4.42495 7.25372 5.14444 7.27606 6.096C7.27557 7.02523 6.62987 7.76754 5.59335 7.76754ZM18.4311 18.9285H15.3153V13.6313C15.3153 12.3622 14.8618 11.4951 13.7345 11.4951C12.8733 11.4951 12.3635 12.0777 12.1368 12.6453C12.0518 12.8492 12.029 13.1269 12.029 13.4104V18.9285H8.91313V9.24052H12.029V10.5887C12.4824 9.94302 13.1908 9.0138 14.839 9.0138C16.8844 9.0138 18.4316 10.362 18.4316 13.2686L18.4311 18.9285Z"
+                  fill="white"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="17"
+                viewBox="0 0 27 20"
+                fill="none"
+              >
+                <path
+                  d="M25.8844 4.36905C25.8844 2.14255 24.2033 0.351453 22.1261 0.351453C19.3125 0.223306 16.443 0.173828 13.5105 0.173828H12.5963C9.67094 0.173828 6.79636 0.223306 3.98273 0.351948C1.91059 0.351948 0.229518 2.15294 0.229518 4.37944C0.102549 6.14036 0.0487142 7.90177 0.0517615 9.66318C0.0466827 11.4246 0.104242 13.1876 0.22444 14.9524C0.22444 17.1789 1.90551 18.9848 3.97765 18.9848C6.93349 19.1184 9.96551 19.1778 13.0483 19.1728C16.1362 19.1827 19.1598 19.12 22.119 18.9848C24.1962 18.9848 25.8773 17.1789 25.8773 14.9524C25.9992 13.186 26.055 11.4246 26.05 9.65823C26.0615 7.89682 26.0063 6.13376 25.8844 4.36905ZM10.5648 14.517V4.79456L17.929 9.65328L10.5648 14.517Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="w-full border-t border-zinc-600 flex justify-center py-5">
+            <p class="text-white 2xl:text-[2rem] lg:text-[1.6rem]">
+              Copyright©2023 PTE Key
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <script>
+          let showProfileDropwdown = true;
+    const onShowProfileDropdown = () => {
+      if(showProfileDropwdown){
+        document.querySelector(".profileDropdown").style.display="block"
+      }
+      else{
+        document.querySelector(".profileDropdown").style.display="none"
+      }
+      showProfileDropwdown = !showProfileDropwdown
+    }
+    </script>
+  </body>
+</html>

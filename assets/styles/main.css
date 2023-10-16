@@ -13,3 +13,21 @@ html{
 .noScrollBar::-webkit-scrollbar {
     display: none;
 }
+.tasksProgress {
+    width: 18% !important;
+  }
+  @media screen and (max-width: 1200px) {
+    .tasksProgress .header {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      justify-content: flex-start !important;
+      .icon .iconImg {
+        width: 15px !important;
+      }
+    }
+    .yourTargetContainer {
+      padding-top: 5rem;
+      padding-bottom: 3rem;
+    }
+  }
+  
