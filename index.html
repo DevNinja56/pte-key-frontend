@@ -19,27 +19,54 @@
     </a>
         <div class="flex items-center gap-[35px] z-10">
             <ul class="flex items-center gap-[35px] text-sm">
-                <li>Home</li>
-                <a href="./Pages/dashboard">
-                <li>PTE Practice</li>
-            </a>
+                <a href="/">
+                <li class="cursor-pointer">Home</li>
+                </a>
+                <li class="cursor-pointer" onclick="onShowLoginModal()">PTE Practice</li>
             <a href="./Pages/pteTurtorials">
-                <li>PTE Guide</li>
+                <li class="cursor-pointer">PTE Guide</li>
                 </a>
                 <a href="./Pages/course">
-                <li>Tutorials</li>
+                <li class="cursor-pointer">Tutorials</li>
                 </a>
-                <a href="./Pages/downloadApp/">
-                <li>App</li>
+                <a href="./Pages/downloadApp">
+                <li class="cursor-pointer">App</li>
                 </a>
             </ul>
+            <a href="./Pages/Login">
             <button class="py-[12px] px-[28px] rounded-[5px] bg-mainBlackColor text-white text-sm font-semibold">Login</button>
+        </a>
         </div>
     </div>
     <img class="absolute right-0 top-0 w-[60%]" src="./assets/images/Home/Pattern.png"/>
 </div>
 
     <!-- NavBar End -->
+
+    <!-- Show PteKey Modal Start -->
+
+    <div class="hidden pteKeyModal">
+        <div class="fixed top-0 left-0 h-full w-full bg-opacity-[20%] bg-black z-30 flex justify-center items-center">
+            <div class="p-7 bg-white rounded-[10px] flex flex-col gap-y-3">
+                <h1 class="flex items-center gap-x-3 text-mainBlackColor text-2xl font-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="none">
+                        <path d="M16 2.6665C13.3629 2.6665 10.785 3.44849 8.59236 4.91358C6.39971 6.37866 4.69074 8.46104 3.68157 10.8974C2.6724 13.3337 2.40836 16.0146 2.92283 18.601C3.4373 21.1875 4.70717 23.5632 6.57188 25.4279C8.43658 27.2926 10.8123 28.5625 13.3988 29.077C15.9852 29.5914 18.6661 29.3274 21.1024 28.3182C23.5388 27.3091 25.6211 25.6001 27.0862 23.4074C28.5513 21.2148 29.3333 18.6369 29.3333 15.9998C29.3333 14.2489 28.9884 12.5151 28.3184 10.8974C27.6483 9.27972 26.6662 7.80986 25.4281 6.57175C24.1899 5.33363 22.7201 4.35151 21.1024 3.68144C19.4847 3.01138 17.7509 2.6665 16 2.6665ZM16 26.6665C13.8903 26.6665 11.828 26.0409 10.0739 24.8688C8.31976 23.6968 6.95259 22.0309 6.14525 20.0818C5.33792 18.1327 5.12668 15.988 5.53826 13.9189C5.94983 11.8497 6.96573 9.94913 8.45749 8.45737C9.94925 6.96561 11.8499 5.9497 13.919 5.53813C15.9881 5.12655 18.1328 5.33779 20.0819 6.14512C22.031 6.95246 23.6969 8.31963 24.869 10.0738C26.041 11.8279 26.6666 13.8902 26.6666 15.9998C26.6666 18.8288 25.5428 21.5419 23.5424 23.5423C21.5421 25.5427 18.8289 26.6665 16 26.6665Z" fill="#49DEFF"/>
+                        <path d="M16 22.6667C16.7363 22.6667 17.3333 22.0697 17.3333 21.3333C17.3333 20.597 16.7363 20 16 20C15.2636 20 14.6666 20.597 14.6666 21.3333C14.6666 22.0697 15.2636 22.6667 16 22.6667Z" fill="#49DEFF"/>
+                        <path d="M16 9.3335C15.6463 9.3335 15.3072 9.47397 15.0572 9.72402C14.8071 9.97407 14.6666 10.3132 14.6666 10.6668V17.3335C14.6666 17.6871 14.8071 18.0263 15.0572 18.2763C15.3072 18.5264 15.6463 18.6668 16 18.6668C16.3536 18.6668 16.6927 18.5264 16.9428 18.2763C17.1928 18.0263 17.3333 17.6871 17.3333 17.3335V10.6668C17.3333 10.3132 17.1928 9.97407 16.9428 9.72402C16.6927 9.47397 16.3536 9.3335 16 9.3335Z" fill="#49DEFF"/>
+                      </svg>
+                      PTE Key
+                </h1>
+                <p class="text-mainBlackColor pl-9">You haven't signed in yet, please sign in.</p>
+                <div class="flex justify-end">
+                <a href="./Pages/Login">
+                    <button class="rounded-[5px] py-1 px-7 bg-mainColor text-white font-medium">Login</button>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Show PteKey Modal End -->
 
     <!-- Main Sectio Start -->
 
@@ -1097,6 +1124,12 @@
     </div>
 
     <!-- Footer End -->
+
+    <script>
+        const onShowLoginModal = () => {
+            document.querySelector(".pteKeyModal").style.display="block"
+        }
+    </script>
 
 </body>
 </html>

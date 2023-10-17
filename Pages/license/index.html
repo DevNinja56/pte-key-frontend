@@ -11,173 +11,63 @@
 
         <!-- NavBar Start -->
 
-        <div class="w-full relative bg-white">
+        <div class="w-full relative">
             <div class="max-w-[1180px] mx-auto px-2 flex items-center justify-between pt-[40px] pb-8 z-10">
+                <a href="/">
                 <div class="flex items-center gap-2">
                     <img class="h-[45px] w-[45px]" src="../../assets/images/Logo.svg"/>
                     <h1 class="text-3xl font-bold text-mainBlackColor">PTE Key</h1>
                 </div>
+            </a>
                 <div class="flex items-center gap-[35px] z-10">
                     <ul class="flex items-center gap-[35px] text-sm">
-                        <li>Home</li>
-                        <li onmouseenter="onShowDropdown()" onmouseleave="hideDropDown()" class="cursor-pointer ptePractice">PTE Practice</li>
-                        <li>PTE Guide</li>
-                        <li class="text-mainColor">Tutorials</li>
-                        <li>App</li>
+                        <a href="/">
+                        <li class="cursor-pointer">Home</li>
+                        </a>
+                        <li class="cursor-pointer" onclick="onShowLoginModal()">PTE Practice</li>
+                    <a href="../pteTurtorials">
+                        <li class="cursor-pointer">PTE Guide</li>
+                        </a>
+                        <a href="../course">
+                        <li class="cursor-pointer">Tutorials</li>
+                        </a>
+                        <a href="../downloadApp">
+                        <li class="cursor-pointer">App</li>
+                        </a>
                     </ul>
+                    <a href="../Login">
                     <button class="py-[12px] px-[28px] rounded-[5px] bg-mainBlackColor text-white text-sm font-semibold">Login</button>
+                </a>
                 </div>
             </div>
-
-            <!-- DropDown Start -->
-            <div class="w-full absolute top-32 left-0 bg-white shadow-xl z-20 showDropDown hidden">
-                <div class="grid grid-cols-4 w-full">
-                    <div class="flex flex-col">
-                    <div class="w-full bg-mainColor px-8 py-5 relative">
-                        <h1 class="text-mainBlackColor text-base font-bold">Speaking</h1>
-                        <div class="absolute bottom-[-20px] right-6 h-16 w-16 rounded-full bg-white border-4 border-mainColor flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="50" viewBox="0 0 49 62" fill="none">
-                                <g filter="url(#filter0_d_362_1305)">
-                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.76749 33.5864C5.75384 33.5864 6.55866 34.3455 6.60253 35.2977C9.39963 41.7381 16.774 46.1381 24.8315 46.1381C28.677 46.2341 32.4646 45.2096 35.7111 43.1951C38.9574 41.1806 41.5155 38.2677 43.0585 34.8278L43.136 34.8624C43.3634 34.1242 44.065 33.5864 44.8954 33.5864C45.9098 33.5864 46.7322 34.3892 46.7322 35.3795C46.7322 35.734 46.6268 36.0646 46.4449 36.3428L46.4496 36.345C44.6697 40.3048 41.7409 43.6689 38.0246 46.022C34.625 48.1746 30.7028 49.395 26.6683 49.566V55.3795H31.1897C31.6769 55.3795 32.144 55.5685 32.4886 55.9048C32.833 56.241 33.0265 56.697 33.0265 57.1726C33.0265 57.6482 32.833 58.1042 32.4886 58.4405C32.144 58.7768 31.6769 58.9657 31.1897 58.9657H18.7558C18.2686 58.9657 17.8013 58.7768 17.4569 58.4405C17.1125 58.1042 16.9188 57.6482 16.9188 57.1726C16.9188 56.697 17.1125 56.241 17.4569 55.9048C17.8013 55.5685 18.2686 55.3795 18.7558 55.3795H22.9947V49.5209C14.1509 48.8895 6.19453 43.747 3.11853 36.3206C3.12625 36.329 3.13453 36.337 3.14266 36.345C3.17797 36.3795 3.21328 36.414 3.21328 36.483L3.28225 36.4348C3.06115 36.1387 2.93066 35.774 2.93066 35.3795C2.93066 34.3892 3.75301 33.5864 4.76749 33.5864ZM3.07191 36.2071C3.07191 36.2601 3.09287 36.2928 3.11853 36.3206C3.10294 36.2828 3.08735 36.245 3.07191 36.2071Z" fill="#F4F4F4"/>
-                                  <path d="M40.004 16.2071C40.004 7.82759 33.2111 1.03467 24.8316 1.03467C16.4521 1.03467 9.65918 7.82759 9.65918 16.2071V25.8623C9.65918 34.2417 16.4521 41.0347 24.8316 41.0347C33.2111 41.0347 40.004 34.2417 40.004 25.8623V16.2071Z" fill="#FF5F5F"/>
-                                  <path d="M24.8311 16.8966C24.8311 15.754 25.7573 14.8276 26.9 14.8276H40.0035V18.9656H26.9C25.7573 18.9656 24.8311 18.0392 24.8311 16.8966Z" fill="#DF3535"/>
-                                  <path d="M28.9697 22.4142C28.9697 21.2716 29.8959 20.3452 31.0387 20.3452H40.0042V24.4831H31.0387C29.8959 24.4831 28.9697 23.5568 28.9697 22.4142Z" fill="#DF3535"/>
-                                </g>
-                                <defs>
-                                  <filter id="filter0_d_362_1305" x="0.930664" y="0.034668" width="47.8018" height="61.9312" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                    <feOffset dy="1"/>
-                                    <feGaussianBlur stdDeviation="1"/>
-                                    <feComposite in2="hardAlpha" operator="out"/>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_362_1305"/>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_362_1305" result="shape"/>
-                                  </filter>
-                                </defs>
-                              </svg>
-                        </div>
-                    </div>
-                    <div class="px-8 py-5 pb-4">
-                        <ul class="text-sm text-mainBlackColor flex flex-col">
-                            <li class="py-[6px] flex items-center gap-x-3 cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Read Aloud</span> <button class="px-1 py-0 bg-red-500 text-white text-[8px] font-bold rounded-[5px]">AI Score</button></li>
-                            <li class="py-[6px] flex items-center gap-x-3 cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Repeat Sentence</span> <button class="px-1 py-0 bg-red-500 text-white text-[8px] font-bold rounded-[5px]">AI Score</button></li>
-                            <li class="py-[6px] flex items-center gap-x-3 cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Discribe Image</span> <button class="px-1 py-0 bg-red-500 text-white text-[8px] font-bold rounded-[5px]">AI Score</button></li>
-                            <li class="py-[6px] flex items-center gap-x-3 cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Re-tell Lecture</span> <button class="px-1 py-0 bg-red-500 text-white text-[8px] font-bold rounded-[5px]">AI Score</button></li>
-                            <li class="py-[6px] flex items-center gap-x-3 cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Answer Short Question</span> <button class="px-1 py-0 bg-red-500 text-white text-[8px] font-bold rounded-[5px]">AI Score</button></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="flex flex-col">
-                    <div class="w-full bg-mainColor px-8 py-5 relative">
-                        <h1 class="text-mainBlackColor text-base font-bold">Writing</h1>
-                        <div class="absolute bottom-[-20px] right-6 h-16 w-16 rounded-full bg-white border-4 border-mainColor flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="50" viewBox="0 0 51 55" fill="none">
-                                <g filter="url(#filter0_d_362_1703)">
-                                  <path d="M29.2334 43.0416L25.7693 47.9792L15.8905 48.0457L11.0849 48.0791C10.9435 48.0802 10.7792 48.0465 10.606 47.9812C10.4329 47.9158 10.2561 47.8206 10.0907 47.7038C9.92531 47.587 9.77634 47.4519 9.65662 47.3104C9.53689 47.1689 9.45 47.025 9.40324 46.8911L7.81386 42.3399L4.55469 32.9929L8.01924 28.0547L29.2334 43.0416Z" fill="#FBD27A"/>
-                                  <path d="M42.8783 23.592L25.7796 47.9642L22.954 44.4513L22.9294 44.4413L18.7045 42.9658L15.8788 39.453L11.6407 37.9755L8.83771 34.4941L8.81384 34.4619L4.56543 32.9771L21.6641 8.60498L42.8783 23.592Z" fill="#FFB545"/>
-                                  <path d="M37.0042 24.3788L22.93 44.4427L18.7046 42.9666L17.9862 42.0722L15.879 39.4537L12.7357 38.355L11.6405 37.9755L8.83789 34.4948L22.9165 14.4272L37.0042 24.3788Z" fill="#FFCD3F"/>
-                                  <path d="M32.5872 21.2586L17.9865 42.0716L15.8787 39.4529L12.7354 38.3542L27.332 17.5469L32.5872 21.2586Z" fill="#FFB545"/>
-                                  <path d="M42.8733 23.5876L21.666 8.60551L25.2885 3.44192C25.4368 3.23061 25.6675 3.08068 25.9675 3.00068C26.2675 2.92068 26.631 2.91213 27.0371 2.97558C27.4431 3.03902 27.8839 3.17309 28.3343 3.37033C28.7848 3.56758 29.2358 3.82413 29.6619 4.12509L44.3801 14.5229C44.8063 14.824 45.199 15.1636 45.5358 15.5226C45.8728 15.8815 46.1473 16.2527 46.3438 16.615C46.5402 16.9772 46.6548 17.3234 46.6809 17.6339C46.707 17.9443 46.6441 18.2128 46.4958 18.4241L42.8733 23.5876Z" fill="#FF5196"/>
-                                  <path d="M15.8902 48.0456L11.0845 48.079C10.9431 48.0801 10.7789 48.0465 10.6056 47.9811C10.4325 47.9157 10.2555 47.8205 10.0902 47.7037C9.92479 47.5869 9.77596 47.4518 9.65624 47.3103C9.53651 47.1688 9.44948 47.0249 9.40286 46.891L7.81348 42.3398L15.8902 48.0456Z" fill="#AC5C40"/>
-                                  <path d="M46.3032 22.9563L21.5378 5.42108C20.9161 4.98088 20.0553 5.12802 19.6151 5.74972L16.4268 10.2525C15.9866 10.8742 16.1338 11.7351 16.7555 12.1753L41.5209 29.7105C42.1426 30.1507 43.0034 30.0035 43.4436 29.3818L46.6319 24.879C47.0721 24.2573 46.9249 23.3965 46.3032 22.9563Z" fill="white"/>
-                                  <path d="M18.8012 6.89893L45.8229 25.996L45.4338 26.5518L18.4121 7.45451L18.8012 6.89893Z" fill="#64798A"/>
-                                  <path d="M17.6245 8.57959L44.6462 27.6767L44.2571 28.2323L17.2354 9.13518L17.6245 8.57959Z" fill="#64798A"/>
-                                </g>
-                                <defs>
-                                  <filter id="filter0_d_362_1703" x="0.554688" y="0.933594" width="50.3311" height="53.1455" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                    <feOffset dy="2"/>
-                                    <feGaussianBlur stdDeviation="2"/>
-                                    <feComposite in2="hardAlpha" operator="out"/>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_362_1703"/>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_362_1703" result="shape"/>
-                                  </filter>
-                                </defs>
-                              </svg>
-                        </div>
-                    </div>
-                    <div class="px-8 py-5 pb-4">
-                        <ul class="text-sm text-mainBlackColor flex flex-col">
-                            <li class="py-[6px] flex items-center gap-x-3 cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Summarize Written Text</span> <button class="px-1 py-0 bg-red-500 text-white text-[8px] font-bold rounded-[5px]">AI Score</button></li>
-                            <li class="py-[6px] flex items-center gap-x-3 cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Write Essay</span> <button class="px-1 py-0 bg-red-500 text-white text-[8px] font-bold rounded-[5px]">AI Score</button></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="flex flex-col">
-                    <div class="w-full bg-mainColor px-8 py-5 relative">
-                        <h1 class="text-mainBlackColor text-base font-bold">Reading</h1>
-                        <div class="absolute bottom-[-20px] right-6 h-16 w-16 rounded-full bg-white border-4 border-mainColor flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="50" viewBox="0 0 45 50" fill="none">
-                                <path d="M7.05499 0.113281H37.6798C39.5455 0.113281 41.3347 0.854523 42.6539 2.1737C43.9732 3.49287 44.7143 5.28211 44.7143 7.14776V40.2544C44.7143 42.12 43.9732 43.9093 42.6539 45.2285C41.3347 46.5478 39.5455 47.2889 37.6798 47.2889H7.05499C5.18933 47.2889 3.40009 46.5478 2.08092 45.2285C0.761612 43.9093 0.0205078 42.12 0.0205078 40.2544V7.14776C0.0205078 5.28238 0.761473 3.49328 2.08051 2.17411C3.3994 0.854937 5.18961 0.113695 7.05499 0.113281Z" fill="#8A6FFD"/>
-                                <path d="M5.97646 47.2863C4.39591 47.2863 2.87991 46.6585 1.76226 45.5407C0.644464 44.423 0.0166016 42.907 0.0166016 41.3263C0.0166016 39.7458 0.644464 38.2298 1.76226 37.1121C2.87991 35.9943 4.39591 35.3665 5.97646 35.3665H38.7491C38.8912 35.3637 39.0334 35.3691 39.1749 35.3826H39.4344C40.8315 35.38 42.1708 34.8244 43.1595 33.8374C44.1482 32.8502 44.706 31.5118 44.7109 30.1147V32.3917C44.7111 33.2378 44.5308 34.0741 44.1821 34.8448C43.8333 35.6156 43.324 36.303 42.6885 36.8612C43.5955 37.6621 44.2373 38.72 44.5287 39.8943C44.82 41.0687 44.7471 42.3038 44.3195 43.4357C43.8919 44.5677 43.13 45.5426 42.1351 46.2312C41.14 46.9196 39.9591 47.2889 38.7491 47.2901L5.97646 47.2863Z" fill="#9747FF"/>
-                                <path d="M41.4866 44.8032H6.6196C5.76388 44.8027 4.94346 44.4626 4.33822 43.8576C3.73312 43.2526 3.39257 42.4322 3.3916 41.5766C3.39229 40.7206 3.73257 39.8999 4.33781 39.2948C4.94305 38.6896 5.76374 38.3493 6.6196 38.3486H38.7553C40.3035 38.3547 41.7928 37.7555 42.9053 36.6787C44.0178 35.602 44.6653 34.133 44.7097 32.5854V41.3282H44.6997C44.7084 41.4115 44.7084 41.5071 44.7084 41.5766C44.7068 42.431 44.3669 43.25 43.7633 43.8547C43.1596 44.4592 42.3411 44.8003 41.4866 44.8032Z" fill="#6B2DBC"/>
-                                <path d="M39.7477 43.3172H6.12836C5.46946 43.3172 4.83746 43.0557 4.37126 42.5902C3.90491 42.1245 3.64257 41.4929 3.6416 40.834C3.64257 40.1753 3.90505 39.5438 4.37126 39.0786C4.8376 38.6132 5.4696 38.352 6.12836 38.3522H38.7557C40.0034 38.3564 41.2202 37.9652 42.2319 37.2349V40.8353C42.2318 41.1615 42.1674 41.4842 42.0424 41.7855C41.9175 42.0867 41.7344 42.3602 41.5038 42.5907C41.273 42.8212 40.9993 43.004 40.6979 43.1287C40.3966 43.2532 40.0737 43.3173 39.7477 43.3172Z" fill="white"/>
-                                <path d="M6.72559 0.113281H8.71331V35.4224H6.72559V0.113281Z" fill="#9747FF"/>
-                                <path d="M8.95383 49.1486C8.82997 48.9392 8.76569 48.7002 8.76762 48.457V38.3447H19.446V48.462C19.4458 48.7017 19.3827 48.937 19.2627 49.1446C19.1428 49.352 18.9704 49.5243 18.7628 49.644C18.5552 49.7639 18.3198 49.8269 18.08 49.8269C17.8404 49.8268 17.605 49.7638 17.3974 49.6439L14.1098 47.7468L10.8187 49.6464C10.505 49.8258 10.1333 49.8744 9.78417 49.7814C9.43493 49.6884 9.13659 49.4602 8.95383 49.1486Z" fill="#FFC411"/>
-                                <path d="M11.0069 39.3418C11.2704 39.3418 11.5229 39.4465 11.7093 39.6327C11.8955 39.819 12.0002 40.0716 12.0002 40.335V44.0571C12.0002 44.3206 11.8955 44.5731 11.7093 44.7595C11.5229 44.9457 11.2704 45.0503 11.0069 45.0503C10.7435 45.0503 10.4908 44.9457 10.3046 44.7595C10.1184 44.5731 10.0137 44.3206 10.0137 44.0571V40.335C10.0137 40.0716 10.1184 39.819 10.3046 39.6327C10.4908 39.4465 10.7435 39.3418 11.0069 39.3418Z" fill="white"/>
-                                <path d="M22.6889 20.3936H27.5165L33.5579 29.1385H28.0958L22.6889 20.3936ZM17.8613 9.82812H22.5234V29.1385H17.8613V9.82812ZM20.7855 13.773V9.82812H24.8958C26.551 9.82812 27.9303 10.0948 29.0337 10.6281C30.1372 11.1615 30.974 11.9063 31.5441 12.8626C32.1142 13.8005 32.3993 14.8948 32.3993 16.1454C32.3993 17.3776 32.1142 18.4718 31.5441 19.4281C30.974 20.3661 30.1372 21.1017 29.0337 21.635C27.9303 22.1684 26.551 22.435 24.8958 22.435H20.7855V18.8212H24.5648C25.1901 18.8212 25.7234 18.7293 26.1648 18.5454C26.6245 18.3431 26.974 18.058 27.2131 17.6902C27.4521 17.304 27.5717 16.8442 27.5717 16.3109C27.5717 15.7776 27.4521 15.327 27.2131 14.9592C26.974 14.573 26.6245 14.2787 26.1648 14.0764C25.7234 13.8741 25.1901 13.773 24.5648 13.773H20.7855Z" fill="#5F44CE"/>
-                                <path d="M22.6889 19.0142H27.5165L33.5579 27.7591H28.0958L22.6889 19.0142ZM17.8613 8.44873H22.5234V27.7591H17.8613V8.44873ZM20.7855 12.3936V8.44873H24.8958C26.551 8.44873 27.9303 8.7154 29.0337 9.24873C30.1372 9.78206 30.974 10.5269 31.5441 11.4832C32.1142 12.4211 32.3993 13.5154 32.3993 14.766C32.3993 15.9982 32.1142 17.0924 31.5441 18.0487C30.974 18.9867 30.1372 19.7223 29.0337 20.2556C27.9303 20.789 26.551 21.0556 24.8958 21.0556H20.7855V17.4418H24.5648C25.1901 17.4418 25.7234 17.3499 26.1648 17.166C26.6245 16.9637 26.974 16.6786 27.2131 16.3108C27.4521 15.9246 27.5717 15.4648 27.5717 14.9315C27.5717 14.3982 27.4521 13.9476 27.2131 13.5798C26.974 13.1936 26.6245 12.8993 26.1648 12.697C25.7234 12.4947 25.1901 12.3936 24.5648 12.3936H20.7855Z" fill="white"/>
-                              </svg>
-                        </div>
-                    </div>
-                    <div class="px-8 py-5 pb-4">
-                        <ul class="text-sm text-mainBlackColor flex flex-col">
-                            <li class="py-[6px] cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Reading & Writing: Fill in the blanks</span></li>
-                            <li class="py-[6px] cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Multiple Choice (Multiple)</span></li>
-                            <li class="py-[6px] cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Re-order Paragraphs</span></li>
-                            <li class="py-[6px] cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Reading: Fill in the blanks</span></li>
-                            <li class="py-[6px] cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Multiple Choice (Single)</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="flex flex-col">
-                    <div class="w-full bg-mainColor px-8 py-5 relative">
-                        <h1 class="text-mainBlackColor text-base font-bold">Listening</h1>
-                        <div class="absolute bottom-[-20px] right-6 h-16 w-16 rounded-full bg-white border-4 border-mainColor flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="50" viewBox="0 0 66 59" fill="none">
-                                <g filter="url(#filter0_d_362_1026)">
-                                  <path d="M57.827 28.9999C57.827 22.0494 55.2113 15.3836 50.5552 10.4688C45.8992 5.55407 39.5841 2.79297 32.9995 2.79297C26.4148 2.79297 20.0997 5.55407 15.4437 10.4688C10.7876 15.3836 8.17188 22.0494 8.17188 28.9999H12.8124C12.8124 23.3486 14.9393 17.9286 18.7251 13.9324C22.5109 9.93628 27.6455 7.69131 32.9995 7.69131C38.3534 7.69131 43.488 9.93628 47.2738 13.9324C51.0596 17.9286 53.1865 23.3486 53.1865 28.9999H57.827Z" fill="#12D3BF"/>
-                                  <path d="M12.7238 25.73C12.7238 25.4334 12.747 25.1437 12.7889 24.862C10.671 25.2 8.75749 26.3628 7.26342 28.0862C5.50767 30.1116 4.33092 32.9068 4.08353 36.0385C4.05139 36.4455 4.03418 36.8581 4.03418 37.2756C4.03418 43.6377 7.85846 48.9025 12.7889 49.6894C12.747 49.4076 12.7238 49.1178 12.7238 48.8213V25.73ZM58.7358 28.086C57.2418 26.3625 55.3284 25.2 53.2105 24.8618C53.2524 25.1436 53.2756 25.4334 53.2756 25.7297V48.8211C53.2756 49.1177 53.2524 49.4075 53.2105 49.6893C58.1409 48.9024 61.9652 43.6374 61.9652 37.2755C61.9652 36.858 61.948 36.4454 61.9158 36.0382C61.6684 32.9066 60.4917 30.1115 58.7358 28.086Z" fill="#FFB545"/>
-                                  <path d="M17.8049 23.3533C17.8049 23.0145 17.8275 22.6819 17.8682 22.3555C17.4547 22.1929 17.0107 22.1035 16.5481 22.1035H16.2992C14.3453 22.1035 12.7161 23.6826 12.3759 25.759C12.3332 26.0205 12.3096 26.2893 12.3096 26.5642V47.9874C12.3096 48.2624 12.3332 48.5312 12.3759 48.7928C12.7161 50.8692 14.3453 52.4482 16.2992 52.4482H16.5481C16.9871 52.4482 17.4094 52.3674 17.8049 52.2201V23.3533ZM53.6889 26.5643C53.6889 26.2893 53.6653 26.0206 53.6225 25.7591C53.2824 23.6827 51.6532 22.1037 49.6992 22.1037H49.4504C48.9878 22.1037 48.5438 22.1932 48.1303 22.3557C48.1711 22.682 48.1937 23.0147 48.1937 23.3534V52.2203C48.5892 52.3675 49.0114 52.4483 49.4504 52.4483H49.6992C51.6532 52.4483 53.2824 50.8692 53.6225 48.7929C53.6653 48.5314 53.6889 48.2626 53.6889 47.9875V26.5643Z" fill="#12D3BF"/>
-                                </g>
-                                <defs>
-                                  <filter id="filter0_d_362_1026" x="0.0341797" y="0.792969" width="65.9307" height="57.6553" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                    <feOffset dy="2"/>
-                                    <feGaussianBlur stdDeviation="2"/>
-                                    <feComposite in2="hardAlpha" operator="out"/>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_362_1026"/>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_362_1026" result="shape"/>
-                                  </filter>
-                                </defs>
-                              </svg>
-                        </div>
-                    </div>
-                    <div class="px-8 py-5 pb-4">
-                        <ul class="text-sm text-mainBlackColor flex flex-col">
-                            <li class="py-[6px] cursor-pointer flex items-center gap-x-3"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Summarize Written Text</span> <button class="px-1 py-0 bg-red-500 text-white text-[8px] font-bold rounded-[5px]">AI Score</button></li>
-                            <li class="py-[6px] cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Multiple Choice (Multiple)</span></li>
-                            <li class="py-[6px] cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Fill in the blanks</span></li>
-                            <li class="py-[6px] cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Highlight Correct Summary</span></li>
-                            <li class="py-[6px] cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Multiple Choice (Single)</span></li>
-                            <li class="py-[6px] cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Select Missing Word</span></li>
-                            <li class="py-[6px] cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Highlight Incorrect Words</span></li>
-                            <li class="py-[6px] cursor-pointer"><span class="hover:bg-mainColor hover:bg-opacity-[20%] p-1">Write From Dictation</span></li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <!-- DropDown End -->
-
         </div>
         
     <!-- NavBar End -->
+
+    <!-- Show PteKey Modal Start -->
+
+    <div class="hidden pteKeyModal">
+            <div class="fixed top-0 left-0 h-full w-full bg-opacity-[20%] bg-black z-30 flex justify-center items-center">
+                <div class="p-7 bg-white rounded-[10px] flex flex-col gap-y-3">
+                    <h1 class="flex items-center gap-x-3 text-mainBlackColor text-2xl font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 2.6665C13.3629 2.6665 10.785 3.44849 8.59236 4.91358C6.39971 6.37866 4.69074 8.46104 3.68157 10.8974C2.6724 13.3337 2.40836 16.0146 2.92283 18.601C3.4373 21.1875 4.70717 23.5632 6.57188 25.4279C8.43658 27.2926 10.8123 28.5625 13.3988 29.077C15.9852 29.5914 18.6661 29.3274 21.1024 28.3182C23.5388 27.3091 25.6211 25.6001 27.0862 23.4074C28.5513 21.2148 29.3333 18.6369 29.3333 15.9998C29.3333 14.2489 28.9884 12.5151 28.3184 10.8974C27.6483 9.27972 26.6662 7.80986 25.4281 6.57175C24.1899 5.33363 22.7201 4.35151 21.1024 3.68144C19.4847 3.01138 17.7509 2.6665 16 2.6665ZM16 26.6665C13.8903 26.6665 11.828 26.0409 10.0739 24.8688C8.31976 23.6968 6.95259 22.0309 6.14525 20.0818C5.33792 18.1327 5.12668 15.988 5.53826 13.9189C5.94983 11.8497 6.96573 9.94913 8.45749 8.45737C9.94925 6.96561 11.8499 5.9497 13.919 5.53813C15.9881 5.12655 18.1328 5.33779 20.0819 6.14512C22.031 6.95246 23.6969 8.31963 24.869 10.0738C26.041 11.8279 26.6666 13.8902 26.6666 15.9998C26.6666 18.8288 25.5428 21.5419 23.5424 23.5423C21.5421 25.5427 18.8289 26.6665 16 26.6665Z" fill="#49DEFF"/>
+                            <path d="M16 22.6667C16.7363 22.6667 17.3333 22.0697 17.3333 21.3333C17.3333 20.597 16.7363 20 16 20C15.2636 20 14.6666 20.597 14.6666 21.3333C14.6666 22.0697 15.2636 22.6667 16 22.6667Z" fill="#49DEFF"/>
+                            <path d="M16 9.3335C15.6463 9.3335 15.3072 9.47397 15.0572 9.72402C14.8071 9.97407 14.6666 10.3132 14.6666 10.6668V17.3335C14.6666 17.6871 14.8071 18.0263 15.0572 18.2763C15.3072 18.5264 15.6463 18.6668 16 18.6668C16.3536 18.6668 16.6927 18.5264 16.9428 18.2763C17.1928 18.0263 17.3333 17.6871 17.3333 17.3335V10.6668C17.3333 10.3132 17.1928 9.97407 16.9428 9.72402C16.6927 9.47397 16.3536 9.3335 16 9.3335Z" fill="#49DEFF"/>
+                          </svg>
+                          PTE Key
+                    </h1>
+                    <p class="text-mainBlackColor pl-9">You haven't signed in yet, please sign in.</p>
+                    <div class="flex justify-end">
+                    <a href="../Login">
+                        <button class="rounded-[5px] py-1 px-7 bg-mainColor text-white font-medium">Login</button>
+                    </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <!-- Show PteKey Modal End -->
 
     <!-- Main Section Start -->
 
@@ -306,6 +196,14 @@
         </div>
     
         <!-- Footer End -->
+
+        <script>
+
+            const onShowLoginModal = () => {
+                document.querySelector(".pteKeyModal").style.display="block"
+            }
+        
+        </script>
     
 </body>
 </html>
