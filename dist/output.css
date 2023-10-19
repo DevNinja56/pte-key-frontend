@@ -1066,6 +1066,10 @@ video {
   height: 110px;
 }
 
+.h-\[15px\]{
+  height: 15px;
+}
+
 .h-\[166px\]{
   height: 166px;
 }
@@ -1201,10 +1205,6 @@ video {
 
 .h-full{
   height: 100%;
-}
-
-.h-\[15px\]{
-  height: 15px;
 }
 
 .min-h-\[355px\]{
@@ -1445,10 +1445,6 @@ video {
 
 .w-\[67\%\]{
   width: 67%;
-}
-
-.w-\[70\%\]{
-  width: 70%;
 }
 
 .w-\[72\%\]{
@@ -3926,10 +3922,6 @@ html{
     height: 45px;
   }
 
-  .lg\:h-\[15px\]{
-    height: 15px;
-  }
-
   .lg\:min-h-\[100px\]{
     min-height: 100px;
   }
@@ -4024,10 +4016,6 @@ html{
 
   .lg\:w-auto{
     width: auto;
-  }
-
-  .lg\:w-\[14px\]{
-    width: 14px;
   }
 
   .lg\:min-w-\[400px\]{
@@ -4545,40 +4533,20 @@ html{
 }
 
 @media (min-width: 1536px){
+  .\32xl\:right-32{
+    right: 8rem;
+  }
+
   .\32xl\:top-10{
     top: 2.5rem;
-  }
-
-  .\32xl\:top-5{
-    top: 1.25rem;
-  }
-
-  .\32xl\:top-60{
-    top: 15rem;
-  }
-
-  .\32xl\:top-40{
-    top: 10rem;
-  }
-
-  .\32xl\:top-48{
-    top: 12rem;
   }
 
   .\32xl\:top-44{
     top: 11rem;
   }
 
-  .\32xl\:right-20{
-    right: 5rem;
-  }
-
-  .\32xl\:right-28{
-    right: 7rem;
-  }
-
-  .\32xl\:right-32{
-    right: 8rem;
+  .\32xl\:top-5{
+    top: 1.25rem;
   }
 
   .\32xl\:my-\[2rem\]{
@@ -4628,6 +4596,10 @@ html{
 
   .\32xl\:mt-\[3rem\]{
     margin-top: 3rem;
+  }
+
+  .\32xl\:h-10{
+    height: 2.5rem;
   }
 
   .\32xl\:h-12{
@@ -4702,12 +4674,8 @@ html{
     height: auto;
   }
 
-  .\32xl\:h-1{
-    height: 0.25rem;
-  }
-
-  .\32xl\:h-10{
-    height: 2.5rem;
+  .\32xl\:w-10{
+    width: 2.5rem;
   }
 
   .\32xl\:w-12{
@@ -4794,10 +4762,6 @@ html{
     width: 100%;
   }
 
-  .\32xl\:w-10{
-    width: 2.5rem;
-  }
-
   .\32xl\:min-w-\[100px\]{
     min-width: 100px;
   }
@@ -4838,6 +4802,11 @@ html{
     gap: 3rem;
   }
 
+  .\32xl\:gap-x-6{
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+
   .\32xl\:gap-y-20{
     row-gap: 5rem;
   }
@@ -4848,11 +4817,6 @@ html{
 
   .\32xl\:gap-y-8{
     row-gap: 2rem;
-  }
-
-  .\32xl\:gap-x-6{
-    -moz-column-gap: 1.5rem;
-         column-gap: 1.5rem;
   }
 
   .\32xl\:p-\[3\.1rem\]{
