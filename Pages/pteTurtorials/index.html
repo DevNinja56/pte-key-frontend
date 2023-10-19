@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,128 +9,214 @@
     <script defer src="../../main.js"></script>
 </head>
 </head>
+
 <body>
 
-        <!-- NavBar Start -->
+    <!-- NavBar Start -->
 
-        <div class="w-full relative">
-            <div class="max-w-[1180px] mx-auto px-2 flex items-center justify-between pt-[40px] pb-8 z-10">
-                <a href="/">
+    <div class="w-full relative">
+        <div
+            class="max-w-[1180px] 2xl:max-w-[2200px] mx-auto px-2 md:px-8 lg:px-2 flex items-center justify-between py-12 md:py-5 lg:pt-[40px] z-10 border-b border-gray-300 lg:border-none">
+            <a href="./index.html">
                 <div class="flex items-center gap-2">
-                    <img class="h-[45px] w-[45px]" src="../../assets/images/Logo.svg"/>
-                    <h1 class="text-3xl font-bold text-mainBlackColor">PTE Key</h1>
+                    <img class="h-[45px] w-[45px] 2xl:h-[100px] 2xl:w-[100px]" src="../../assets/images/Logo.svg" />
+                    <h1 class="text-3xl 2xl:text-6xl font-bold text-mainBlackColor">PTE Key</h1>
                 </div>
             </a>
-                <div class="flex items-center gap-[35px] z-10">
-                    <ul class="flex items-center gap-[35px] text-sm">
-                        <a href="/">
+            <div class="hidden lg:flex items-center gap-[35px] z-10">
+                <ul class="flex items-center gap-[35px] text-sm 2xl:text-3xl">
+                    <a href="/">
                         <li class="cursor-pointer">Home</li>
-                        </a>
-                        <li class="cursor-pointer" onclick="onShowLoginModal()">PTE Practice</li>
-                    <a href="../pteTurtorials">
+                    </a>
+                    <li class="cursor-pointer" onclick="onShowLoginModal()">PTE Practice</li>
+                    <a href="../../Pages/pteTurtorials">
                         <li class="cursor-pointer">PTE Guide</li>
-                        </a>
-                        <a href="../course">
+                    </a>
+                    <a href="../../Pages/course">
                         <li class="cursor-pointer">Tutorials</li>
-                        </a>
-                        <a href="../downloadApp">
+                    </a>
+                    <a href="../../Pages/downloadApp">
                         <li class="cursor-pointer">App</li>
-                        </a>
-                    </ul>
-                    <a href="../Login">
-                    <button class="py-[12px] px-[28px] rounded-[5px] bg-mainBlackColor text-white text-sm font-semibold">Login</button>
+                    </a>
+                </ul>
+                <a href="../../Pages/Login">
+                    <button
+                        class="py-[12px] px-[28px] rounded-[5px] bg-mainBlackColor text-white text-sm 2xl:text-3xl font-semibold">Login</button>
                 </a>
+            </div>
+            <button onclick="onShowSideBar()"
+                class="h-10 w-10 rounded-[10px] bg-mainBlackColor flex items-center justify-center cursor-pointer lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 36 37" fill="none">
+                    <path d="M30 11H6" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    <path d="M30 18.5H6" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    <path d="M30 26H6" stroke="white" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- sideBar Start -->
+
+        <div class="showSideBar hidden">
+            <div class="fixed top-0 left-0 h-full w-full bg-black bg-opacity-[20%] z-30 flex justify-end">
+                <div class="h-full w-[100%] md:w-[45%] bg-white">
+                    <div class="py-5 border-b border-gray-200 flex items-center justify-between px-7 mb-7">
+                        <div class="flex items-center gap-x-2">
+                            <img class="h-[32px] w-[32px] lg:h-[45px] lg:w-[45px]" src="../../assets/images/Logo.svg" />
+                            <h1 class="text-xl lg:text-3xl font-bold text-mainBlackColor">PTE Key</h1>
+                        </div>
+                        <button onclick="onHideSideBar()"
+                            class="flex items-center justify-center rounded-[5px] h-7 w-7 bg-mainBlackColor cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20"
+                                fill="none">
+                                <path d="M16.6667 3.33404L3.3334 16.6673M3.33334 3.33398L16.6667 16.6673" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex flex-col gap-y-[35px] text-mainBlackColor px-7 text-xl font-medium">
+                        <ul class="gap-y-[35px] flex flex-col">
+                            <a href="/">
+                                <li class="cursor-pointer">Home</li>
+                            </a>
+                            <li class="cursor-pointer" onclick="onShowLoginModal()">PTE Practice</li>
+                            <a href="../../Pages/pteTurtorials">
+                                <li class="cursor-pointer">PTE Guide</li>
+                            </a>
+                            <a href="../../Pages/course">
+                                <li class="cursor-pointer">Tutorials</li>
+                            </a>
+                            <a href="../../Pages/downloadApp">
+                                <li class="cursor-pointer">App</li>
+                            </a>
+                        </ul>
+                        <div>
+                            <a href="../../Pages/Login">
+                                <button
+                                    class="bg-mainBlackColor text-white rounded-[5px] py-3 px-8 font-semibold text-sm">Login</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
+
+        <!-- sideBar End -->
+
+    </div>
+
     <!-- NavBar End -->
 
-        <!-- Show PteKey Modal Start -->
+    <!-- Show PteKey Modal Start -->
 
-        <div class="hidden pteKeyModal">
-            <div class="fixed top-0 left-0 h-full w-full bg-opacity-[20%] bg-black z-30 flex justify-center items-center">
-                <div class="p-7 bg-white rounded-[10px] flex flex-col gap-y-3">
-                    <h1 class="flex items-center gap-x-3 text-mainBlackColor text-2xl font-bold">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="none">
-                            <path d="M16 2.6665C13.3629 2.6665 10.785 3.44849 8.59236 4.91358C6.39971 6.37866 4.69074 8.46104 3.68157 10.8974C2.6724 13.3337 2.40836 16.0146 2.92283 18.601C3.4373 21.1875 4.70717 23.5632 6.57188 25.4279C8.43658 27.2926 10.8123 28.5625 13.3988 29.077C15.9852 29.5914 18.6661 29.3274 21.1024 28.3182C23.5388 27.3091 25.6211 25.6001 27.0862 23.4074C28.5513 21.2148 29.3333 18.6369 29.3333 15.9998C29.3333 14.2489 28.9884 12.5151 28.3184 10.8974C27.6483 9.27972 26.6662 7.80986 25.4281 6.57175C24.1899 5.33363 22.7201 4.35151 21.1024 3.68144C19.4847 3.01138 17.7509 2.6665 16 2.6665ZM16 26.6665C13.8903 26.6665 11.828 26.0409 10.0739 24.8688C8.31976 23.6968 6.95259 22.0309 6.14525 20.0818C5.33792 18.1327 5.12668 15.988 5.53826 13.9189C5.94983 11.8497 6.96573 9.94913 8.45749 8.45737C9.94925 6.96561 11.8499 5.9497 13.919 5.53813C15.9881 5.12655 18.1328 5.33779 20.0819 6.14512C22.031 6.95246 23.6969 8.31963 24.869 10.0738C26.041 11.8279 26.6666 13.8902 26.6666 15.9998C26.6666 18.8288 25.5428 21.5419 23.5424 23.5423C21.5421 25.5427 18.8289 26.6665 16 26.6665Z" fill="#49DEFF"/>
-                            <path d="M16 22.6667C16.7363 22.6667 17.3333 22.0697 17.3333 21.3333C17.3333 20.597 16.7363 20 16 20C15.2636 20 14.6666 20.597 14.6666 21.3333C14.6666 22.0697 15.2636 22.6667 16 22.6667Z" fill="#49DEFF"/>
-                            <path d="M16 9.3335C15.6463 9.3335 15.3072 9.47397 15.0572 9.72402C14.8071 9.97407 14.6666 10.3132 14.6666 10.6668V17.3335C14.6666 17.6871 14.8071 18.0263 15.0572 18.2763C15.3072 18.5264 15.6463 18.6668 16 18.6668C16.3536 18.6668 16.6927 18.5264 16.9428 18.2763C17.1928 18.0263 17.3333 17.6871 17.3333 17.3335V10.6668C17.3333 10.3132 17.1928 9.97407 16.9428 9.72402C16.6927 9.47397 16.3536 9.3335 16 9.3335Z" fill="#49DEFF"/>
-                          </svg>
-                          PTE Key
-                    </h1>
-                    <p class="text-mainBlackColor pl-9">You haven't signed in yet, please sign in.</p>
-                    <div class="flex justify-end">
-                    <a href="../Login">
-                        <button class="rounded-[5px] py-1 px-7 bg-mainColor text-white font-medium">Login</button>
+    <div class="hidden pteKeyModal">
+        <div class="fixed top-0 left-0 h-full w-full bg-opacity-[20%] bg-black z-30 flex justify-center items-center">
+            <div class="p-7 bg-white rounded-[10px] flex flex-col gap-y-3 2xl:gap-y-8">
+                <h1 class="flex items-center gap-x-3 text-mainBlackColor text-2xl 2xl:text-3xl font-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="none"
+                        class="h-[24px] w-[24px] 2xl:h-[50px] 2xl:w-[50px]">
+                        <path
+                            d="M16 2.6665C13.3629 2.6665 10.785 3.44849 8.59236 4.91358C6.39971 6.37866 4.69074 8.46104 3.68157 10.8974C2.6724 13.3337 2.40836 16.0146 2.92283 18.601C3.4373 21.1875 4.70717 23.5632 6.57188 25.4279C8.43658 27.2926 10.8123 28.5625 13.3988 29.077C15.9852 29.5914 18.6661 29.3274 21.1024 28.3182C23.5388 27.3091 25.6211 25.6001 27.0862 23.4074C28.5513 21.2148 29.3333 18.6369 29.3333 15.9998C29.3333 14.2489 28.9884 12.5151 28.3184 10.8974C27.6483 9.27972 26.6662 7.80986 25.4281 6.57175C24.1899 5.33363 22.7201 4.35151 21.1024 3.68144C19.4847 3.01138 17.7509 2.6665 16 2.6665ZM16 26.6665C13.8903 26.6665 11.828 26.0409 10.0739 24.8688C8.31976 23.6968 6.95259 22.0309 6.14525 20.0818C5.33792 18.1327 5.12668 15.988 5.53826 13.9189C5.94983 11.8497 6.96573 9.94913 8.45749 8.45737C9.94925 6.96561 11.8499 5.9497 13.919 5.53813C15.9881 5.12655 18.1328 5.33779 20.0819 6.14512C22.031 6.95246 23.6969 8.31963 24.869 10.0738C26.041 11.8279 26.6666 13.8902 26.6666 15.9998C26.6666 18.8288 25.5428 21.5419 23.5424 23.5423C21.5421 25.5427 18.8289 26.6665 16 26.6665Z"
+                            fill="#49DEFF" />
+                        <path
+                            d="M16 22.6667C16.7363 22.6667 17.3333 22.0697 17.3333 21.3333C17.3333 20.597 16.7363 20 16 20C15.2636 20 14.6666 20.597 14.6666 21.3333C14.6666 22.0697 15.2636 22.6667 16 22.6667Z"
+                            fill="#49DEFF" />
+                        <path
+                            d="M16 9.3335C15.6463 9.3335 15.3072 9.47397 15.0572 9.72402C14.8071 9.97407 14.6666 10.3132 14.6666 10.6668V17.3335C14.6666 17.6871 14.8071 18.0263 15.0572 18.2763C15.3072 18.5264 15.6463 18.6668 16 18.6668C16.3536 18.6668 16.6927 18.5264 16.9428 18.2763C17.1928 18.0263 17.3333 17.6871 17.3333 17.3335V10.6668C17.3333 10.3132 17.1928 9.97407 16.9428 9.72402C16.6927 9.47397 16.3536 9.3335 16 9.3335Z"
+                            fill="#49DEFF" />
+                    </svg>
+                    PTE Key
+                </h1>
+                <p class="text-mainBlackColor pl-16 text-base 2xl:text-2xl">You haven't signed in yet, please sign in.
+                </p>
+                <div class="flex justify-end">
+                    <a href="../../Pages/Login">
+                        <button
+                            class="rounded-[5px] py-1 px-7 bg-mainColor text-white font-medium text-base 2xl:text-2xl">Login</button>
                     </a>
-                    </div>
                 </div>
             </div>
+        </div>
     </div>
-    
+
     <!-- Show PteKey Modal End -->
 
-    <div class="mb-[1200px] w-full h-[166px] 2xl:h-auto relative">
-        <img class="absolute top-0 left-0 h-[640px] w-full" src="../../assets/images/PteTurtorial/pteTurtorialBackground.png" />
+    <div class="mb-[1300px] md:mb-[850px] lg:mb-[1000px] 2xl:mb-[400px] w-full h-[166px] 2xl:h-auto relative">
+        <img class="absolute top-0 left-0 h-[640px] w-full"
+            src="../../assets/images/PteTurtorial/pteTurtorialBackground.png" />
         <div class="w-full">
-            <div class="max-w-[1180px] mx-auto px-2 flex gap-x-10 py-20">
-                <div class="p-4 bg-white bg-opacity-[93%] rounded-[30px] shadow-lg z-10 w-[20%] h-fit">
+            <div
+                class="max-w-[1180px] 2xl:max-w-[2200px] mx-auto px-2 md:px-8 lg:px-2 flex flex-col md:flex-row py-20 justify-between gap-y-[50px]">
+                <div
+                    class="p-4 bg-white bg-opacity-[93%] rounded-[30px] shadow-lg z-10 w-full md:w-[28%] lg:w-[20%] h-fit">
                     <a href="../pteTurtorial2">
-                    <h1 class="py-4 text-mainParaColor text-sm">
-                        Study Materials Download 
-                    </h1>
-                </a>
-                    <h1 class="py-4 text-mainParaColor text-sm flex justify-between items-center">
+                        <h1 class="py-4 2xl:py-8 text-mainParaColor text-sm 2xl:text-3xl">
+                            Study Materials Download
+                        </h1>
+                    </a>
+                    <h1 class="py-4 2xl:py-8 text-mainParaColor text-sm 2xl:text-3xl flex justify-between items-center">
                         About PTE
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M9.94439 11.6427L10.2979 11.9963L10.6515 11.6427L14.261 8.03324C14.2844 8.01164 14.3151 7.99973 14.347 8C14.3798 8.00029 14.4111 8.01344 14.4343 8.03661C14.4575 8.05979 14.4706 8.09114 14.4709 8.12391C14.4712 8.15579 14.4593 8.18654 14.4376 8.20989L10.3881 12.2594C10.3766 12.2709 10.363 12.28 10.3479 12.2862C10.3329 12.2924 10.3167 12.2955 10.3005 12.2955V12.2954L10.2944 12.2955C10.2784 12.2956 10.2626 12.2925 10.2479 12.2864L10.0577 12.7489L10.2479 12.2864C10.2331 12.2804 10.2197 12.2714 10.2085 12.2601L10.2077 12.2594L6.15824 8.20989C6.13664 8.18654 6.12473 8.15579 6.125 8.12391C6.12529 8.09114 6.13844 8.05979 6.16161 8.03661C6.18479 8.01344 6.21614 8.00029 6.24891 8C6.28079 7.99973 6.31154 8.01164 6.33489 8.03324L9.94439 11.6427Z" fill="#303030" stroke="#303030"/>
-                          </svg>
-                    </h1>
-                    <h1 class="py-4 text-mainParaColor text-sm flex justify-between items-center">
-                        Speaking Guide
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M9.94439 11.6427L10.2979 11.9963L10.6515 11.6427L14.261 8.03324C14.2844 8.01164 14.3151 7.99973 14.347 8C14.3798 8.00029 14.4111 8.01344 14.4343 8.03661C14.4575 8.05979 14.4706 8.09114 14.4709 8.12391C14.4712 8.15579 14.4593 8.18654 14.4376 8.20989L10.3881 12.2594C10.3766 12.2709 10.363 12.28 10.3479 12.2862C10.3329 12.2924 10.3167 12.2955 10.3005 12.2955V12.2954L10.2944 12.2955C10.2784 12.2956 10.2626 12.2925 10.2479 12.2864L10.0577 12.7489L10.2479 12.2864C10.2331 12.2804 10.2197 12.2714 10.2085 12.2601L10.2077 12.2594L6.15824 8.20989C6.13664 8.18654 6.12473 8.15579 6.125 8.12391C6.12529 8.09114 6.13844 8.05979 6.16161 8.03661C6.18479 8.01344 6.21614 8.00029 6.24891 8C6.28079 7.99973 6.31154 8.01164 6.33489 8.03324L9.94439 11.6427Z" fill="#303030" stroke="#303030"/>
+                            <path
+                                d="M9.94439 11.6427L10.2979 11.9963L10.6515 11.6427L14.261 8.03324C14.2844 8.01164 14.3151 7.99973 14.347 8C14.3798 8.00029 14.4111 8.01344 14.4343 8.03661C14.4575 8.05979 14.4706 8.09114 14.4709 8.12391C14.4712 8.15579 14.4593 8.18654 14.4376 8.20989L10.3881 12.2594C10.3766 12.2709 10.363 12.28 10.3479 12.2862C10.3329 12.2924 10.3167 12.2955 10.3005 12.2955V12.2954L10.2944 12.2955C10.2784 12.2956 10.2626 12.2925 10.2479 12.2864L10.0577 12.7489L10.2479 12.2864C10.2331 12.2804 10.2197 12.2714 10.2085 12.2601L10.2077 12.2594L6.15824 8.20989C6.13664 8.18654 6.12473 8.15579 6.125 8.12391C6.12529 8.09114 6.13844 8.05979 6.16161 8.03661C6.18479 8.01344 6.21614 8.00029 6.24891 8C6.28079 7.99973 6.31154 8.01164 6.33489 8.03324L9.94439 11.6427Z"
+                                fill="#303030" stroke="#303030" />
                         </svg>
                     </h1>
-                    <h1 class="py-4 text-mainParaColor text-sm flex justify-between items-center">
+                    <h1 class="py-4 2xl:py-8 text-mainParaColor text-sm 2xl:text-3xl flex justify-between items-center">
+                        Speaking Guide
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M9.94439 11.6427L10.2979 11.9963L10.6515 11.6427L14.261 8.03324C14.2844 8.01164 14.3151 7.99973 14.347 8C14.3798 8.00029 14.4111 8.01344 14.4343 8.03661C14.4575 8.05979 14.4706 8.09114 14.4709 8.12391C14.4712 8.15579 14.4593 8.18654 14.4376 8.20989L10.3881 12.2594C10.3766 12.2709 10.363 12.28 10.3479 12.2862C10.3329 12.2924 10.3167 12.2955 10.3005 12.2955V12.2954L10.2944 12.2955C10.2784 12.2956 10.2626 12.2925 10.2479 12.2864L10.0577 12.7489L10.2479 12.2864C10.2331 12.2804 10.2197 12.2714 10.2085 12.2601L10.2077 12.2594L6.15824 8.20989C6.13664 8.18654 6.12473 8.15579 6.125 8.12391C6.12529 8.09114 6.13844 8.05979 6.16161 8.03661C6.18479 8.01344 6.21614 8.00029 6.24891 8C6.28079 7.99973 6.31154 8.01164 6.33489 8.03324L9.94439 11.6427Z"
+                                fill="#303030" stroke="#303030" />
+                        </svg>
+                    </h1>
+                    <h1 class="py-4 2xl:py-8 text-mainParaColor text-sm 2xl:text-3xl flex justify-between items-center">
                         Writing Guide
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M9.94439 11.6427L10.2979 11.9963L10.6515 11.6427L14.261 8.03324C14.2844 8.01164 14.3151 7.99973 14.347 8C14.3798 8.00029 14.4111 8.01344 14.4343 8.03661C14.4575 8.05979 14.4706 8.09114 14.4709 8.12391C14.4712 8.15579 14.4593 8.18654 14.4376 8.20989L10.3881 12.2594C10.3766 12.2709 10.363 12.28 10.3479 12.2862C10.3329 12.2924 10.3167 12.2955 10.3005 12.2955V12.2954L10.2944 12.2955C10.2784 12.2956 10.2626 12.2925 10.2479 12.2864L10.0577 12.7489L10.2479 12.2864C10.2331 12.2804 10.2197 12.2714 10.2085 12.2601L10.2077 12.2594L6.15824 8.20989C6.13664 8.18654 6.12473 8.15579 6.125 8.12391C6.12529 8.09114 6.13844 8.05979 6.16161 8.03661C6.18479 8.01344 6.21614 8.00029 6.24891 8C6.28079 7.99973 6.31154 8.01164 6.33489 8.03324L9.94439 11.6427Z" fill="#303030" stroke="#303030"/>
-                          </svg>
+                            <path
+                                d="M9.94439 11.6427L10.2979 11.9963L10.6515 11.6427L14.261 8.03324C14.2844 8.01164 14.3151 7.99973 14.347 8C14.3798 8.00029 14.4111 8.01344 14.4343 8.03661C14.4575 8.05979 14.4706 8.09114 14.4709 8.12391C14.4712 8.15579 14.4593 8.18654 14.4376 8.20989L10.3881 12.2594C10.3766 12.2709 10.363 12.28 10.3479 12.2862C10.3329 12.2924 10.3167 12.2955 10.3005 12.2955V12.2954L10.2944 12.2955C10.2784 12.2956 10.2626 12.2925 10.2479 12.2864L10.0577 12.7489L10.2479 12.2864C10.2331 12.2804 10.2197 12.2714 10.2085 12.2601L10.2077 12.2594L6.15824 8.20989C6.13664 8.18654 6.12473 8.15579 6.125 8.12391C6.12529 8.09114 6.13844 8.05979 6.16161 8.03661C6.18479 8.01344 6.21614 8.00029 6.24891 8C6.28079 7.99973 6.31154 8.01164 6.33489 8.03324L9.94439 11.6427Z"
+                                fill="#303030" stroke="#303030" />
+                        </svg>
                     </h1>
-                    <h1 class="py-4 text-mainParaColor text-sm flex justify-between items-center">
+                    <h1 class="py-4 2xl:py-8 text-mainParaColor text-sm 2xl:text-3xl flex justify-between items-center">
                         Reading Guide
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M9.94439 11.6427L10.2979 11.9963L10.6515 11.6427L14.261 8.03324C14.2844 8.01164 14.3151 7.99973 14.347 8C14.3798 8.00029 14.4111 8.01344 14.4343 8.03661C14.4575 8.05979 14.4706 8.09114 14.4709 8.12391C14.4712 8.15579 14.4593 8.18654 14.4376 8.20989L10.3881 12.2594C10.3766 12.2709 10.363 12.28 10.3479 12.2862C10.3329 12.2924 10.3167 12.2955 10.3005 12.2955V12.2954L10.2944 12.2955C10.2784 12.2956 10.2626 12.2925 10.2479 12.2864L10.0577 12.7489L10.2479 12.2864C10.2331 12.2804 10.2197 12.2714 10.2085 12.2601L10.2077 12.2594L6.15824 8.20989C6.13664 8.18654 6.12473 8.15579 6.125 8.12391C6.12529 8.09114 6.13844 8.05979 6.16161 8.03661C6.18479 8.01344 6.21614 8.00029 6.24891 8C6.28079 7.99973 6.31154 8.01164 6.33489 8.03324L9.94439 11.6427Z" fill="#303030" stroke="#303030"/>
-                          </svg>
+                            <path
+                                d="M9.94439 11.6427L10.2979 11.9963L10.6515 11.6427L14.261 8.03324C14.2844 8.01164 14.3151 7.99973 14.347 8C14.3798 8.00029 14.4111 8.01344 14.4343 8.03661C14.4575 8.05979 14.4706 8.09114 14.4709 8.12391C14.4712 8.15579 14.4593 8.18654 14.4376 8.20989L10.3881 12.2594C10.3766 12.2709 10.363 12.28 10.3479 12.2862C10.3329 12.2924 10.3167 12.2955 10.3005 12.2955V12.2954L10.2944 12.2955C10.2784 12.2956 10.2626 12.2925 10.2479 12.2864L10.0577 12.7489L10.2479 12.2864C10.2331 12.2804 10.2197 12.2714 10.2085 12.2601L10.2077 12.2594L6.15824 8.20989C6.13664 8.18654 6.12473 8.15579 6.125 8.12391C6.12529 8.09114 6.13844 8.05979 6.16161 8.03661C6.18479 8.01344 6.21614 8.00029 6.24891 8C6.28079 7.99973 6.31154 8.01164 6.33489 8.03324L9.94439 11.6427Z"
+                                fill="#303030" stroke="#303030" />
+                        </svg>
                     </h1>
-                    <h1 class="py-4 text-mainParaColor text-sm flex justify-between items-center">
+                    <h1 class="py-4 2xl:py-8 text-mainParaColor text-sm 2xl:text-3xl flex justify-between items-center">
                         Listening Guide
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M9.94439 11.6427L10.2979 11.9963L10.6515 11.6427L14.261 8.03324C14.2844 8.01164 14.3151 7.99973 14.347 8C14.3798 8.00029 14.4111 8.01344 14.4343 8.03661C14.4575 8.05979 14.4706 8.09114 14.4709 8.12391C14.4712 8.15579 14.4593 8.18654 14.4376 8.20989L10.3881 12.2594C10.3766 12.2709 10.363 12.28 10.3479 12.2862C10.3329 12.2924 10.3167 12.2955 10.3005 12.2955V12.2954L10.2944 12.2955C10.2784 12.2956 10.2626 12.2925 10.2479 12.2864L10.0577 12.7489L10.2479 12.2864C10.2331 12.2804 10.2197 12.2714 10.2085 12.2601L10.2077 12.2594L6.15824 8.20989C6.13664 8.18654 6.12473 8.15579 6.125 8.12391C6.12529 8.09114 6.13844 8.05979 6.16161 8.03661C6.18479 8.01344 6.21614 8.00029 6.24891 8C6.28079 7.99973 6.31154 8.01164 6.33489 8.03324L9.94439 11.6427Z" fill="#303030" stroke="#303030"/>
-                          </svg>
+                            <path
+                                d="M9.94439 11.6427L10.2979 11.9963L10.6515 11.6427L14.261 8.03324C14.2844 8.01164 14.3151 7.99973 14.347 8C14.3798 8.00029 14.4111 8.01344 14.4343 8.03661C14.4575 8.05979 14.4706 8.09114 14.4709 8.12391C14.4712 8.15579 14.4593 8.18654 14.4376 8.20989L10.3881 12.2594C10.3766 12.2709 10.363 12.28 10.3479 12.2862C10.3329 12.2924 10.3167 12.2955 10.3005 12.2955V12.2954L10.2944 12.2955C10.2784 12.2956 10.2626 12.2925 10.2479 12.2864L10.0577 12.7489L10.2479 12.2864C10.2331 12.2804 10.2197 12.2714 10.2085 12.2601L10.2077 12.2594L6.15824 8.20989C6.13664 8.18654 6.12473 8.15579 6.125 8.12391C6.12529 8.09114 6.13844 8.05979 6.16161 8.03661C6.18479 8.01344 6.21614 8.00029 6.24891 8C6.28079 7.99973 6.31154 8.01164 6.33489 8.03324L9.94439 11.6427Z"
+                                fill="#303030" stroke="#303030" />
+                        </svg>
                     </h1>
                 </div>
-                <div class="w-[80%] py-12 px-16 z-10 bg-white bg-opacity-[93%] rounded-[30px] flex flex-col items-center shadow-lg">
+                <div
+                    class="w-full md:w-[70%] lg:w-[77%] py-12 px-4 lg:px-16 z-10 bg-white bg-opacity-[93%] rounded-[30px] flex flex-col items-center shadow-lg">
                     <div class="flex flex-col items-center gap-y-4 mb-10">
-                        <h1 class="text-mainBlackColor text-sm font-semibold">PTE Score Report</h1>
-                        <div class="text-mainBlackColor text-3xl font-semibold relative">
-                            <svg class="absolute left-[-6px] top-[-4px]" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 38 38" fill="none">
-                                <circle cx="19" cy="19" r="19" fill="#49DEFF"/>
-                              </svg>
+                        <h1 class="text-mainBlackColor text-base lg:text-sm 2xl:text-3xl font-semibold">PTE Score Report</h1>
+                        <div class="text-mainBlackColor text-lg md:text-3xl 2xl:text-5xl font-semibold relative">
+                            <svg class="absolute left-[-6px] top-[-4px]" xmlns="http://www.w3.org/2000/svg" width="28"
+                                height="28" viewBox="0 0 38 38" fill="none">
+                                <circle cx="19" cy="19" r="19" fill="#49DEFF" />
+                            </svg>
                             <p class="z-10 sticky">PTE's Integrated Score System</p>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-y-5 text-mainBlackColor mb-8">
+                    <div class="flex flex-col gap-y-5 text-mainBlackColor mb-8 text-sm 2xl:text-2xl lg:text-base">
                         <p>
-                            PTE Integrated Score System: some question types of PTE test more than one section (listening, speaking, reading and writing).
-                            For example, Read Aloud (RA), the first question type in the Speaking Section, tests not only speaking but also reading. This 
+                            PTE Integrated Score System: some question types of PTE test more than one section
+                            (listening, speaking, reading and writing).
+                            For example, Read Aloud (RA), the first question type in the Speaking Section, tests not
+                            only speaking but also reading. This
                             scoring system brings more objectiveness and comprehensiveness.
                         </p>
                         <p>Below is a complete breakdown of PTE’s Integrated Score System by PTEKey:</p>
                     </div>
-                    <img src="../../assets/images/PteTurtorial/APEUni PTE Score Breakdown Table 1.svg"/>
+                    <img src="../../assets/images/PteTurtorial/APEUni PTE Score Breakdown Table 1.svg" />
                 </div>
             </div>
         </div>
@@ -137,98 +224,147 @@
 
     <!-- Footer Start -->
 
-        <div class="w-full relative bg-mainBlackColor">
-            <div class="max-w-[1210px] mx-auto px-2">
-            <div class="relative w-full top-[-150px]">
-                <img class="absolute top-0 left-0 h-[306px]" src="../../assets/images/Home/Footer Pattern.png"/>
-                <div class="w-full flex items-center justify-around z-10 h-full pt-20">
-                    <div class="flex flex-col z-10">
-                        <h1 class="text-4xl text-mainBlackColor font-bold">Still have questions?<br />
+    <div class="w-full relative bg-mainBlackColor">
+        <div class="max-w-[1180px] lg:max-w-[1210px] 2xl:max-w-[2200px] mx-auto px-2 md:px-8 lg:px-2">
+            <div class="relative w-full top-[-60px]">
+                <img class="absolute top-0 left-0 h-[300px] md:h-[151px] w-full lg:h-[306px]"
+                    src="../../assets/images/Home/Footer Pattern.png" />
+                <div
+                    class="w-full flex flex-col md:flex-row items-center justify-around z-10 h-full pt-10 md:pt-6 2xl:pt-16 lg:pt-20 md:gap-0 gap-y-8">
+                    <div class="flex flex-col z-10 gap-y-3 md:gap-0">
+                        <h1
+                            class="text-2xl lg:text-4xl 2xl:text-5xl text-mainBlackColor font-bold 2xl:mb-5 text-center md:text-center">
+                            Still have questions?<br />
                             We're here to help.</h1>
-                            <p class="text-2xl text-mainBlackColor">Get in touch with our experts today.</p>
+                        <p class="text-base lg:text-2xl 2xl:text-3xl text-mainBlackColor">Get in touch with our experts
+                            today.</p>
                     </div>
-                    <button class="px-[103px] py-[23px] h-fit bg-mainBlackColor rounded-[10px] text-white text-xl font-semibold z-10">Contact Us</button>
+                    <button
+                        class="px-10 lg:px-[103px] py-3 md:py-4 lg:py-[23px] h-fit bg-mainBlackColor rounded-[10px] text-white text-xl 2xl:text-4xl font-semibold z-10">Contact
+                        Us</button>
                 </div>
             </div>
-            <div class="max-w-[990px] mx-auto px-2 pt-16">
-                <div class="w-full flex justify-between mb-12">
+            <div class="max-w-[1180px] lg:max-w-[990px] 2xl:max-w-[2200px] mx-auto px-2 md:px-8 lg:px-2 pt-16">
+                <div class="w-full flex flex-col md:flex-row justify-between mb-12 gap-8 md:gap-0">
                     <div class="flex items-center gap-2">
-                    <img class="h-[38px] w-[38px]" src="../../assets/images/Logo.svg"/>
-                    <h1 class="text-white text-3xl font-bold">PTE Key</h1>
-                </div>
-                <div class="flex items-center gap-[25px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23" fill="none">
-                        <path d="M16.3383 2.74907C17.5671 2.7526 18.7445 3.22389 19.6134 4.06001C20.4823 4.89612 20.9721 6.02913 20.9757 7.21157V16.1356C20.9721 17.3181 20.4823 18.4511 19.6134 19.2872C18.7445 20.1233 17.5671 20.5946 16.3383 20.5981H7.06439C5.8356 20.5946 4.65817 20.1233 3.78928 19.2872C2.92038 18.4511 2.43062 17.3181 2.42695 16.1356V7.21157C2.43062 6.02913 2.92038 4.89612 3.78928 4.06001C4.65817 3.22389 5.8356 2.7526 7.06439 2.74907H16.3383ZM16.3383 0.964355H7.06439C3.49365 0.964355 0.572266 3.77553 0.572266 7.21157V16.1356C0.572266 19.5717 3.49365 22.3828 7.06439 22.3828H16.3383C19.909 22.3828 22.8304 19.5717 22.8304 16.1356V7.21157C22.8304 3.77553 19.909 0.964355 16.3383 0.964355Z" fill="white"/>
-                        <path d="M17.7295 7.21198C17.4543 7.21198 17.1854 7.13347 16.9566 6.98637C16.7278 6.83928 16.5495 6.63021 16.4442 6.3856C16.3389 6.141 16.3114 5.87184 16.3651 5.61216C16.4187 5.35249 16.5512 5.11397 16.7458 4.92675C16.9403 4.73954 17.1882 4.61204 17.4581 4.56039C17.7279 4.50874 18.0076 4.53525 18.2618 4.63657C18.516 4.73789 18.7333 4.90947 18.8862 5.12961C19.039 5.34975 19.1206 5.60856 19.1206 5.87332C19.121 6.04922 19.0853 6.22347 19.0155 6.38605C18.9457 6.54863 18.8433 6.69636 18.714 6.82074C18.5848 6.94512 18.4313 7.04371 18.2623 7.11085C18.0933 7.17799 17.9123 7.21236 17.7295 7.21198ZM11.7014 8.1041C12.4351 8.1041 13.1524 8.31347 13.7625 8.70573C14.3726 9.098 14.8481 9.65554 15.1288 10.3079C15.4096 10.9602 15.4831 11.678 15.34 12.3705C15.1968 13.0629 14.8435 13.699 14.3246 14.1983C13.8058 14.6976 13.1448 15.0376 12.4251 15.1753C11.7055 15.3131 10.9596 15.2424 10.2817 14.9722C9.60379 14.702 9.02439 14.2444 8.61675 13.6573C8.2091 13.0703 7.99152 12.3801 7.99152 11.674C7.99258 10.7275 8.38377 9.82008 9.07928 9.15081C9.77478 8.48155 10.7178 8.10511 11.7014 8.1041ZM11.7014 6.31938C10.6008 6.31938 9.52497 6.63342 8.60989 7.2218C7.69481 7.81017 6.98159 8.64645 6.56042 9.62488C6.13925 10.6033 6.02906 11.6799 6.24376 12.7186C6.45847 13.7573 6.98844 14.7114 7.76666 15.4603C8.54487 16.2091 9.53638 16.7191 10.6158 16.9257C11.6952 17.1323 12.8141 17.0263 13.8308 16.621C14.8476 16.2157 15.7167 15.5294 16.3281 14.6489C16.9396 13.7683 17.2659 12.733 17.2659 11.674C17.2659 10.2539 16.6797 8.8919 15.6361 7.88771C14.5926 6.88353 13.1772 6.31938 11.7014 6.31938Z" fill="white"/>
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 24 23" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8304 11.7384C23.8304 5.78996 18.6811 0.966797 12.3304 0.966797C5.97977 0.966797 0.830444 5.78996 0.830444 11.7384C0.830444 17.1145 5.03513 21.5708 10.5336 22.3796V14.853H7.61288V11.7384H10.5336V9.36526C10.5336 6.66611 12.2509 5.17396 14.8774 5.17396C16.1357 5.17396 17.4521 5.38458 17.4521 5.38458V8.03564H16.0012C14.5735 8.03564 14.1268 8.86563 14.1268 9.7187V11.7384H17.316L16.8067 14.853H14.1273V22.3806C19.6258 21.5722 23.8304 17.116 23.8304 11.7384Z" fill="white"/>
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 23 18" fill="none">
-                        <path d="M22.3015 2.12514C21.4961 2.47485 20.6439 2.70524 19.7719 2.80904C20.6883 2.27282 21.3775 1.42093 21.7102 0.413152C20.8438 0.919413 19.8974 1.27463 18.9118 1.46359C18.4967 1.0289 17.9975 0.683093 17.4445 0.447188C16.8916 0.211283 16.2964 0.0902057 15.6951 0.0913162C13.2608 0.0913162 11.2909 2.03127 11.2909 4.42269C11.2892 4.75533 11.3273 5.08697 11.4045 5.41055C9.65894 5.32877 7.94968 4.8838 6.38607 4.1041C4.82247 3.32439 3.43895 2.22712 2.32402 0.882496C1.93288 1.54142 1.72603 2.29323 1.72507 3.05936C1.72507 4.56126 2.50921 5.88883 3.69325 6.6666C2.99174 6.64996 2.30461 6.46442 1.69018 6.12574V6.17937C1.69018 8.28025 3.21105 10.028 5.22396 10.4258C4.84544 10.5267 4.45537 10.5777 4.06363 10.5778C3.78566 10.5783 3.50832 10.5513 3.23565 10.4973C3.79524 12.2183 5.42391 13.4698 7.35317 13.5056C5.78551 14.7129 3.86082 15.3654 1.88163 15.3606C1.53032 15.3601 1.17933 15.3392 0.830444 15.2981C2.84388 16.5828 5.18435 17.2624 7.57325 17.2559C15.6857 17.2559 20.1177 10.6538 20.1177 4.92779C20.1177 4.74005 20.1128 4.55232 20.1038 4.36905C20.9641 3.75759 21.7083 2.99772 22.3015 2.12514Z" fill="white"/>
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23" fill="none">
-                        <path d="M20.3119 0.798828H2.15997C1.16811 0.798828 0.301514 1.5125 0.301514 2.4927V20.685C0.301514 21.6705 1.16811 22.5488 2.15997 22.5488H20.3066C21.3038 22.5488 22.0514 21.6647 22.0514 20.685V2.4927C22.0573 1.5125 21.3038 0.798828 20.3119 0.798828ZM7.04351 18.9285H3.92763V9.24052H7.04351V18.9285ZM5.59335 7.76754H5.57102C4.57382 7.76754 3.92812 7.02523 3.92812 6.096C3.92812 5.14979 4.59081 4.42495 5.61034 4.42495C6.62987 4.42495 7.25372 5.14444 7.27606 6.096C7.27557 7.02523 6.62987 7.76754 5.59335 7.76754ZM18.4311 18.9285H15.3153V13.6313C15.3153 12.3622 14.8618 11.4951 13.7345 11.4951C12.8733 11.4951 12.3635 12.0777 12.1368 12.6453C12.0518 12.8492 12.029 13.1269 12.029 13.4104V18.9285H8.91313V9.24052H12.029V10.5887C12.4824 9.94302 13.1908 9.0138 14.839 9.0138C16.8844 9.0138 18.4316 10.362 18.4316 13.2686L18.4311 18.9285Z" fill="white"/>
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 27 20" fill="none">
-                        <path d="M25.8844 4.36905C25.8844 2.14255 24.2033 0.351453 22.1261 0.351453C19.3125 0.223306 16.443 0.173828 13.5105 0.173828H12.5963C9.67094 0.173828 6.79636 0.223306 3.98273 0.351948C1.91059 0.351948 0.229518 2.15294 0.229518 4.37944C0.102549 6.14036 0.0487142 7.90177 0.0517615 9.66318C0.0466827 11.4246 0.104242 13.1876 0.22444 14.9524C0.22444 17.1789 1.90551 18.9848 3.97765 18.9848C6.93349 19.1184 9.96551 19.1778 13.0483 19.1728C16.1362 19.1827 19.1598 19.12 22.119 18.9848C24.1962 18.9848 25.8773 17.1789 25.8773 14.9524C25.9992 13.186 26.055 11.4246 26.05 9.65823C26.0615 7.89682 26.0063 6.13376 25.8844 4.36905ZM10.5648 14.517V4.79456L17.929 9.65328L10.5648 14.517Z" fill="white"/>
-                      </svg>
-                </div>
-                </div>
-                <div class="flex items-center py-2 w-full border-t border-b border-zinc-600 justify-between mb-4">
-                    <p class="text-white font-medium text-xl w-[18%]">Pearson PTE</p>
-                    <p class="text-white font-medium text-xl w-[18%]">PTE Course</p>
-                    <p class="text-white font-medium text-xl w-[18%]">Contact Us</p>
-                    <div class="text-white font-medium text-xl flex items-center justify-between w-[40%]">Our Latest News 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
-                        <circle cx="21.3662" cy="21.4238" r="20" transform="rotate(-90 21.3662 21.4238)" stroke="#4A4A4A"/>
-                        <path d="M15.3662 23.4238L21.3662 17.4238L27.3662 23.4238" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                        <img class="h-[38px] w-[38px] 2xl:h-[60px] 2xl:w-[60px]" src="../../assets/images/Logo.svg" />
+                        <h1 class="text-white text-3xl 2xl:text-5xl font-bold">PTE Key</h1>
+                    </div>
+                    <div class="flex items-center gap-[25px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23" fill="none"
+                            class="h-5 w-5 2xl:h-[40px] 2xl:w-[40px]">
+                            <path
+                                d="M16.3383 2.74907C17.5671 2.7526 18.7445 3.22389 19.6134 4.06001C20.4823 4.89612 20.9721 6.02913 20.9757 7.21157V16.1356C20.9721 17.3181 20.4823 18.4511 19.6134 19.2872C18.7445 20.1233 17.5671 20.5946 16.3383 20.5981H7.06439C5.8356 20.5946 4.65817 20.1233 3.78928 19.2872C2.92038 18.4511 2.43062 17.3181 2.42695 16.1356V7.21157C2.43062 6.02913 2.92038 4.89612 3.78928 4.06001C4.65817 3.22389 5.8356 2.7526 7.06439 2.74907H16.3383ZM16.3383 0.964355H7.06439C3.49365 0.964355 0.572266 3.77553 0.572266 7.21157V16.1356C0.572266 19.5717 3.49365 22.3828 7.06439 22.3828H16.3383C19.909 22.3828 22.8304 19.5717 22.8304 16.1356V7.21157C22.8304 3.77553 19.909 0.964355 16.3383 0.964355Z"
+                                fill="white" />
+                            <path
+                                d="M17.7295 7.21198C17.4543 7.21198 17.1854 7.13347 16.9566 6.98637C16.7278 6.83928 16.5495 6.63021 16.4442 6.3856C16.3389 6.141 16.3114 5.87184 16.3651 5.61216C16.4187 5.35249 16.5512 5.11397 16.7458 4.92675C16.9403 4.73954 17.1882 4.61204 17.4581 4.56039C17.7279 4.50874 18.0076 4.53525 18.2618 4.63657C18.516 4.73789 18.7333 4.90947 18.8862 5.12961C19.039 5.34975 19.1206 5.60856 19.1206 5.87332C19.121 6.04922 19.0853 6.22347 19.0155 6.38605C18.9457 6.54863 18.8433 6.69636 18.714 6.82074C18.5848 6.94512 18.4313 7.04371 18.2623 7.11085C18.0933 7.17799 17.9123 7.21236 17.7295 7.21198ZM11.7014 8.1041C12.4351 8.1041 13.1524 8.31347 13.7625 8.70573C14.3726 9.098 14.8481 9.65554 15.1288 10.3079C15.4096 10.9602 15.4831 11.678 15.34 12.3705C15.1968 13.0629 14.8435 13.699 14.3246 14.1983C13.8058 14.6976 13.1448 15.0376 12.4251 15.1753C11.7055 15.3131 10.9596 15.2424 10.2817 14.9722C9.60379 14.702 9.02439 14.2444 8.61675 13.6573C8.2091 13.0703 7.99152 12.3801 7.99152 11.674C7.99258 10.7275 8.38377 9.82008 9.07928 9.15081C9.77478 8.48155 10.7178 8.10511 11.7014 8.1041ZM11.7014 6.31938C10.6008 6.31938 9.52497 6.63342 8.60989 7.2218C7.69481 7.81017 6.98159 8.64645 6.56042 9.62488C6.13925 10.6033 6.02906 11.6799 6.24376 12.7186C6.45847 13.7573 6.98844 14.7114 7.76666 15.4603C8.54487 16.2091 9.53638 16.7191 10.6158 16.9257C11.6952 17.1323 12.8141 17.0263 13.8308 16.621C14.8476 16.2157 15.7167 15.5294 16.3281 14.6489C16.9396 13.7683 17.2659 12.733 17.2659 11.674C17.2659 10.2539 16.6797 8.8919 15.6361 7.88771C14.5926 6.88353 13.1772 6.31938 11.7014 6.31938Z"
+                                fill="white" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 24 23" fill="none"
+                            class="h-5 w-5 2xl:h-[40px] 2xl:w-[40px]">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.8304 11.7384C23.8304 5.78996 18.6811 0.966797 12.3304 0.966797C5.97977 0.966797 0.830444 5.78996 0.830444 11.7384C0.830444 17.1145 5.03513 21.5708 10.5336 22.3796V14.853H7.61288V11.7384H10.5336V9.36526C10.5336 6.66611 12.2509 5.17396 14.8774 5.17396C16.1357 5.17396 17.4521 5.38458 17.4521 5.38458V8.03564H16.0012C14.5735 8.03564 14.1268 8.86563 14.1268 9.7187V11.7384H17.316L16.8067 14.853H14.1273V22.3806C19.6258 21.5722 23.8304 17.116 23.8304 11.7384Z"
+                                fill="white" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 23 18" fill="none"
+                            class="h-5 w-5 2xl:h-[40px] 2xl:w-[40px]">
+                            <path
+                                d="M22.3015 2.12514C21.4961 2.47485 20.6439 2.70524 19.7719 2.80904C20.6883 2.27282 21.3775 1.42093 21.7102 0.413152C20.8438 0.919413 19.8974 1.27463 18.9118 1.46359C18.4967 1.0289 17.9975 0.683093 17.4445 0.447188C16.8916 0.211283 16.2964 0.0902057 15.6951 0.0913162C13.2608 0.0913162 11.2909 2.03127 11.2909 4.42269C11.2892 4.75533 11.3273 5.08697 11.4045 5.41055C9.65894 5.32877 7.94968 4.8838 6.38607 4.1041C4.82247 3.32439 3.43895 2.22712 2.32402 0.882496C1.93288 1.54142 1.72603 2.29323 1.72507 3.05936C1.72507 4.56126 2.50921 5.88883 3.69325 6.6666C2.99174 6.64996 2.30461 6.46442 1.69018 6.12574V6.17937C1.69018 8.28025 3.21105 10.028 5.22396 10.4258C4.84544 10.5267 4.45537 10.5777 4.06363 10.5778C3.78566 10.5783 3.50832 10.5513 3.23565 10.4973C3.79524 12.2183 5.42391 13.4698 7.35317 13.5056C5.78551 14.7129 3.86082 15.3654 1.88163 15.3606C1.53032 15.3601 1.17933 15.3392 0.830444 15.2981C2.84388 16.5828 5.18435 17.2624 7.57325 17.2559C15.6857 17.2559 20.1177 10.6538 20.1177 4.92779C20.1177 4.74005 20.1128 4.55232 20.1038 4.36905C20.9641 3.75759 21.7083 2.99772 22.3015 2.12514Z"
+                                fill="white" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23" fill="none"
+                            class="h-5 w-5 2xl:h-[40px] 2xl:w-[40px]">
+                            <path
+                                d="M20.3119 0.798828H2.15997C1.16811 0.798828 0.301514 1.5125 0.301514 2.4927V20.685C0.301514 21.6705 1.16811 22.5488 2.15997 22.5488H20.3066C21.3038 22.5488 22.0514 21.6647 22.0514 20.685V2.4927C22.0573 1.5125 21.3038 0.798828 20.3119 0.798828ZM7.04351 18.9285H3.92763V9.24052H7.04351V18.9285ZM5.59335 7.76754H5.57102C4.57382 7.76754 3.92812 7.02523 3.92812 6.096C3.92812 5.14979 4.59081 4.42495 5.61034 4.42495C6.62987 4.42495 7.25372 5.14444 7.27606 6.096C7.27557 7.02523 6.62987 7.76754 5.59335 7.76754ZM18.4311 18.9285H15.3153V13.6313C15.3153 12.3622 14.8618 11.4951 13.7345 11.4951C12.8733 11.4951 12.3635 12.0777 12.1368 12.6453C12.0518 12.8492 12.029 13.1269 12.029 13.4104V18.9285H8.91313V9.24052H12.029V10.5887C12.4824 9.94302 13.1908 9.0138 14.839 9.0138C16.8844 9.0138 18.4316 10.362 18.4316 13.2686L18.4311 18.9285Z"
+                                fill="white" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 27 20" fill="none"
+                            class="h-5 w-5 2xl:h-[40px] 2xl:w-[40px]">
+                            <path
+                                d="M25.8844 4.36905C25.8844 2.14255 24.2033 0.351453 22.1261 0.351453C19.3125 0.223306 16.443 0.173828 13.5105 0.173828H12.5963C9.67094 0.173828 6.79636 0.223306 3.98273 0.351948C1.91059 0.351948 0.229518 2.15294 0.229518 4.37944C0.102549 6.14036 0.0487142 7.90177 0.0517615 9.66318C0.0466827 11.4246 0.104242 13.1876 0.22444 14.9524C0.22444 17.1789 1.90551 18.9848 3.97765 18.9848C6.93349 19.1184 9.96551 19.1778 13.0483 19.1728C16.1362 19.1827 19.1598 19.12 22.119 18.9848C24.1962 18.9848 25.8773 17.1789 25.8773 14.9524C25.9992 13.186 26.055 11.4246 26.05 9.65823C26.0615 7.89682 26.0063 6.13376 25.8844 4.36905ZM10.5648 14.517V4.79456L17.929 9.65328L10.5648 14.517Z"
+                                fill="white" />
+                        </svg>
                     </div>
                 </div>
-                <div class="flex py-[17px] w-full justify-between mb-12">
-                    <ul class="text-white text-sm w-[18%] flex flex-col gap-3">
-                        <li>Pearson Official Website</li>
-                        <li>Pearson PTE Mock Tests</li>
-                        <li>Book PTE Tests</li>
-                        <li>Contact Pearson PTE</li>
-                    </ul>
-                    <ul class="text-white text-sm w-[18%] flex flex-col gap-3">
-                        <li>PTE Speaking Course</li>
-                        <li>PTE Writing Course</li>
-                        <li>PTE Reading Course</li>
-                        <li>PTE Listening Course</li>
-                    </ul>                
-                    <div class="w-[18%] flex flex-col">
-                        <div class="py-3 px-5 border-t border-b border-r border-zinc-600 rounded-[20px] flex flex-col gap-y-2 mb-5">
-                            <p class="text-white text-xs">1700 W Blancke St, kiyev </p>
-                            <p class="text-white text-xs">1700 W Blancke St, kiyev </p>
-                        </div>
-                        <div class="py-3 px-5 border-t border-b border-r border-zinc-600 rounded-[20px] flex flex-col gap-y-2">
-                            <p class="text-white text-xs">+3255 456 789</p>
-                            <p class="text-white text-xs">mail@primarily.com</p>
+                <div class="flex flex-wrap py-2 w-full justify-between mb-10 gap-y-10 2xl:gap-y-20 lg:gap-0">
+                    <div class="w-[50%] lg:w-[20%] flex flex-col gap-y-8">
+                        <p class="text-white font-medium text-xl 2xl:text-3xl border-t border-b border-zinc-600 py-3">
+                            Pearson PTE</p>
+                        <ul class="text-white text-sm 2xl:text-xl flex flex-col gap-3">
+                            <li>Pearson Official Website</li>
+                            <li>Pearson PTE Mock Tests</li>
+                            <li>Book PTE Tests</li>
+                            <li>Contact Pearson PTE</li>
+                        </ul>
+                    </div>
+                    <div class="w-[50%] lg:w-[20%] flex flex-col gap-y-8">
+                        <p class="text-white font-medium text-xl 2xl:text-3xl border-t border-b border-zinc-600 py-3">
+                            PTE Course</p>
+                        <ul class="text-white text-sm 2xl:text-xl flex flex-col gap-3">
+                            <li>PTE Speaking Course</li>
+                            <li>PTE Writing Course</li>
+                            <li>PTE Reading Course</li>
+                            <li>PTE Listening Course</li>
+                        </ul>
+                    </div>
+                    <div class="w-[100%] lg:w-[20%] flex flex-col gap-y-8">
+                        <p class="text-white font-medium text-xl 2xl:text-3xl border-t border-b border-zinc-600 py-3">
+                            Contact Us</p>
+                        <div class="flex flex-col w-[80%]">
+                            <div
+                                class="py-3 px-2 border-t border-b border-r border-zinc-600 rounded-[20px] flex flex-col gap-y-2 mb-5">
+                                <p class="text-white text-xs 2xl:text-xl">1700 W Blancke St, kiyev </p>
+                                <p class="text-white text-xs 2xl:text-xl">1700 W Blancke St, kiyev </p>
+                            </div>
+                            <div
+                                class="py-3 px-2 border-t border-b border-r border-zinc-600 rounded-[20px] flex flex-col gap-y-2">
+                                <p class="text-white text-xs 2xl:text-xl">+3255 456 789</p>
+                                <p class="text-white text-xs 2xl:text-xl">mail@primarily.com</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-[40%]">
-                        <img src="../../assets/images/Home/footer Image.svg"/>
+                    <div class="flex flex-col gap-y-8 w-[100%] lg:w-[40%]">
+                        <div
+                            class="text-white font-medium text-xl 2xl:text-3xl flex items-center justify-between border-t border-b border-zinc-600 py-3">
+                            Our Latest News
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 42 42"
+                                fill="none">
+                                <circle cx="21.3662" cy="21.4238" r="20" transform="rotate(-90 21.3662 21.4238)"
+                                    stroke="#4A4A4A" />
+                                <path d="M15.3662 23.4238L21.3662 17.4238L27.3662 23.4238" stroke="white"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="w-full">
+                            <img src="../../assets/images/Home/footer Image.svg" />
+                        </div>
                     </div>
                 </div>
                 <div class="w-full border-t border-zinc-600 flex justify-center py-5">
-                    <p class="text-white text-sm">Copyright©2023 PTE Key</p>
+                    <p class="text-white text-sm 2xl:text-xl">Copyright©2023 PTE Key</p>
                 </div>
             </div>
         </div>
-        </div>
-    
+    </div>
+
     <!-- Footer End -->
 
     <script>
 
         const onShowLoginModal = () => {
-            document.querySelector(".pteKeyModal").style.display="block"
+            document.querySelector(".pteKeyModal").style.display = "block"
         }
-    
-        </script>
-    
+
+        const onShowSideBar = () => {
+            document.querySelector(".showSideBar").style.display = "block"
+        }
+
+        const onHideSideBar = () => {
+            document.querySelector(".showSideBar").style.display = "none"
+        }
+
+    </script>
+
 </body>
+
 </html>

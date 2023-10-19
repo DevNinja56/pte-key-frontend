@@ -1,64 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PTE</title>
     <link rel="stylesheet" href="../../dist/output.css">
 </head>
+
 <body>
 
     <!-- Forgot Pass Screen Start -->
 
-    <div class="w-full relative mb-36">
-        <img class="absolute right-0 w-[60%] top-0" src="../../assets/images/Login/Login Pattern.png"/>
-        <div class="max-w-[1210px] mx-auto pt-[40px] px-2">
-            <div class="flex items-center gap-2">
-                <img class="h-[45px] w-[45px]" src="../../assets/images/Logo.svg"/>
-                <h1 class="text-3xl font-bold text-mainBlackColor">PTE Key</h1>
+    <div class="w-full mb-16 lg:mb-24">
+        <img class="absolute right-0 w-[60%] top-0 hidden lg:flex" src="../../assets/images/Login/Login Pattern.png" />
+        <img class="absolute left-0 md:left-auto md:right-0 w-full md:w-[80%] h-auto md:h-[100%] top-0 hidden md:block lg:hidden"
+            src="../../assets/images/Login/mdResponsiveBackground.png" />
+        <img class="absolute left-0 md:left-auto md:right-0 w-full md:w-[80%] h-auto md:h-[100%] top-0 block md:hidden lg:hidden"
+            src="../../assets/images/Login/mdResponsiveBackground2.png" />
+        <div
+            class="max-w-[1180px] lg:max-w-[1210px] 2xl:max-w-[2200px] mx-auto pt-12 lg:pt-[40px] px-4 md:px-8 lg:px-2 z-10 relative">
+            <div class="flex items-center gap-2 w-full">
+                <img class="h-[45px] w-[45px] 2xl:h-[60px] 2xl:w-[60px]" src="../../assets/images/Logo.svg" />
+                <h1 class="text-3xl 2xl:text-5xl font-bold text-mainBlackColor">PTE Key</h1>
             </div>
         </div>
     </div>
-    
+
     <!-- Forgot Pass Screen End -->
-    <div class="w-full mb-52">
-        <div class="max-w-[1210px] px-2 pr-20 flex justify-between items-center mx-auto">
-            <div class="flex flex-col gap-y-[35px]">
+    <div class="mb-40 md:mb-40 lg:mb-80 2xl:mb-[800px] z-10 relative">
+        <div
+            class="max-w-[1180px] lg:max-w-[1210px] 2xl:max-w-[2200px] mx-auto pt-12 lg:pt-[40px] px-4 md:px-8 lg:px-2 flex flex-col md:flex-row justify-center md:justify-start 2xl:justify-between items-center gap-8 md:gap-0 lg:gap-0">
+            <div class="flex flex-col items-center md:items-start gap-y-[35px]">
                 <div class="flex flex-col gap-2">
-                    <h1 class="text-5xl text-mainBlackColor font-semibold">Forgot Password?</h1>
+                    <h1 class="text-[32px] md:text-5xl lg:text-6xl 2xl:text-7xl text-mainBlackColor font-semibold">
+                        Forgot Password?</h1>
                 </div>
-                <p class="text-2xl text-mainBlackColor w-[70%]">Please enter your email address to receive a reset password link</p>
+                <p
+                    class="text-lg md:text-3xl lg:text-[39px] 2xl:text-6xl text-mainBlackColor w-auto md:w-[80%] lg:w-[70%] text-center md:text-start leading-normal">
+                    Please enter your email address to receive a reset password link</p>
             </div>
-            <div class="rounded-[40px] py-12 px-20 bg-gray-50 bg-opacity-[0.93] z-10 w-[500px]">
+            <div
+                class="rounded-[40px] pt-[40px] pb-[43px] px-6 md:pl-[40px] md:pr-[33px] bg-gray-50 bg-opacity-[0.93] z-10 md:mt-24 lg:mt-0 2xl:mt-24 min-w-0 w-full md:w-auto md:min-w-[380px] lg:min-w-[400px] 2xl:min-w-[800px]">
                 <div class="flex flex-col gap-y-[30px] mb-10">
-                    <lable class="flex flex-col gap-2 text-black">
+                    <lable class="flex flex-col gap-2 text-black text-sm md:text-base 2xl:text-3xl">
                         Enter your username or email address
-                        <input class="rounded-[9px] bg-white w-full py-[10px] pl-4 text-gray-500 text-xs font-light outline-none border border-mainColor" placeholder="Username or email address"/>
+                        <input
+                            class="rounded-[9px] bg-white w-full py-[10px] 2xl:py-6 pl-4 text-gray-500 text-xs 2xl:text-2xl font-light outline-none border border-gray-300"
+                            placeholder="Username or email address" />
                     </lable>
                 </div>
                 <a href="../Login">
-                <button class="w-full py-2 rounded-[10px] bg-mainBlackColor text-white font-medium">Sign Email</button>
-            </a>
+                    <button
+                        class="px-0 md:px-[70px] py-2 2xl:py-4 rounded-[10px] bg-mainBlackColor text-white font-medium w-full text-base 2xl:text-3xl">Sign
+                        Email</button>
+                </a>
             </div>
         </div>
     </div>
 
     <!-- Footer Start -->
 
-        <div class="bg-mainBlackColor w-full">
-            <div class="max-w-[1210px] mx-auto py-5 flex justify-between items-center px-5">
-                <ul class="text-white text-sm flex items-center gap-8">
-                    <li>Contact</li>
-                    <li>Disclaimer</li>
-                    <li>Refund & Cancellation Policy</li>
-                    <li>Privacy Policy</li>
-                    <li>Terms & Conditions</li>
-                </ul>
-                <p class="text-white text-sm">All rights reserved © PTEKey Ltd, 2023</p>
-            </div>
+    <div class="bg-mainBlackColor w-full">
+        <div
+            class="max-w-[1180px] lg:max-w-[1210px] 2xl:max-w-[2200px] mx-auto py-5 flex justify-center lg:justify-between gap-3 2xl:gap-6 items-center px-5 flex-wrap">
+            <ul class="text-white text-sm 2xl:text-3xl flex items-center justify-center gap-5 2xl:gap-40 flex-wrap">
+                <li>Contact</li>
+                <li>Disclaimer</li>
+                <li>Refund & Cancellation Policy</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+            </ul>
+            <p class="text-white text-sm lg:flex hidden text-center 2xl:text-2xl">All rights reserved © PTEKey Ltd, 2023
+            </p>
         </div>
-    
+    </div>
+    <div class="w-full bg-white flex items-center justify-center py-1 lg:hidden">
+        <p class="text-mainBlackColor text-sm">All rights reserved © PTEKey Ltd, 2023</p>
+    </div>
+
     <!-- Footer End -->
 
 </body>
+
 </html>

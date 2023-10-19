@@ -1,96 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PTE</title>
     <link rel="stylesheet" href="../../dist/output.css">
 </head>
+
 <body>
 
     <!-- Login Screen Start -->
 
-    <div class="w-full relative mb-20">
-        <img class="absolute right-0 w-[60%] top-0" src="../../assets/images/Login/Login Pattern.png"/>
-        <div class="max-w-[1210px] mx-auto pt-[40px] px-2 pr-28 flex justify-between">
-        <div class="flex flex-col gap-y-28">
-            <div class="flex items-center gap-2">
-                <img class="h-[45px] w-[45px]" src="../../assets/images/Logo.svg"/>
-                <h1 class="text-3xl font-bold text-mainBlackColor">PTE Key</h1>
-            </div>
-            <div class="flex flex-col gap-y-[35px]">
-                <div class="flex flex-col gap-2">
-                    <h1 class="text-7xl text-mainBlackColor font-semibold">PTE Key</h1>
-                    <p class="text-[39px] text-mainBlackColor leading-normal w-[70%]">The Most Advanced PTE Practice Platform</p>
+    <div class="w-full relative mb-20 md:mb-40 2xl:mb-[500px]">
+        <img class="absolute right-0 w-[60%] top-0 hidden lg:flex" src="../../assets/images/Login/Login Pattern.png" />
+        <img class="absolute left-0 md:left-auto md:right-0 w-full md:w-[80%] h-auto md:h-[100%] top-0 hidden md:block lg:hidden"
+            src="../../assets/images/Login/mdResponsiveBackground.png" />
+        <img class="absolute left-0 md:left-auto md:right-0 w-full md:w-[80%] h-auto md:h-[100%] top-0 block md:hidden lg:hidden"
+            src="../../assets/images/Login/mdResponsiveBackground2.png" />
+        <div
+            class="max-w-[1180px] lg:max-w-[1210px] 2xl:max-w-[2200px] mx-auto pt-12 lg:pt-[40px] px-4 md:px-8 lg:px-2 flex flex-col md:flex-row justify-center md:justify-start 2xl:justify-between gap-10 lg:gap-0">
+            <div class="flex flex-col items-center md:items-start gap-y-20 md:gap-y-40 lg:gap-y-28 2xl:gap-y-72 z-10">
+                <div class="flex items-center gap-2 w-full">
+                    <img class="h-[45px] w-[45px] 2xl:h-[60px] 2xl:w-[60px]" src="../../assets/images/Logo.svg" />
+                    <h1 class="text-3xl 2xl:text-5xl font-bold text-mainBlackColor">PTE Key</h1>
                 </div>
-                <p class="text-2xl text-mainBlackColor font-semibold">If you don’t have an account, you can 
-                    <span class="text-mainColor">
-                        <a href="../SignUp">
-                        Sign Up Now !
+                <div class="flex flex-col items-center md:items-start gap-y-1 md:gap-y-[35px]">
+                    <div class="flex flex-col items-center md:items-start gap-2">
+                        <h1 class="text-[32px] md:text-5xl lg:text-7xl 2xl:text-9xl text-mainBlackColor font-semibold">
+                            PTE Key</h1>
+                        <p
+                            class="text-lg md:text-3xl lg:text-[39px] 2xl:text-6xl text-mainBlackColor leading-normal w-auto md:w-[80%] lg:w-[70%] text-center md:text-start font-medium md:font-normal">
+                            The Most Advanced PTE Practice Platform</p>
+                    </div>
+                    <p
+                        class="text-xl lg:text-2xl 2xl:text-4xl text-mainBlackColor font-normal md:font-semibold text-center md:text-start">
+                        If you don’t have an account, you can
+                        <span class="text-mainBlackColor md:text-mainColor md:font-normal font-bold">
+                            <a href="../SignUp">
+                                Sign Up Now !
+                            </a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div
+                class="rounded-[40px] pt-[40px] pb-[43px] px-6 md:pl-[40px] md:pr-[33px] bg-gray-50 bg-opacity-[0.93] z-10 md:mt-24 lg:mt-0 2xl:mt-24 min-w-0 md:min-w-[380px] lg:min-w-[400px] 2xl:min-w-[800px]">
+                <div class="w-full flex justify-between gap-0 md:gap-x-16 lg:gap-x-24">
+                    <div class="flex flex-col">
+                        <h1 class="text-base lg:text-lg 2xl:text-4xl text-mainBlackColor mb-1">Welcome to <span
+                                class="text-mainColor font-semibold">LOREM</span></h1>
+                        <h1 class="text-3xl lg:text-4xl 2xl:text-7xl font-semibold text-black mb-6 lg:mb-8">Sign in</h1>
+                    </div>
+                    <a href="../SignUp">
+                        <div class="flex flex-col mt-0 lg:mt-1">
+                            <p class="text-mainBlackColor lg:text-xs 2xl:text-2xl text-base font-medium">No Account ?
+                            </p>
+                            <p class="text-mainColor text-base lg:text-xs 2xl:text-2xl font-medium">Sign up</p>
+                        </div>
                     </a>
-                    </span>
-                </p>
-            </div>
-        </div>
-        <div class="rounded-[40px] pt-[40px] pb-[43px] pl-[40px] pr-[33px] bg-gray-50 bg-opacity-[0.93] z-10 w-[400px]">
-            <div class="w-full flex justify-between items-center">
-                <h1 class="text-lg text-mainBlackColor mb-1">Welcome to <span class="text-mainColor font-semibold">LOREM</span></h1>
-                <a href="../SignUp">
-                <div class="flex flex-col">
-                    <p class="text-mainBlackColor text-xs font-medium">No Account ?</p>
-                    <p class="text-mainColor text-xs font-medium">Sign up</p>
                 </div>
-            </a>
+                <div class="w-full flex items-center justify-between mb-8 lg:mb-10">
+                    <button
+                        class="rounded-[9px] py-3 pl-0 w-[65%] flex items-center justify-center gap-x-2 md:gap-x-4 text-blue-500 bg-blue-400 bg-opacity-[0.1] text-xs 2xl:text-2xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 26 26" fill="none"
+                            class="h-5 w-5 2xl:h-12 2xl:w-12">
+                            <path
+                                d="M24.3762 13.2528C24.3762 12.3175 24.2988 11.635 24.1312 10.9272H13.2334V15.1486H19.6302C19.5012 16.1976 18.8048 17.7775 17.2572 18.8391L17.2355 18.9804L20.6812 21.5964L20.9199 21.6197C23.1123 19.6354 24.3762 16.7158 24.3762 13.2528Z"
+                                fill="#4285F4" />
+                            <path
+                                d="M13.2326 24.3749C16.3664 24.3749 18.9973 23.3637 20.919 21.6196L17.2563 18.8389C16.2762 19.5088 14.9607 19.9764 13.2326 19.9764C10.1631 19.9764 7.55802 17.9922 6.62936 15.2495L6.49324 15.2608L2.91038 17.9782L2.86353 18.1059C4.77223 21.8217 8.69286 24.3749 13.2326 24.3749Z"
+                                fill="#34A853" />
+                            <path
+                                d="M6.63013 15.2496C6.3851 14.5418 6.24329 13.7834 6.24329 12.9999C6.24329 12.2162 6.3851 11.4579 6.61724 10.7501L6.61075 10.5994L2.98298 7.83838L2.86428 7.89371C2.07761 9.43567 1.62622 11.1672 1.62622 12.9999C1.62622 14.8325 2.07761 16.564 2.86428 18.1059L6.63013 15.2496Z"
+                                fill="#FBBC05" />
+                            <path
+                                d="M13.2326 6.0233C15.4122 6.0233 16.8824 6.94594 17.7207 7.71696L20.9965 4.5825C18.9846 2.74987 16.3665 1.625 13.2326 1.625C8.69289 1.625 4.77224 4.17804 2.86353 7.89384L6.61649 10.7503C7.55805 8.00763 10.1632 6.0233 13.2326 6.0233Z"
+                                fill="#EB4335" />
+                        </svg>
+                        Sign in with Google
+                    </button>
+                    <button class="h-[45px] 2xl:h-20 w-[14%] rounded-[9px] bg-white flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none"
+                            class="h-[29px] w-[29px] 2xl:h-12 2xl:w-12">
+                            <ellipse cx="14.5" cy="13.3398" rx="12.6875" ry="12.6875"
+                                fill="url(#paint0_linear_66_691)" />
+                            <path
+                                d="M19.2249 18.3802L19.7885 14.7992H16.2629V12.4763C16.2629 11.4964 16.7544 10.5407 18.3336 10.5407H19.9375V7.49196C19.9375 7.49196 18.4825 7.25 17.0921 7.25C14.1872 7.25 12.2903 8.96548 12.2903 12.0698V14.7992H9.0625V18.3802H12.2903V27.0375C12.9383 27.1367 13.6012 27.1875 14.2766 27.1875C14.9519 27.1875 15.6148 27.1367 16.2629 27.0375V18.3802H19.2249Z"
+                                fill="white" />
+                            <defs>
+                                <linearGradient id="paint0_linear_66_691" x1="14.5" y1="0.652344" x2="14.5" y2="25.9521"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#18ACFE" />
+                                    <stop offset="1" stop-color="#0163E0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button class="h-[45px] 2xl:h-20 w-[14%] rounded-[9px] bg-white flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28" fill="none"
+                            class="h-[29px] w-[29px] 2xl:h-12 2xl:w-12">
+                            <path
+                                d="M27.5315 13.8316C27.5315 20.4823 21.8568 25.8799 14.8506 25.8799C7.84438 25.8799 2.16968 20.4823 2.16968 13.8316C2.16968 7.17484 7.84438 1.7832 14.8506 1.7832C21.8568 1.7832 27.5315 7.17484 27.5315 13.8316Z"
+                                fill="#283544" />
+                            <path
+                                d="M20.7945 10.783C20.7253 10.8214 19.078 11.6308 19.078 13.4255C19.1557 15.4722 21.1568 16.1899 21.1911 16.1899C21.1568 16.2283 20.889 17.1677 20.0958 18.1525C19.4662 19.0007 18.7675 19.856 17.7064 19.856C16.6971 19.856 16.3348 19.2906 15.1702 19.2906C13.9196 19.2906 13.5657 19.856 12.6082 19.856C11.5471 19.856 10.7966 18.9549 10.1327 18.1146C9.27029 17.0148 8.53723 15.2889 8.51135 13.6317C8.49391 12.7535 8.68406 11.8903 9.16677 11.1571C9.84808 10.1335 11.0644 9.43866 12.3927 9.41575C13.4104 9.38536 14.3162 10.0344 14.9373 10.0344C15.5326 10.0344 16.6454 9.41575 17.9045 9.41575C18.4479 9.41624 19.8972 9.56119 20.7945 10.783ZM14.8512 9.24041C14.6701 8.43847 15.1702 7.63652 15.6361 7.12497C16.2313 6.50633 17.1714 6.08643 17.9821 6.08643C18.0339 6.88837 17.7059 7.67488 17.1196 8.24769C16.5936 8.86634 15.6878 9.33206 14.8512 9.24041Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-col gap-y-4 lg:gap-y-[30px] mb-2">
+                    <lable class="flex flex-col gap-2 text-black text-sm md:text-base 2xl:text-3xl">
+                        Enter your username or email address
+                        <input
+                            class="rounded-[9px] bg-white w-full py-[10px] 2xl:py-6 pl-4 text-gray-500 text-xs 2xl:text-2xl font-light outline-none border border-mainColor"
+                            placeholder="Username or email address" />
+                    </lable>
+                    <lable class="flex flex-col gap-2 text-black text-sm md:text-base 2xl:text-3xl">
+                        Enter your Password
+                        <input
+                            class="rounded-[9px] bg-white w-full py-[10px] 2xl:py-6 pl-4 text-gray-500 text-xs 2xl:text-2xl font-light outline-none border border-gray-300"
+                            placeholder="Password" />
+                    </lable>
+                </div>
+                <div class="flex flex-col items-end gap-y-[35px]">
+                    <a href="../forgotPass">
+                        <p class="text-xs 2xl:text-2xl text-mainBlackColor">Forgot Password</p>
+                    </a>
+                    <a class="w-full" href="../dashboard">
+                        <button
+                            class="px-0 md:px-[70px] py-2 2xl:py-4 rounded-[10px] bg-mainBlackColor text-white font-medium w-full text-base 2xl:text-3xl">Sign
+                            in</button>
+                    </a>
+                </div>
             </div>
-            <h1 class="text-4xl font-semibold text-black mb-8">Sign in</h1>
-            <div class="w-full flex items-center justify-between mb-10">
-                <button class="rounded-[9px] py-3 pl-4 w-[65%] flex items-center gap-x-4 text-blue-500 bg-blue-400 bg-opacity-[0.1] text-xs">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 26 26" fill="none">
-                        <path d="M24.3762 13.2528C24.3762 12.3175 24.2988 11.635 24.1312 10.9272H13.2334V15.1486H19.6302C19.5012 16.1976 18.8048 17.7775 17.2572 18.8391L17.2355 18.9804L20.6812 21.5964L20.9199 21.6197C23.1123 19.6354 24.3762 16.7158 24.3762 13.2528Z" fill="#4285F4"/>
-                        <path d="M13.2326 24.3749C16.3664 24.3749 18.9973 23.3637 20.919 21.6196L17.2563 18.8389C16.2762 19.5088 14.9607 19.9764 13.2326 19.9764C10.1631 19.9764 7.55802 17.9922 6.62936 15.2495L6.49324 15.2608L2.91038 17.9782L2.86353 18.1059C4.77223 21.8217 8.69286 24.3749 13.2326 24.3749Z" fill="#34A853"/>
-                        <path d="M6.63013 15.2496C6.3851 14.5418 6.24329 13.7834 6.24329 12.9999C6.24329 12.2162 6.3851 11.4579 6.61724 10.7501L6.61075 10.5994L2.98298 7.83838L2.86428 7.89371C2.07761 9.43567 1.62622 11.1672 1.62622 12.9999C1.62622 14.8325 2.07761 16.564 2.86428 18.1059L6.63013 15.2496Z" fill="#FBBC05"/>
-                        <path d="M13.2326 6.0233C15.4122 6.0233 16.8824 6.94594 17.7207 7.71696L20.9965 4.5825C18.9846 2.74987 16.3665 1.625 13.2326 1.625C8.69289 1.625 4.77224 4.17804 2.86353 7.89384L6.61649 10.7503C7.55805 8.00763 10.1632 6.0233 13.2326 6.0233Z" fill="#EB4335"/>
-                      </svg>
-                    Sign in with Google
-                </button>
-                <button class="h-[45px] w-[14%] rounded-[9px] bg-white flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
-                        <ellipse cx="14.5" cy="13.3398" rx="12.6875" ry="12.6875" fill="url(#paint0_linear_66_691)"/>
-                        <path d="M19.2249 18.3802L19.7885 14.7992H16.2629V12.4763C16.2629 11.4964 16.7544 10.5407 18.3336 10.5407H19.9375V7.49196C19.9375 7.49196 18.4825 7.25 17.0921 7.25C14.1872 7.25 12.2903 8.96548 12.2903 12.0698V14.7992H9.0625V18.3802H12.2903V27.0375C12.9383 27.1367 13.6012 27.1875 14.2766 27.1875C14.9519 27.1875 15.6148 27.1367 16.2629 27.0375V18.3802H19.2249Z" fill="white"/>
-                        <defs>
-                          <linearGradient id="paint0_linear_66_691" x1="14.5" y1="0.652344" x2="14.5" y2="25.9521" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#18ACFE"/>
-                            <stop offset="1" stop-color="#0163E0"/>
-                          </linearGradient>
-                        </defs>
-                      </svg>
-                </button>
-                <button class="h-[45px] w-[14%] rounded-[9px] bg-white flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28" fill="none">
-                        <path d="M27.5315 13.8316C27.5315 20.4823 21.8568 25.8799 14.8506 25.8799C7.84438 25.8799 2.16968 20.4823 2.16968 13.8316C2.16968 7.17484 7.84438 1.7832 14.8506 1.7832C21.8568 1.7832 27.5315 7.17484 27.5315 13.8316Z" fill="#283544"/>
-                        <path d="M20.7945 10.783C20.7253 10.8214 19.078 11.6308 19.078 13.4255C19.1557 15.4722 21.1568 16.1899 21.1911 16.1899C21.1568 16.2283 20.889 17.1677 20.0958 18.1525C19.4662 19.0007 18.7675 19.856 17.7064 19.856C16.6971 19.856 16.3348 19.2906 15.1702 19.2906C13.9196 19.2906 13.5657 19.856 12.6082 19.856C11.5471 19.856 10.7966 18.9549 10.1327 18.1146C9.27029 17.0148 8.53723 15.2889 8.51135 13.6317C8.49391 12.7535 8.68406 11.8903 9.16677 11.1571C9.84808 10.1335 11.0644 9.43866 12.3927 9.41575C13.4104 9.38536 14.3162 10.0344 14.9373 10.0344C15.5326 10.0344 16.6454 9.41575 17.9045 9.41575C18.4479 9.41624 19.8972 9.56119 20.7945 10.783ZM14.8512 9.24041C14.6701 8.43847 15.1702 7.63652 15.6361 7.12497C16.2313 6.50633 17.1714 6.08643 17.9821 6.08643C18.0339 6.88837 17.7059 7.67488 17.1196 8.24769C16.5936 8.86634 15.6878 9.33206 14.8512 9.24041Z" fill="white"/>
-                      </svg>
-                </button>
-            </div>
-            <div class="flex flex-col gap-y-[30px] mb-2">
-                <lable class="flex flex-col gap-2 text-black">
-                    Enter your username or email address
-                    <input class="rounded-[9px] bg-white w-full py-[10px] pl-4 text-gray-500 text-xs font-light outline-none border border-mainColor" placeholder="Username or email address"/>
-                </lable>
-                <lable class="flex flex-col gap-2 text-black">
-                    Enter your Password
-                    <input class="rounded-[9px] bg-white w-full py-[10px] pl-4 text-gray-500 text-xs font-light outline-none border border-gray-300" placeholder="Password"/>
-                </lable>
-            </div>
-            <div class="flex flex-col items-end gap-y-[35px]">
-        <a href="../forgotPass">
-            <p class="text-xs text-mainBlackColor">Forgot Password</p>
-        </a>
-        <a href="../dashboard">
-            <button class="px-[70px] py-2 rounded-[10px] bg-mainBlackColor text-white font-medium">Sign in</button>
-        </a>
-        </div>
-        </div>
         </div>
     </div>
 
@@ -99,19 +142,25 @@
     <!-- Footer Start -->
 
     <div class="bg-mainBlackColor w-full">
-        <div class="max-w-[1210px] mx-auto py-5 flex justify-between items-center px-5">
-            <ul class="text-white text-sm flex items-center gap-8">
+        <div
+            class="max-w-[1180px] lg:max-w-[1210px] 2xl:max-w-[2200px] mx-auto py-5 flex justify-center lg:justify-between gap-3 2xl:gap-6 items-center px-5 flex-wrap">
+            <ul class="text-white text-sm 2xl:text-3xl flex items-center justify-center gap-5 2xl:gap-40 flex-wrap">
                 <li>Contact</li>
                 <li>Disclaimer</li>
                 <li>Refund & Cancellation Policy</li>
                 <li>Privacy Policy</li>
                 <li>Terms & Conditions</li>
             </ul>
-            <p class="text-white text-sm">All rights reserved © PTEKey Ltd, 2023</p>
+            <p class="text-white text-sm lg:flex hidden text-center 2xl:text-2xl">All rights reserved © PTEKey Ltd, 2023
+            </p>
         </div>
+    </div>
+    <div class="w-full bg-white flex items-center justify-center py-1 lg:hidden">
+        <p class="text-mainBlackColor text-sm">All rights reserved © PTEKey Ltd, 2023</p>
     </div>
 
     <!-- Footer End -->
 
 </body>
+
 </html>
