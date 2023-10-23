@@ -17,27 +17,29 @@
         <div
             class="max-w-[1180px] 2xl:max-w-[2200px] mx-auto px-2 md:px-8 lg:px-2 flex items-center justify-between py-12 md:py-5 lg:pt-[40px] z-10 border-b border-gray-300 lg:border-none">
             <a href="./index.html">
-                <div class="flex items-center gap-2">
-                    <img class="h-[45px] w-[45px] 2xl:h-[100px] 2xl:w-[100px]" src="../../assets/images/Logo.svg" />
-                    <h1 class="text-3xl 2xl:text-6xl font-bold text-mainBlackColor">PTE Key</h1>
+                <div class="flex items-center gap-x-0 w-full">
+                    <div class="flex items-center gap-2">
+                        <img class="h-[45px] w-[45px] 2xl:h-[100px] 2xl:w-[100px]" src="../../assets/images/Logo.svg" />
+                        <h1 class="text-3xl 2xl:text-6xl font-bold text-mainBlackColor">PTE Key</h1>
+                    </div>
+                    <ul class="hidden lg:flex items-center gap-[35px] text-sm 2xl:text-3xl">
+                        <a href="/">
+                            <li class="cursor-pointer">Home</li>
+                        </a>
+                        <li class="cursor-pointer" onclick="onShowLoginModal()">PTE Practice</li>
+                        <a href="../../Pages/pteTurtorials">
+                            <li class="cursor-pointer">PTE Guide</li>
+                        </a>
+                        <a href="../../Pages/course">
+                            <li class="cursor-pointer">Tutorials</li>
+                        </a>
+                        <a href="../../Pages/downloadApp">
+                            <li class="cursor-pointer">App</li>
+                        </a>
+                    </ul>
                 </div>
             </a>
             <div class="hidden lg:flex items-center gap-[35px] z-10">
-                <ul class="flex items-center gap-[35px] text-sm 2xl:text-3xl">
-                    <a href="/">
-                        <li class="cursor-pointer">Home</li>
-                    </a>
-                    <li class="cursor-pointer" onclick="onShowLoginModal()">PTE Practice</li>
-                    <a href="../../Pages/pteTurtorials">
-                        <li class="cursor-pointer">PTE Guide</li>
-                    </a>
-                    <a href="../../Pages/course">
-                        <li class="cursor-pointer">Tutorials</li>
-                    </a>
-                    <a href="../../Pages/downloadApp">
-                        <li class="cursor-pointer">App</li>
-                    </a>
-                </ul>
                 <a href="../../Pages/Login">
                     <button
                         class="py-[12px] px-[28px] rounded-[5px] bg-mainBlackColor text-white text-sm 2xl:text-3xl font-semibold">Login</button>
@@ -144,7 +146,8 @@
     <div class="w-full py-16 relative mb-4 max-w-[1180px] 2xl:max-w-[2200px] mx-auto px-2 md:px-8 lg:px-2">
         <div
             class="py-24 bg-black bg-opacity-[90%] rounded-[30px] flex flex-col gap-y-5 justify-center items-center w-full">
-            <h1 class="text-white text-[150px] lg:text-[250px] font-extrabold leading-[150px] lg:leading-[250px]">404</h1>
+            <h1 class="text-white text-[150px] lg:text-[250px] font-extrabold leading-[150px] lg:leading-[250px]">404
+            </h1>
             <h1 class="text-5xl lg:text-6xl font-bold text-white">Oops! Page not found</h1>
             <p class="text-white text-xl w-[55%] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Mattis congue
